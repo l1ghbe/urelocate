@@ -1,0 +1,74 @@
+.instruments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  // flex-wrap: wrap;
+
+  gap: 10vw;
+  padding: 5rem;
+
+  border-radius: 3.2rem;
+  background: #228cdb;
+
+  @include respond(tab-port) {
+    padding: 3.5rem;
+    flex-direction: column;
+  }
+
+  @include respond(phone) {
+    padding: 2.7rem;
+  }
+
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10vw;
+  }
+
+  .tags {
+    display: flex;
+    gap: 1rem;
+    align-self: stretch;
+    flex-wrap: wrap;
+
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    @include respond(tab-port) {
+      max-width: 70%;
+    }
+    @include respond(phone) {
+      max-width: 100%;
+      font-size: 1.5rem;
+    }
+
+    & > div {
+      padding: 1rem 2.5rem;
+      border-radius: 3.2rem;
+      background-color: #fff;
+
+      @include respond(tab-port) {
+        max-width: 50%;
+      }
+    }
+  }
+
+  .image-content {
+    display: flex;
+    // max-width: 60rem;
+    width: 50%;
+    aspect-ratio: 3/2;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+
+  .main-image-icon {
+    overflow: hidden;
+    border-radius: 1.8rem;
+    object-fit: cover;
+  }
+}

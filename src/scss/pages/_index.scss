@@ -10,13 +10,13 @@
 }
 
 .page-main {
-  display: flex;
-  // width: 1290px;
-  flex-direction: column;
-  align-items: center;
-  gap: 5rem;
-  flex-shrink: 0;
-  max-width: 100%;
+  // display: flex;
+  // // width: 1290px;
+  // flex-direction: column;
+  // align-items: center;
+  // gap: 5rem;
+  // flex-shrink: 0;
+  // max-width: 100%;
 }
 
 .t1 {
@@ -201,86 +201,6 @@ h4-18bl {
   font-weight: 400;
   line-height: normal;
 }
-
-/*
-Главный блок - Начало
-*/
-
-.main {
-  display: flex;
-  padding: 50px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  gap: 50px 150px;
-  align-self: stretch;
-  flex-wrap: wrap;
-  border-radius: 32px;
-  background: #228cdb;
-}
-
-.main-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 50px;
-  flex: 1 0 0;
-}
-
-.main-text-head {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  align-self: stretch;
-}
-
-.main-text-tags {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  gap: 9px;
-  align-self: stretch;
-  flex-wrap: wrap;
-}
-
-.main-tags {
-  display: flex;
-  padding: 8px 25px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 32px;
-  background: #fff;
-  color: #000;
-  text-align: center;
-
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.main-image {
-  display: flex;
-  width: 549px;
-  height: 387px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 50px;
-}
-
-.main-image-icon {
-  flex: 1;
-  align-self: stretch;
-  border-radius: 18px;
-  object-fit: cover;
-}
-
-/*
-Главный блок - Конец
-*/
 
 /*
 Продукты - Начало
