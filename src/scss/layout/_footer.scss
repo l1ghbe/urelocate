@@ -1,0 +1,56 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem 3rem;
+  width: 100%;
+  background: #323232;
+
+  &__info {
+    display: flex;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 300;
+    gap: 10vw;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      gap: 5rem;
+    }
+
+    & > [class^="footer__"] {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      @include respond(tab-port) {
+        text-align: center;
+      }
+    }
+  }
+
+  &__right {
+    justify-content: space-between;
+
+    & > div {
+      width: 100%;
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: flex-end;
+    gap: 18px;
+  }
+
+  &__social-icon {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}

@@ -1,0 +1,51 @@
+header {
+  display: flex;
+  align-items: center;
+  padding: 5rem 0;
+  font-weight: 400;
+
+  @include respond(tab-port) {
+    padding-bottom: 3.2rem;
+  }
+}
+
+.header-logo {
+  padding: 1rem;
+  font-size: 2.5rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0px 1rem;
+  gap: 5.5rem;
+  margin-left: auto;
+
+  @include respond(tab-port) {
+    display: none;
+    gap: 4rem;
+  }
+
+  &__item {
+    display: block;
+  }
+
+  &__link {
+    color: #000;
+    font-weight: 400;
+  }
+}
+
+.burger-menu {
+  display: none;
+  margin-left: auto;
+  @include respond(tab-port) {
+    display: block;
+  }
+}
+
+input::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+}
