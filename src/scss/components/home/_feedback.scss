@@ -1,0 +1,29 @@
+.feedback {
+}
+
+.swiper {
+  // position: relative;
+  height: 30rem;
+  &__container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 30rem;
+    background-color: #b98cff;
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+  }
+
+  &__control {
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: 0.3s;
+    &:hover {
+      background-color: #e2dedec2;
+    }
+  }
+}
