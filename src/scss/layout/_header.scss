@@ -21,6 +21,7 @@ header {
   padding: 0px 1rem;
   gap: 5.5rem;
   margin-left: auto;
+  font-size: 1.8rem;
 
   @include respond(tab-port) {
     display: none;

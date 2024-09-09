@@ -9,338 +9,188 @@
   }
 }
 
-.page-main {
-  // display: flex;
-  // // width: 1290px;
-  // flex-direction: column;
-  // align-items: center;
-  // gap: 5rem;
-  // flex-shrink: 0;
-  // max-width: 100%;
-}
+// .t1 {
+//   align-self: stretch;
+//   color: #fff;
+//   font-size: 5rem;
+//   font-style: normal;
+//   font-weight: 800;
+//   line-height: normal;
+// }
 
-.t1 {
-  align-self: stretch;
-  color: #fff;
-  font-size: 5rem;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
+// .txt-1 {
+//   align-self: stretch;
+//   color: #fff;
+//   font-size: 5rem;
+//   font-style: normal;
+//   font-weight: 800;
+//   line-height: normal;
+// }
 
-.txt-1 {
-  align-self: stretch;
-  color: #fff;
-  font-size: 5rem;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
+// .b1 {
+//   align-self: stretch;
+//   color: #000;
+//   text-align: center;
+//   font-size: 32px;
+//   font-style: normal;
+//   font-weight: 800;
+//   line-height: normal;
+// }
 
-.b1 {
-  align-self: stretch;
-  color: #000;
-  text-align: center;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
+// .b1-w {
+//   align-self: stretch;
+//   color: #fff;
+//   text-align: left;
+//   font-size: 3.2rem;
+//   font-style: normal;
+//   font-weight: 800;
+//   line-height: normal;
+// }
 
-.b1-w {
-  align-self: stretch;
-  color: #fff;
-  text-align: left;
-  font-size: 3.2rem;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
+// .b2-b {
+//   align-self: stretch;
+//   color: #000;
+//   text-align: left;
+//   font-size: 3.2rem;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: normal;
+// }
 
-.b2-b {
-  align-self: stretch;
-  color: #000;
-  text-align: left;
-  font-size: 3.2rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
+// h3 {
+//   color: #fff;
+//   font-size: 2rem;
+//   font-style: normal;
+//   font-weight: 800;
+//   line-height: normal;
+//   flex: 1 0 0;
+//   margin: 1.8rem 0px;
+// }
 
-h3 {
-  color: #fff;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  flex: 1 0 0;
-  margin: 1.8rem 0px;
-}
+// h4 {
+//   color: #fff;
+//   font-size: 1.6rem;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+//   flex: 1 0 0;
+// }
 
-h4 {
-  color: #fff;
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  flex: 1 0 0;
-}
+// h4-1 {
+//   color: #fff;
+//   font-size: 2.7rem;
+//   font-style: normal;
+//   font-weight: 800;
+//   line-height: normal;
+// }
 
-h4-1 {
-  color: #fff;
-  font-size: 2.7rem;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
+// h4-1c {
+//   color: #fff;
+//   font-size: 2rem;
+//   font-style: normal;
+//   font-weight: 600;
+//   line-height: normal;
+//   text-decoration-line: line-through;
+// }
 
-h4-1c {
-  color: #fff;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  text-decoration-line: line-through;
-}
+// h4-1b {
+//   color: #000;
+//   text-align: center;
+//   font-size: 18px;
+//   font-style: normal;
+//   font-weight: 600;
+//   line-height: normal;
+// }
 
-h4-1b {
-  color: #000;
-  text-align: center;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
+// h4-1-l {
+//   color: #000;
+//   text-align: left;
 
-h4-1-l {
-  color: #000;
-  text-align: left;
+//   font-size: 18px;
+//   font-style: normal;
+//   font-weight: 600;
+//   line-height: normal;
+// }
 
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
+// h4-2w {
+//   color: #fff;
+//   text-align: center;
 
-h4-2w {
-  color: #fff;
-  text-align: center;
+//   font-size: 18px;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: normal;
+// }
 
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
+// h4-2w-c {
+//   color: #fff;
+//   text-align: left;
 
-h4-2w-c {
-  color: #fff;
-  text-align: left;
+//   font-size: 18px;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: normal;
+// }
 
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
+// h4-2bl {
+//   color: #000;
+//   text-align: center;
 
-h4-2bl {
-  color: #000;
-  text-align: center;
+//   font-size: 18px;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: normal;
+// }
 
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
+// h4-2p {
+//   color: #b98cff;
+//   text-align: center;
 
-h4-2p {
-  color: #b98cff;
-  text-align: center;
+//   font-size: 18px;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: normal;
+// }
 
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
+// h5 {
+//   color: #000;
+//   text-align: right;
 
-h5 {
-  color: #000;
-  text-align: right;
+//   font-size: 18px;
+//   font-style: normal;
+//   font-weight: 600;
+//   line-height: normal;
+// }
 
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
+// .text1 {
+//   color: #fff;
 
-.text1 {
-  color: #fff;
+//   font-size: 16px;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+//   flex: 1 0 0;
+//   margin: 0;
+// }
 
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  flex: 1 0 0;
-  margin: 0;
-}
+// h4-13u {
+//   color: #fff;
 
-h4-13u {
-  color: #fff;
+//   font-size: 13px;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+//   text-decoration-line: underline;
+// }
 
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration-line: underline;
-}
+// h4-18bl {
+//   color: #000;
 
-h4-18bl {
-  color: #000;
-
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-/*
-Продукты - Начало
-*/
-
-.prod {
-  display: flex;
-  align-items: flex-start;
-  align-content: flex-start;
-  gap: 18px;
-  align-self: stretch;
-  flex-wrap: wrap;
-}
-
-.product-1 {
-  display: flex;
-  width: 418px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  border-radius: 32px;
-  background: #323232;
-}
-
-.prod-up {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-}
-
-.prod-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  gap: 18px;
-  align-self: stretch;
-}
-
-.prod-head {
-  display: flex;
-  padding: 0px 18px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  align-self: stretch;
-}
-
-.prod-text {
-  display: flex;
-  padding: 0px 18px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  align-self: stretch;
-}
-
-.prod-icon-cont {
-  flex: 1 0 0;
-  align-self: stretch;
-  border-radius: 18px;
-  box-shadow: inset 5px 5px 5px 5px grey;
-}
-
-.prod-down {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  gap: 18px;
-  align-self: stretch;
-}
-
-.prod-price {
-  display: flex;
-  padding: 0px 9px 0px 18px;
-  align-items: center;
-  gap: 18px;
-  flex: 1 0 0;
-}
-
-.prod-price-num {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.prod-price-sale {
-  display: flex;
-  padding: 1px 9px;
-  align-items: center;
-  gap: 10px;
-  border-radius: 13px;
-  background: #95ff8c;
-}
-
-.prod-buttons {
-  display: flex;
-  padding: 0px 18px 18px 18px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  align-self: stretch;
-}
-
-.prod-buttons-block {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  align-self: stretch;
-}
-
-.prod-button-buy {
-  border-radius: 13px;
-  background: #b98cff;
-  display: flex;
-  padding: 13.5px 15px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex: 1 0 0;
-  white-space: nowrap;
-}
-
-.prod-button-info {
-  display: flex;
-  padding: 13.5px 26.5px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex: 1 0 0;
-  border-radius: 13px;
-  outline: 2px solid #b98cff;
-  outline-offset: -2px;
-}
-
-/*
-Продукты - Конец
-*/
+//   font-size: 18px;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+// }
 
 /*
 Аккаунты - Начало
