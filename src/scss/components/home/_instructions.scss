@@ -1,0 +1,81 @@
+// .instructions {
+// }
+
+.chip {
+  &__labels {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  &__label {
+    padding: 0.8rem 2rem;
+    border-radius: 3.2rem;
+    border: 1px solid #000;
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    &:active {
+      background: #000;
+      color: #fff;
+    }
+  }
+}
+
+.view {
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+    max-width: 110rem;
+    margin: 0 auto;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    display: flex;
+
+    flex-direction: column;
+    gap: 3.5rem;
+    width: 45%;
+
+    @include respond(tab-port) {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    max-width: fit-content;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    border-radius: 1.8rem;
+    color: #fff;
+    background-color: #000;
+  }
+
+  &__video-block {
+    width: 55%;
+    min-height: 23rem;
+    padding: 7rem;
+    border-radius: 3.2rem;
+    background-color: #228cdb;
+
+    @include respond(tab-port) {
+      width: 100%;
+      padding: 5rem;
+    }
+  }
+
+  &__video {
+    width: 100%;
+    aspect-ratio: 1.8;
+    object-fit: cover;
+    border-radius: 18px;
+  }
+}
