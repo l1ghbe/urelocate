@@ -1,0 +1,36 @@
+.community-section {
+  display: flex;
+  border-radius: 3.2rem;
+  overflow: hidden;
+  background-color: $purple;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
+  & > div {
+    flex: 1 1 50%;
+    width: 50%;
+    max-height: 36rem;
+
+    @include respond(phone) {
+      width: 100%;
+      min-height: 19rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  &__video-block {
+    object-fit: cover;
+
+    & > video {
+      width: 100%;
+    }
+  }
+}
