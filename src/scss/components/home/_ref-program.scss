@@ -1,0 +1,31 @@
+.ref-program-section {
+  display: flex;
+  gap: 3.2rem;
+  padding: 3.2rem;
+  border-radius: 3.2rem;
+  background-color: $black;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
+  & > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  &__image {
+    max-width: 33rem;
+    aspect-ratio: 1.22;
+
+    @include respond(phone) {
+      max-width: 100%;
+    }
+  }
+}
