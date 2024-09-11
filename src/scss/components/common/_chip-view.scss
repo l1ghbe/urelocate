@@ -58,3 +58,26 @@
     border-radius: 18px;
   }
 }
+
+.chip {
+  &__labels {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  &__label {
+    padding: 0.8rem 2rem;
+    border-radius: 3.2rem;
+    border: 1px solid $black;
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-color: $white;
+
+    &:active {
+      background-color: $black;
+      color: $white;
+    }
+  }
+}

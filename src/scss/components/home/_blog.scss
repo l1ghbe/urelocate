@@ -1,0 +1,89 @@
+.blog-section {
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+  }
+
+  &__huge-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    flex: 4 1 55rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 70%;
+    padding: 3.2rem;
+    min-height: 26rem;
+
+    border-radius: 3.2rem;
+    background-image: url("../../../assets/img/dist/blog.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+
+    @include respond(phone) {
+      padding: 1rem;
+    }
+  }
+
+  &__chip {
+    display: inline-flex;
+    padding: 0.5rem 1.3rem;
+    border-radius: 1.3rem;
+    border: 1px solid $black;
+
+    @include respond(phone) {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__bottom-block {
+    display: flex;
+    align-items: end;
+    gap: 2rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__btn-link {
+    height: fit-content;
+    padding: 1.4rem 5.6rem;
+    border-radius: 1.3rem;
+
+    color: $white;
+    background-color: #7d6167;
+
+    @include respond(phone) {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__right-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    flex: 1 1 30rem;
+
+    & > div {
+      border-radius: 3.2rem;
+    }
+  }
+
+  &__text {
+    padding: 3.2rem;
+    background-color: $blue;
+  }
+
+  &__arrow {
+    background-color: $black;
+
+    &-link {
+      display: flex;
+      justify-content: center;
+      padding: 5rem 8rem;
+    }
+  }
+}

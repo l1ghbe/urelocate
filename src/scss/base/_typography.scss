@@ -36,6 +36,15 @@ body {
   font-size: 2rem;
 }
 
+.huge-paragraph {
+  font-size: 3.2rem;
+  font-weight: 800;
+
+  @include respond(phone) {
+    font-size: 2.2rem;
+  }
+}
+
 .big-paragraph {
   font-size: 1.8rem;
 }
