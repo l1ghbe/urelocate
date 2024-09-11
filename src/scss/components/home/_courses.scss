@@ -1,0 +1,23 @@
+.courses {
+  &__content {
+    padding: 3.2rem;
+    border-radius: 3.2rem;
+    background-color: $blue;
+  }
+
+  &__text {
+    color: $white;
+  }
+
+  &__label {
+    border: none !important;
+  }
+
+  &__video-block {
+    background-color: $swampy !important;
+  }
+
+  &__view__content {
+    margin-top: 3.2rem !important;
+  }
+}

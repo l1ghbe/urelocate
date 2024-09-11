@@ -1,20 +1,22 @@
-const arr = [1, 2, 3, 4, 5, 6, 7];
-const main = document.querySelector(".main");
-
-console.log(arr);
-
 // HOME INSTRUCTION SECTION
 
-const radioButtonsBlock = document.querySelector(".view__rbs");
-const radioButtons = document.querySelectorAll(".view__rb");
+const instructionsradioButtonsBlock = document.querySelector(
+  ".instructions-view__rbs"
+);
 
 // get instructions content
 
-const headingEl = document.querySelector(".view-heading");
-const paragraphEl = document.querySelector(".view-paragraph");
+const instructionsHeadingEl = document.querySelector(
+  ".instructions-view-heading"
+);
+const instructionsParagraphEl = document.querySelector(
+  ".instructions-view-paragraph"
+);
 const instructionLinkEl = document.querySelector(".view-inctruction-link");
-const videoSrcEl = document.querySelector(".view-videoSrc");
-const videoEl = document.querySelector(".view__video");
+const instructionsVideoSrcEl = document.querySelector(
+  ".instructions-view-videoSrc"
+);
+const instructionsVideoEl = document.querySelector(".instructions-view__video");
 
 fetch("../json/instructions.json")
   .then((response) => {
@@ -24,18 +26,54 @@ fetch("../json/instructions.json")
     return response.json();
   })
   .then((instructionsSourses) => {
-    radioButtonsBlock.addEventListener("click", (event) => {
+    instructionsradioButtonsBlock.addEventListener("click", (event) => {
       if (event.target && event.target.type === "radio") {
         const instructionId = event.target.id;
         try {
           const { heading, paragraph, instructionLink, videoSrc } =
             instructionsSourses[instructionId];
 
-          headingEl.textContent = heading;
-          paragraphEl.textContent = paragraph;
+          instructionsHeadingEl.textContent = heading;
+          instructionsParagraphEl.textContent = paragraph;
           instructionLinkEl.href = instructionLink;
-          videoSrcEl.src = videoSrc;
-          videoEl.load();
+          instructionsVideoSrcEl.src = videoSrc;
+          instructionsVideoEl.load();
+        } catch (error) {
+          console.error(error);
+        }
+      }
+    });
+  });
+
+// HOME COURSES SECTION
+
+const coursesRadioButtonsBlock = document.querySelector(".courses-view__rbs");
+const courseHeadingEl = document.querySelector(".course-view-heading");
+const courseParagraphEl = document.querySelector(".course-view-paragraph");
+const courseLinkEl = document.querySelector(".view-course-link");
+const courseVideoSrcEl = document.querySelector(".course-view-videoSrc");
+const courseVideoEl = document.querySelector(".course-view__video");
+
+fetch("../json/courses.json")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("Failed to load JSON");
+    }
+    return response.json();
+  })
+  .then((coursesSourses) => {
+    coursesRadioButtonsBlock.addEventListener("click", (event) => {
+      if (event.target && event.target.type === "radio") {
+        const courseId = event.target.id;
+        try {
+          const { heading, paragraph, instructionLink, videoSrc } =
+            coursesSourses[courseId];
+
+          courseHeadingEl.textContent = heading;
+          courseParagraphEl.textContent = paragraph;
+          courseLinkEl.href = instructionLink;
+          courseVideoSrcEl.src = videoSrc;
+          courseVideoEl.load();
         } catch (error) {
           console.error(error);
         }
