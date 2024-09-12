@@ -14,6 +14,7 @@ function building() {
       "./src/js/index.min.js",
       "./src/**/*.html",
       "!./src/pages/**/*.html",
+      "!./src/components/**/*.html",
     ],
     { base: "./src", encoding: false }
   ).pipe(dest("./build"));
