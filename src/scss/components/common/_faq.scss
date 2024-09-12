@@ -18,7 +18,7 @@
     max-height: 0;
     line-height: 3.2rem;
     overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.5s;
   }
 
   &__item {
@@ -50,7 +50,7 @@
   }
 
   &__input:checked ~ &__label &__control &__vertical-line {
-    display: none;
+    opacity: 0;
   }
 
   &__input:checked ~ &__content {
@@ -58,6 +58,8 @@
   }
 
   &__vertical-line {
+    transition: 0.1s ease-in-out;
+    // transition-delay: 0.1s;
     transform: translate(50%, -50%) rotate(90deg);
   }
 
