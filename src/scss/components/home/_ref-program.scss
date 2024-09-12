@@ -12,12 +12,15 @@
   & > div {
     display: flex;
     justify-content: center;
-    align-items: center;
   }
 
   &__content {
     flex-direction: column;
     gap: 3.2rem;
+
+    & > h1 {
+      text-align: left;
+    }
   }
 
   &__image {

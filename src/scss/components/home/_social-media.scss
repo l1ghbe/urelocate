@@ -15,7 +15,9 @@
   }
 
   &-heading {
-    text-align: center;
+    @include respond(tab-port) {
+      text-align: center;
+    }
   }
 
   &__icons {

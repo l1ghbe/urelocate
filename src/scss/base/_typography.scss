@@ -47,6 +47,11 @@ body {
 
 .big-paragraph {
   font-size: 1.8rem;
+
+  @include respond(phone) {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
 }
 
 .paragraph {
