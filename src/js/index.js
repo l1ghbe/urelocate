@@ -18,7 +18,7 @@ const instructionsVideoSrcEl = document.querySelector(
 );
 const instructionsVideoEl = document.querySelector(".instructions-view__video");
 
-fetch("../assets/json/instructions.json")
+fetch("./json/instructions.json")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Failed to load JSON");
@@ -54,7 +54,7 @@ const courseLinkEl = document.querySelector(".view-course-link");
 const courseVideoSrcEl = document.querySelector(".course-view-videoSrc");
 const courseVideoEl = document.querySelector(".course-view__video");
 
-fetch("../assets/json/courses.json")
+fetch("./json/courses.json")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Failed to load JSON");
