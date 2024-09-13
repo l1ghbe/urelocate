@@ -35,4 +35,4 @@ function optimizeImages() {
 }
 
 // export const images = series(avifConversion, webpConversion, optimizeImages);
-export const images = series(optimizeImages);
+export const images = series(webpConversion, optimizeImages);

@@ -1,0 +1,151 @@
+.blog {
+  max-width: 90rem;
+  margin: 0 auto;
+
+  &__tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+  }
+
+  &__tag {
+    min-width: 14rem;
+    padding: 0.7rem 1.3rem;
+    border: 2px solid $black;
+    border-radius: 3.2rem;
+    transition: 0.1s ease-in-out;
+
+    &--active {
+      border: none;
+      color: $white;
+      background-color: $black;
+    }
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+
+    &-item-top-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__date {
+    font-weight: 200;
+  }
+
+  &__btn-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn-more {
+    padding: 1.3rem 2rem;
+    font-size: 1.8rem;
+    border-radius: 1.3rem;
+    color: $white;
+    background-color: $blue;
+  }
+
+  &__grid-item {
+    &--big {
+      flex: 1 1 55rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      font-size: 1.8rem;
+      font-weight: 600;
+      width: 70%;
+      padding: 3.2rem;
+      min-height: 38rem;
+
+      border-radius: 3.2rem;
+      background-image: url("../assets/img/dist/blog.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: left;
+
+      @include respond(phone) {
+        padding: 1rem;
+        min-height: 30rem;
+      }
+    }
+
+    &--small {
+      flex: 1 1 44rem;
+
+      min-height: 19rem;
+      border-radius: 3.2rem;
+      font-size: 1.8rem;
+
+      & > a > picture {
+        margin-bottom: 1.8rem;
+      }
+
+      & > a > picture {
+        display: block;
+        width: 100%;
+      }
+
+      & > a > p {
+        font-size: 2.5rem;
+        font-weight: 800;
+
+        @include respond(phone) {
+          font-size: 1.8rem;
+        }
+      }
+
+      @include respond(tab-port) {
+        flex-basis: 36rem;
+      }
+      @include respond(phone) {
+        flex-basis: 28rem;
+      }
+    }
+  }
+
+  &__chip {
+    display: inline-flex;
+    width: fit-content;
+    padding: 0.5rem 1.3rem;
+    border-radius: 1.3rem;
+    border: 1px solid $black;
+
+    @include respond(phone) {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__bottom-block {
+    display: flex;
+    align-items: end;
+    gap: 2rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__btn-link {
+    height: fit-content;
+    padding: 1.4rem 5.6rem;
+    border-radius: 1.3rem;
+
+    color: $white;
+    background-color: #7d6167;
+
+    @include respond(phone) {
+      font-size: 1.3rem;
+    }
+  }
+}

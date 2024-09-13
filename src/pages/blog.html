@@ -1,18 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.min.css" />
+    <!--=include head-content.html -->
     <title>Blog</title>
   </head>
   <body>
-    <!--=include header.html -->
-    <main>
-      <h1 class="blog-page-title">blog page</h1>
-      <a href="./index.html">Go to Main Page</a>
-      <div>SOME NEW INFO</div>
-    </main>
+    <div class="wrapper">
+      <!--=include header.html -->
+      <main class="main">
+        <section class="blog u-margin-bottom-section">
+          <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
+            Наш полезный блог
+          </h1>
+          <div class="blog__tags u-margin-bottom-heading">
+            <button data-tag="psycho" class="blog__tag blog__tag--active">
+              Психология
+            </button>
+            <button data-tag="useful" class="blog__tag">Полезное</button>
+            <button data-tag="news" class="blog__tag">Новости</button>
+            <button data-tag="guides" class="blog__tag">Гайды</button>
+            <button data-tag="other" class="blog__tag">Прочее</button>
+          </div>
+          <div class="blog__grid u-margin-bottom-heading">
+            <div class="blog__grid-item blog__grid-item--big">
+              <span class="blog__chip">Психология</span>
+              <div class="blog__bottom-block">
+                <h2 class="huge-paragraph">
+                  Как фрилансеру сохранить свою психику и не выгореть
+                </h2>
+                <a href="##" class="blog__btn-link">Читать</a>
+              </div>
+            </div>
+            <div class="blog__grid-item--small">
+              <a href="##">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="./assets/img/dist/blog-post-decoration-1.webp"
+                  />
+                  <img
+                    src="./assets/img/dist/blog-post-decoration-1.png"
+                    alt="tg-icon"
+                  />
+                </picture>
+
+                <div class="blog__grid-item-top-content">
+                  <span class="blog__chip">Психология</span>
+                  <span class="blog__date">30 июня 2024</span>
+                </div>
+                <p>Статья о какой-то важной хуете которая нужна всем</p>
+              </a>
+            </div>
+            <div class="blog__grid-item--small">
+              <a href="##">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="./assets/img/dist/blog-post-decoration-2.webp"
+                  />
+                  <img
+                    src="./assets/img/dist/blog-post-decoration-2.png"
+                    alt="tg-icon"
+                  />
+                </picture>
+
+                <div class="blog__grid-item-top-content">
+                  <span class="blog__chip">Психология</span>
+                  <span class="blog__date">30 июня 2024</span>
+                </div>
+                <p>Статья о какой-то важной хуете которая нужна всем</p>
+              </a>
+            </div>
+          </div>
+          <div class="blog__btn-section">
+            <button class="blog__btn-more">Показать еще</button>
+          </div>
+        </section>
+      </main>
+    </div>
 
     <!--=include footer.html -->
     <script src="./js/index.min.js"></script>

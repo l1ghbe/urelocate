@@ -6,20 +6,19 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "pages/home";
-@import "pages/index";
+@import "pages/common";
 
 @import "layout/header";
 @import "layout/navigation";
 @import "layout/footer";
 
 @import "components/common/chip-view";
+@import "components/common/answer-form";
 @import "components/common/faq";
 
 @import "components/home/instruments";
 @import "components/home/services";
 @import "components/home/feedback";
-@import "components/home/purchase";
 @import "components/home/instructions";
 @import "components/home/statistics";
 @import "components/home/courses";
@@ -28,3 +27,5 @@
 @import "components/home/ref-program";
 @import "components/home/videos";
 @import "components/home/social-media";
+
+@import "components/blog/blog";
