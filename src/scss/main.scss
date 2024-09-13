@@ -7,6 +7,8 @@
 @import "base/utilities";
 
 @import "pages/common";
+@import "pages/blog";
+@import "pages/blog-article";
 
 @import "layout/header";
 @import "layout/navigation";
@@ -27,5 +29,3 @@
 @import "components/home/ref-program";
 @import "components/home/videos";
 @import "components/home/social-media";
-
-@import "components/blog/blog";
