@@ -18,6 +18,14 @@
   }
 }
 
+.u-margin-bottom-common {
+  margin-bottom: 3.2rem !important;
+
+  @include respond(phone) {
+    margin-bottom: 1.8rem !important;
+  }
+}
+
 .u-margin-bottom-paragraph {
   margin-bottom: 1rem !important;
 }

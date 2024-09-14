@@ -37,12 +37,9 @@
 
     .picture {
       width: 100%;
-      // height: 100%;
       flex: 1 1 55rem;
       border-radius: 3.2rem;
-      // background-image: url("../assets/img/dist/blog.webp");
-      // background-repeat: no-repeat;
-      // background-size: cover;
+
       background-position: left;
 
       & > img {
@@ -58,9 +55,6 @@
       @include respond(phone) {
         padding: 1rem;
         flex: 1 1 20rem;
-      }
-
-      &-bottom {
       }
     }
 
