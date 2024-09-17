@@ -1,16 +1,31 @@
 .why-udocs-section {
   font-size: 1.8rem;
 
-  // display: grid;
-  // grid-template-columns: 2fr 1fr;
-  // grid-template-rows: auto auto;
-  // gap: 20px;
+  &__content {
+    display: flex;
+    gap: 1.8rem;
+
+    &-left {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+    }
+
+    &-right {
+      min-width: 30%;
+    }
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
 
   &__item {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex: 1 1;
     border-radius: 3.2rem;
     padding: 1.8rem;
 
@@ -21,11 +36,23 @@
 
     overflow: hidden;
 
+    &-union {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 30rem;
+      gap: 1.8rem;
+
+      &-bottom {
+        flex-basis: 40rem;
+      }
+    }
+
     &-guarantee {
       background-color: $blue;
     }
 
     &-list {
+      flex-basis: 42rem;
       & > h3 {
         font-weight: 600;
       }
@@ -48,8 +75,14 @@
     &-map {
       position: relative;
       padding: 0;
-      min-height: 44rem;
+      min-height: 100%;
+
       background-color: transparent;
+      flex-basis: 34rem;
+
+      @include respond(tab-port) {
+        min-height: 24rem;
+      }
 
       & > img {
         position: absolute;
@@ -66,7 +99,9 @@
         flex-direction: column;
         justify-content: space-between;
         min-height: inherit;
+        flex: 1;
         padding: 1.8rem;
+        height: 100%;
 
         text-transform: uppercase;
 
@@ -88,8 +123,10 @@
     }
 
     &-variety {
+      justify-content: flex-start;
       width: inherit;
       max-height: 23rem;
+      flex-basis: 35rem;
 
       & > div {
         display: flex;
@@ -119,7 +156,7 @@
         margin-top: 1.8rem;
 
         border-radius: 1.8rem;
-        padding: 1.5rem 2.5rem;
+        padding: 1rem 2.5rem;
         max-width: fit-content;
 
         color: $white;
@@ -136,8 +173,13 @@
       background-color: $blue;
 
       font-size: 2.5rem;
+      max-height: 6rem;
 
-      & > span {
+      & > div {
+        white-space: nowrap;
+      }
+
+      & > div > span {
         text-transform: uppercase;
         font-weight: 800;
 
