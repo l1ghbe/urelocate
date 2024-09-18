@@ -99,7 +99,10 @@
   }
 
   &__item {
-    align-self: flex-start;
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1.8rem;
     border-radius: 1.8rem;
 
@@ -187,6 +190,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: left;
       flex: 1 1 40rem;
       gap: 3.2rem;
       max-height: 23rem;
@@ -230,9 +234,9 @@
         margin: 0 auto;
         margin-top: 1.8rem;
 
-        border-radius: 3.2rem;
+        border-radius: 1.8rem;
         padding: 1.5rem 2.5rem;
-        max-width: 18rem;
+        max-width: 22rem;
 
         color: $white;
         background-color: $blue;
@@ -244,7 +248,7 @@
     &-traffic {
       color: $white;
       background-color: $blue;
-
+      width: 100%;
       & > p {
         max-height: min-content;
         font-size: 2.5rem;
@@ -333,6 +337,7 @@
       align-items: center;
       justify-content: center;
       flex: 1 1 33rem;
+      width: 100%;
       gap: 2rem;
       height: 16rem;
       background-color: #eaeaea;

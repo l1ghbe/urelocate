@@ -49,4 +49,21 @@
       }
     }
   }
+
+  .quote {
+    position: relative;
+    padding: 1rem 1.5rem;
+    border-radius: 1.8rem;
+    background-color: $purple;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -0.5rem;
+      left: -2rem;
+      height: 120%;
+      width: 2px;
+      background-color: $black;
+    }
+  }
 }
