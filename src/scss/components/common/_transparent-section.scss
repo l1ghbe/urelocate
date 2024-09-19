@@ -26,6 +26,8 @@
 
     & > .image-block {
       max-width: 33rem;
+      border-radius: 3.2rem;
+      overflow: hidden;
 
       @include respond(tab-port) {
         order: -1;
