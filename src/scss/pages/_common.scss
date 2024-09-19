@@ -4,6 +4,10 @@
   margin: 0 auto;
   padding: 0 3rem;
 
+  @include respond(big-desktop) {
+    max-width: 1800px;
+  }
+
   @include respond(phone) {
     padding: 0 1.5rem;
   }
