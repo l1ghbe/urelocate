@@ -8,6 +8,8 @@
     border-radius: 3.2rem;
     background-color: #eaeaea;
 
+    font-weight: 500;
+
     @include respond(phone) {
       flex-direction: column;
       gap: 3.2rem;
