@@ -1,0 +1,135 @@
+.why-services-section {
+  font-size: 1.8rem;
+  text-align: center;
+  &__content {
+    display: flex;
+    gap: 1.8rem;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+
+    &-left {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+    }
+
+    &-right {
+      min-width: 30%;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 1;
+    border-radius: 1.8rem;
+    padding: 1.8rem;
+    color: $white;
+    background-color: $black;
+
+    font-weight: 500;
+
+    overflow: hidden;
+
+    &-devices {
+      flex: 1 1 30rem;
+      gap: 2rem;
+      color: $black;
+      background-color: #eaeaea;
+
+      & > .image-block {
+        display: flex;
+        gap: 1.8rem;
+
+        & > img {
+          object-fit: contain;
+          max-height: 6.7rem;
+        }
+      }
+    }
+
+    &-config {
+      flex-direction: column;
+      gap: 1.5rem;
+      color: $black;
+      width: 100%;
+      background-color: #eaeaea;
+
+      & > div {
+        text-transform: uppercase;
+        margin: 0 auto;
+
+        border-radius: 1.8rem;
+        padding: 1.5rem 2.5rem;
+        max-width: 22rem;
+
+        color: $white;
+        background-color: $blue;
+
+        font-size: 150%;
+        font-weight: 900;
+      }
+    }
+
+    &-protocols {
+      flex-direction: row;
+      text-align: left;
+      gap: 1rem;
+      flex: 1 1 40rem;
+
+      & > .image-block {
+        display: flex;
+        column-gap: 1.8rem;
+
+        & > img {
+          max-width: 9rem;
+          border-radius: 3.2rem;
+        }
+      }
+    }
+
+    &-speed {
+      flex-direction: row;
+      justify-content: center;
+      gap: 1rem;
+      flex: 1 1 38rem;
+      background-color: #eaeaea;
+
+      & > div:nth-child(2) {
+        & > span {
+          margin: 0 1rem;
+          font-size: 200%;
+          font-weight: 900;
+        }
+        & > b {
+          font-size: 150%;
+          font-weight: 900;
+        }
+      }
+    }
+
+    &-traffic {
+      color: $white;
+      background-color: $blue;
+      flex: 1 1 32rem;
+      width: 100%;
+      & > p {
+        max-height: min-content;
+        font-size: 2.5rem;
+
+        & > span {
+          text-transform: uppercase;
+          background: linear-gradient(90deg, #39d9ff, #ffc700);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          font-weight: 800;
+        }
+      }
+    }
+  }
+}

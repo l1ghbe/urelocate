@@ -1,0 +1,356 @@
+.connection-section {
+  &__content {
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+
+    font-size: 1.8rem;
+
+    @include respond(tab-port) {
+      min-height: 55rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+
+  &__image-block {
+    width: 100%;
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+
+    &-mobile {
+      position: absolute;
+      top: 0;
+      right: 50%;
+      transform: translateX(50%);
+      z-index: -1;
+
+      display: none;
+      min-height: 55rem;
+      @include respond(tab-port) {
+        display: block;
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  &__text-block {
+    display: flex;
+    column-gap: 7vw;
+
+    margin-right: 1.5rem;
+    margin-top: -1rem;
+
+    @include respond(tab-port) {
+      position: absolute;
+      right: 50%;
+      width: 1px;
+      height: 100%;
+      flex-direction: column;
+      margin: 0;
+    }
+  }
+
+  &__item {
+    @include respond(tab-port) {
+      position: absolute;
+      min-width: 32rem;
+
+      &:nth-child(1) {
+        left: -14rem;
+        top: 3rem;
+        min-width: 14rem;
+      }
+      &:nth-child(2) {
+        top: 10rem;
+        left: -7rem;
+        min-width: 22rem;
+      }
+      &:nth-child(3) {
+        right: -22rem;
+        top: 27rem;
+        min-width: 30rem;
+      }
+      &:nth-child(4) {
+        text-align: end;
+        top: 46rem;
+        left: -22rem;
+        min-width: 32rem;
+      }
+    }
+  }
+}
+
+.why-userver-section {
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+  }
+
+  &__item {
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.8rem;
+    border-radius: 1.8rem;
+
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    overflow: hidden;
+
+    &-common-info {
+      flex: 1 1 110rem;
+      color: $white;
+      background-color: $blue;
+    }
+
+    &-connection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1 1 30rem;
+      color: $white;
+      background-color: $blue;
+      min-height: 20rem;
+
+      & > img {
+        margin-top: 1rem;
+        max-height: 7rem;
+      }
+
+      & > span {
+        margin-top: -1.5rem;
+
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+    }
+
+    &-firewall {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.8rem;
+      flex: 1 1 45rem;
+      min-height: 20rem;
+
+      color: $white;
+      background-color: $black;
+
+      & > img {
+        max-height: 9.8rem;
+      }
+    }
+
+    &-location {
+      position: relative;
+      flex: 1 1 30rem;
+      height: 20rem;
+
+      padding: 0;
+      color: $white;
+
+      & > div {
+        position: absolute;
+        top: 30%;
+        right: 50%;
+        transform: translate(50%, -50%);
+
+        text-transform: uppercase;
+
+        & > p:nth-child(2) {
+          font-size: 4.5rem;
+          font-weight: 900;
+          color: $black;
+        }
+      }
+
+      & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+      }
+    }
+
+    &-opportunity {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      flex: 1 1 40rem;
+      gap: 3.2rem;
+      max-height: 23rem;
+      background-color: #eaeaea;
+
+      font-size: 2.5rem;
+
+      & > p {
+        max-width: min-content;
+      }
+
+      & > img {
+        max-width: 13rem;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &-union {
+      display: flex;
+      justify-content: end;
+      flex-direction: column;
+      flex: 1 1 32rem;
+      gap: 2rem;
+      padding: 0;
+      overflow: hidden;
+
+      & > div {
+        border-radius: 3.2rem;
+        padding: 1.8rem;
+      }
+    }
+
+    &-config {
+      max-height: 14.5rem;
+      color: $black;
+      background-color: #eaeaea;
+
+      & > div {
+        text-transform: uppercase;
+        margin: 0 auto;
+        margin-top: 1.8rem;
+
+        border-radius: 1.8rem;
+        padding: 1.5rem 2.5rem;
+        max-width: 22rem;
+
+        color: $white;
+        background-color: $blue;
+
+        font-weight: 900;
+      }
+    }
+
+    &-traffic {
+      color: $white;
+      background-color: $blue;
+      width: 100%;
+      & > p {
+        max-height: min-content;
+        font-size: 2.5rem;
+
+        & > span {
+          text-transform: uppercase;
+          background: linear-gradient(90deg, #39d9ff, #ffc700);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          font-weight: 800;
+        }
+      }
+    }
+
+    &-os {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2.5rem;
+      flex: 1 1 35rem;
+      min-height: 23rem;
+
+      color: $white;
+      background-color: $blue;
+
+      & > .image-block {
+        display: flex;
+        gap: 1.8rem;
+
+        & > img {
+          border-radius: 1.3rem;
+          max-width: 5.5rem;
+          object-fit: cover;
+          object-position: center center;
+        }
+      }
+    }
+
+    &-protocols {
+      display: flex;
+      gap: 3.2rem;
+      flex: 1 1 53rem;
+      align-items: center;
+      justify-content: center;
+      padding: 3.2rem;
+      min-height: 16rem;
+
+      color: $white;
+      background-color: $black;
+
+      & > .image-block {
+        display: flex;
+        column-gap: 3.2rem;
+
+        & > img {
+          max-width: 9rem;
+          border-radius: 3.2rem;
+        }
+      }
+    }
+
+    &-speed {
+      display: flex;
+      // flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1 1 16rem;
+      background-color: #eaeaea;
+      min-height: 16rem;
+
+      & > p > span {
+        font-size: 200%;
+        font-weight: 900;
+      }
+      & > p > b {
+        font-size: 150%;
+        font-weight: 900;
+      }
+    }
+
+    &-devices {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1 1 33rem;
+      width: 100%;
+      gap: 2rem;
+      height: 16rem;
+      background-color: #eaeaea;
+
+      & > .image-block {
+        display: flex;
+        gap: 1.8rem;
+
+        & > img {
+          object-fit: contain;
+          max-height: 6.7rem;
+        }
+      }
+    }
+  }
+}

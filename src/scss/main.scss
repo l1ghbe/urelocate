@@ -7,6 +7,13 @@
 @import "base/utilities";
 
 @import "pages/common";
+@import "pages/blog";
+@import "pages/blog-article";
+@import "pages/userver";
+@import "pages/udocs";
+@import "pages/payoneer";
+@import "pages/unblock";
+@import "pages/services";
 
 @import "layout/header";
 @import "layout/navigation";
@@ -15,6 +22,12 @@
 @import "components/common/chip-view";
 @import "components/common/answer-form";
 @import "components/common/faq";
+@import "components/common/service-hero";
+@import "components/common/blue-section";
+@import "components/common/transparent-section";
+@import "components/common/black-section";
+@import "components/common/background-section";
+@import "components/common/tariffs-section";
 
 @import "components/home/instruments";
 @import "components/home/services";
@@ -27,5 +40,3 @@
 @import "components/home/ref-program";
 @import "components/home/videos";
 @import "components/home/social-media";
-
-@import "components/blog/blog";

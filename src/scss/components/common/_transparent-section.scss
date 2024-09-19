@@ -1,0 +1,71 @@
+.transparent-section {
+  max-width: 82%;
+  margin: 0 auto;
+
+  @include respond(tab-land) {
+    max-width: 95%;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.2rem;
+    padding: 0 3.2rem;
+
+    &--reversed {
+      & > .image-block {
+        order: -1;
+      }
+    }
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+
+    & > .image-block {
+      max-width: 33rem;
+      border-radius: 3.2rem;
+      overflow: hidden;
+
+      @include respond(tab-port) {
+        order: -1;
+      }
+
+      @include respond(phone) {
+        max-width: 24rem;
+      }
+
+      & > .image {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    & > .content {
+      max-width: 65%;
+
+      @include respond(tab-port) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .quote {
+    position: relative;
+    padding: 1rem 1.5rem;
+    border-radius: 1.8rem;
+    background-color: $purple;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -0.5rem;
+      left: -2rem;
+      height: 120%;
+      width: 2px;
+      background-color: $black;
+    }
+  }
+}

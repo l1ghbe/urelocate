@@ -1,0 +1,43 @@
+.background-section {
+  &__content {
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+
+    padding: 3.2rem;
+    border-radius: 3.2rem;
+    background-color: #eaeaea;
+
+    font-weight: 500;
+
+    @include respond(phone) {
+      flex-direction: column;
+      gap: 3.2rem;
+    }
+  }
+
+  &__image-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+
+    border-radius: 3.2rem;
+    min-height: 22rem;
+    background-color: $purple;
+
+    @include respond(phone) {
+      max-height: 15rem;
+    }
+
+    & > img {
+      padding: 3.2rem 0;
+      width: 70%;
+
+      @include respond(phone) {
+        padding: 0;
+        width: 100%;
+      }
+    }
+  }
+}
