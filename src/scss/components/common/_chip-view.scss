@@ -44,6 +44,7 @@
     padding: 7rem;
     border-radius: 3.2rem;
     background-color: #228cdb;
+    overflow: hidden;
 
     @include respond(tab-port) {
       width: 100%;
@@ -56,6 +57,10 @@
     aspect-ratio: 1.8;
     object-fit: cover;
     border-radius: 18px;
+
+    & > img {
+      border-radius: 1.8rem;
+    }
   }
 }
 
