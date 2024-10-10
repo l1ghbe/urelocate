@@ -1,4 +1,5 @@
 function executePageSpecificCode() {
+  commonScripts();
   const currentPath = window.location.pathname;
 
   if (currentPath.endsWith("index.html") || currentPath === "/") {
@@ -11,6 +12,17 @@ function executePageSpecificCode() {
 }
 
 executePageSpecificCode();
+
+function commonScripts() {
+  const mobileNavMenu = document.querySelector(".nav__mobile");
+  const checkbox = document.querySelector(".checkbox");
+  console.log(mobileNavMenu);
+  mobileNavMenu.addEventListener("click", (e) => {
+    if (e.target.classList.contains("nav__link")) {
+      checkbox.checked = false;
+    }
+  });
+}
 
 function initializeHomePageScripts() {
   // HOME INSTRUCTION SECTION

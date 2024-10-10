@@ -20,19 +20,41 @@
     <div class="wrapper">
       <header>
         <div class="header-logo"><a href="/">URelocate</a></div>
+      
         <nav class="nav">
           <h5 class="nav__item">
             <a class="nav__link" href="/#services">Услуги</a>
           </h5>
           <h5 class="nav__item"><a class="nav__link" href="blog.html">Блог</a></h5>
-          <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5>
+          <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
           <h5 class="nav__item">
             <a class="nav__link" href="/#instructions">Инструкции</a>
           </h5>
         </nav>
-        <div class="burger-menu">
-          <img src="./assets/img/dist/icons/burger.svg" alt="menu-icon" />
-        </div>
+      
+        <noindex>
+          <div class="mobile-menu">
+            <input id="checkbox-burger" class="checkbox" type="checkbox" />
+            <label for="checkbox-burger">
+              <div class="checkbox-box"></div>
+            </label>
+      
+            <div class="background">
+              <nav class="nav__mobile">
+                <h5 class="nav__item">
+                  <a class="nav__link" href="/#services">Услуги</a>
+                </h5>
+                <h5 class="nav__item">
+                  <a class="nav__link" href="blog.html">Блог</a>
+                </h5>
+                <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
+                <h5 class="nav__item">
+                  <a class="nav__link" href="/#instructions">Инструкции</a>
+                </h5>
+              </nav>
+            </div>
+          </div>
+        </noindex>
       </header>
       
       <main class="main">
@@ -59,7 +81,9 @@
                   <span class="service__card-price-present">$49</span>
                   <span class="service__card-sale">-17%</span>
                 </div>
-                <a class="service__card-btn" href="##">Оставить заявку</a>
+                <a class="service__card-btn" href="userver.html/#customer-form"
+                  >Оставить заявку</a
+                >
               </div>
             </div>
           </div>
@@ -325,7 +349,9 @@
                 <span class="services__sale">-17%</span>
               </div>
 
-              <a href="##" class="btn">Оставить заявку</a>
+              <a href="userver.html/#customer-form" class="btn"
+                >Оставить заявку</a
+              >
             </div>
 
             <div class="tariffs-section__item">
@@ -337,11 +363,13 @@
                 <span class="services__sale">-17%</span>
               </div>
 
-              <a href="##" class="btn">Оставить заявку</a>
+              <a href="userver.html/#customer-form" class="btn"
+                >Оставить заявку</a
+              >
             </div>
           </div>
         </section>
-        <section class="purchase u-margin-bottom-section">
+        <section id="customer-form" class="purchase u-margin-bottom-section">
           <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
             Хотите приобрести наши услуги?
           </h1>

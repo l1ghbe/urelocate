@@ -20,19 +20,41 @@
     <div class="wrapper">
       <header>
         <div class="header-logo"><a href="/">URelocate</a></div>
+      
         <nav class="nav">
           <h5 class="nav__item">
             <a class="nav__link" href="/#services">Услуги</a>
           </h5>
           <h5 class="nav__item"><a class="nav__link" href="blog.html">Блог</a></h5>
-          <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5>
+          <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
           <h5 class="nav__item">
             <a class="nav__link" href="/#instructions">Инструкции</a>
           </h5>
         </nav>
-        <div class="burger-menu">
-          <img src="./assets/img/dist/icons/burger.svg" alt="menu-icon" />
-        </div>
+      
+        <noindex>
+          <div class="mobile-menu">
+            <input id="checkbox-burger" class="checkbox" type="checkbox" />
+            <label for="checkbox-burger">
+              <div class="checkbox-box"></div>
+            </label>
+      
+            <div class="background">
+              <nav class="nav__mobile">
+                <h5 class="nav__item">
+                  <a class="nav__link" href="/#services">Услуги</a>
+                </h5>
+                <h5 class="nav__item">
+                  <a class="nav__link" href="blog.html">Блог</a>
+                </h5>
+                <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
+                <h5 class="nav__item">
+                  <a class="nav__link" href="/#instructions">Инструкции</a>
+                </h5>
+              </nav>
+            </div>
+          </div>
+        </noindex>
       </header>
       
       <main class="main">
@@ -109,7 +131,9 @@
                 </div>
         
                 <div class="services__btns u-margin-top-paragraph u-text-white">
-                  <button class="services__btn">Оставить заявку</button>
+                  <button class="services__btn">
+                    <a href="/#customer-form">Оставить заявку</a>
+                  </button>
                   <button class="services__btn services__more">
                     <a href="./userver.html"> Подробнее </a>
                   </button>
@@ -152,7 +176,9 @@
                 </div>
         
                 <div class="services__btns u-margin-top-paragraph u-text-white">
-                  <button class="services__btn">Оставить заявку</button>
+                  <button class="services__btn">
+                    <a href="/#customer-form">Оставить заявку</a>
+                  </button>
                   <button class="services__btn services__more">
                     <a href="./udocs.html"> Подробнее </a>
                   </button>
@@ -195,7 +221,9 @@
                 </div>
         
                 <div class="services__btns u-margin-top-paragraph u-text-white">
-                  <button class="services__btn">Оставить заявку</button>
+                  <button class="services__btn">
+                    <a href="/#customer-form">Оставить заявку</a>
+                  </button>
                   <button class="services__btn services__more">
                     <a href="./unblock.html"> Подробнее </a>
                   </button>
@@ -238,7 +266,9 @@
                 </div>
         
                 <div class="services__btns u-margin-top-paragraph u-text-white">
-                  <button class="services__btn">Оставить заявку</button>
+                  <button class="services__btn">
+                    <a href="/#customer-form">Оставить заявку</a>
+                  </button>
                   <button class="services__btn services__more">
                     <a href="./payoneer.html"> Подробнее </a>
                   </button>
@@ -282,7 +312,9 @@
                 </div>
         
                 <div class="services__btns u-margin-top-paragraph u-text-white">
-                  <button class="services__btn">Оставить заявку</button>
+                  <button class="services__btn">
+                    <a href="/#customer-form">Оставить заявку</a>
+                  </button>
                   <button class="services__btn services__more">
                     <a href="./review.html"> Подробнее </a>
                   </button>
@@ -326,7 +358,9 @@
                 </div>
         
                 <div class="services__btns u-margin-top-paragraph u-text-white">
-                  <button class="services__btn">Оставить заявку</button>
+                  <button class="services__btn">
+                    <a href="/#customer-form">Оставить заявку</a>
+                  </button>
                   <button class="services__btn services__more">
                     <a href="./services.html"> Подробнее </a>
                   </button>
@@ -336,24 +370,8 @@
           </div>
         </section>
         
-        <section class="feedback u-margin-bottom-section">
-          <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
-            Нам доверяют свои аккаунты
-          </h1>
-          <div class="swiper u-margin-bottom-heading">
-            <div class="swiper__container"></div>
-          </div>
-          <div class="swiper__controls">
-            <button class="swiper__control">
-              <img src="./assets/img/dist/icons/left-chevrone.svg" alt="left" />
-            </button>
-            <button class="swiper__control">
-              <img src="./assets/img/dist/icons/right-chevrone.svg" alt="right" />
-            </button>
-          </div>
-        </section>
-        
-        <section class="purchase u-margin-bottom-section">
+        <!-- include home/feedback.html -->
+        <section id="customer-form" class="purchase u-margin-bottom-section">
           <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
             Хотите приобрести наши услуги?
           </h1>
@@ -542,76 +560,7 @@
           </div>
         </section>
         
-        <section class="courses u-margin-bottom-section">
-          <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
-            Полезные курсы от URelocate
-          </h1>
-          <div class="courses__content">
-            <div class="chip__labels">
-              <label for="courses-tag-1" class="chip__label courses__label"
-                >Регистрация на UpWork</label
-              >
-              <label for="courses-tag-2" class="chip__label courses__label">
-                Разблокировка аккаунта UpWork
-              </label>
-              <label for="courses-tag-3" class="chip__label courses__label"
-                >Вывод денег с UpWork</label
-              >
-            </div>
-        
-            <div class="view__content courses__view__content">
-              <div class="courses-view__rbs">
-                <input
-                  class="view__rb courses-view__rb"
-                  type="radio"
-                  name="radio"
-                  id="courses-tag-1"
-                  checked
-                />
-                <input
-                  class="view__rb courses-view__rb"
-                  type="radio"
-                  name="radio"
-                  id="courses-tag-2"
-                />
-                <input
-                  class="view__rb courses-view__rb"
-                  type="radio"
-                  name="radio"
-                  id="courses-tag-3"
-                />
-              </div>
-        
-              <div class="view__text courses__text">
-                <h2 class="course-view-heading heading-secondary">
-                  Подробнейший курс по старту на UpWork
-                </h2>
-                <p class="course-view-paragraph big-paragraph">
-                  Полный гайд по быстрому старту на UpWork. Внутри основы работы,
-                  полезные советы, подводные камни, памятки и таблицы, а так же очень
-                  много текстовых и видео гайдов.
-                </p>
-                <a href="#" class="view__btn view-course-link">Приобрести курс</a>
-              </div>
-              <div class="view__video-block courses__video-block">
-                <video
-                  playsinline
-                  muted="muted"
-                  autoplay="autoplay"
-                  loop="loop"
-                  class="course-view__video view__video"
-                >
-                  <source
-                    class="view-videoSrc course-view-videoSrc"
-                    src="./assets/img/dist/videos/PayoneerPrvw.webm"
-                    type="video/webm"
-                  />
-                </video>
-              </div>
-            </div>
-          </div>
-        </section>
-        
+        <!-- include home/courses.html -->
         <section class="blog-section u-margin-bottom-section">
           <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
             Наш полезный блог
