@@ -25,7 +25,7 @@
 
     gap: 3vw;
 
-    & > img {
+    & > a > img {
       max-width: 7.5rem;
 
       @include respond(tab-port) {
