@@ -9,7 +9,7 @@ function building() {
   return src(
     [
       "./src/assets/img/dist/**/*.*",
-      "./src/assets/fonts/*.*",
+      // "./src/assets/fonts/*.*",
       // "./src/assets/json/*.json",
       "./src/css/style.min.css",
       "./src/js/index.min.js",
