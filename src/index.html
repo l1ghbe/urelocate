@@ -58,33 +58,24 @@
       </header>
       
       <main class="main">
-        <section class="instruments u-margin-bottom-section">
+        <!--include home/instruments.html -->
+        <section class="journey u-margin-bottom-section">
           <div class="text-content">
             <p class="heading-primary u-text-white">
-              Лучшие инструменты для дизайна снова доступны
+              Начни свой путь на зарубежном фрилансе
             </p>
-            <div class="tags">
-              <div>Envato</div>
-              <div>Canva</div>
-              <div>Shutterstock</div>
-              <div>Figma</div>
-              <div>Adobe</div>
-              <div>AutoDesk</div>
-            </div>
+            <span class="tag">upwork</span>
           </div>
           <div class="image-content">
-            <video
-              playsinline
-              muted="muted"
-              autoplay="autoplay"
-              loop="loop"
-              class="main-image-icon"
-            >
-              <source
-                src="./assets/img/dist/videos/MainPageOne.webm"
-                type="video/webm"
-              />
-            </video>
+            <div class="small">
+              <img src="./assets/img/dist/icons/upwork-logo.svg" alt="upwork-icon" />
+            </div>
+            <div class="big">
+              <picture>
+                <source srcset="./assets/img/dist/journey.webp" type="image/webp" />
+                <img src="./assets/img/dist/journey.png" alt="journey-icon" />
+              </picture>
+            </div>
           </div>
         </section>
         
@@ -427,7 +418,9 @@
           </h1>
           <div class="instructions__chips u-margin-bottom-heading">
             <div class="chip__labels">
-              <label for="tag-1" class="chip__label">Регистрация на UpWork</label>
+              <label for="tag-1" class="chip__label chip__label--active"
+                >Регистрация на UpWork</label
+              >
               <label for="tag-2" class="chip__label">
                 Разблокировка аккаунта UpWork
               </label>
@@ -620,7 +613,10 @@
         <section class="community-section u-margin-bottom-section">
           <div class="community-section__content">
             <h1 class="heading-secondary u-text-center u-text-white">
-              Ламповое и готовое помочь коммьюнти
+              Ламповое и готовое помочь
+              <a class="community-section__link" href="https://discord.gg/PertUXuZRb"
+                >коммьюнти</a
+              >
             </h1>
           </div>
         
@@ -898,8 +894,6 @@
           <a href="udocs.html">Документы</a>
           <a href="index.html#instructions">Инструкции</a>
           <a href="index.html#clients">Отзывы</a>
-        </div>
-        <div class="footer__center">
           <a href="index.html#contacts">Контакты</a>
           <a href="blog.html">Блог</a>
         </div>
