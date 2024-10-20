@@ -36,6 +36,14 @@
       & > h2 {
         font-size: 5rem;
         font-weight: 1000;
+
+        @include respond(tab-port) {
+          font-size: 4rem;
+        }
+
+        @include respond(phone) {
+          font-size: 2.5rem;
+        }
       }
     }
 

@@ -19,6 +19,10 @@
     gap: 3.2rem;
     padding-left: 3.2rem;
 
+    @include respond(phone) {
+      padding-left: 0rem;
+    }
+
     & > h1 {
       text-align: left;
     }
