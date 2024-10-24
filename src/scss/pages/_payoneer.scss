@@ -58,6 +58,11 @@
         max-width: 7rem;
         filter: invert(1);
       }
+
+      & > img.inverted {
+        max-width: 9.7rem;
+        filter: invert(0);
+      }
     }
 
     &-comission {
