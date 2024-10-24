@@ -34,8 +34,16 @@
       background-color: #f5e161;
 
       & > h2 {
-        font-size: 4rem;
-        font-weight: 800;
+        font-size: 5rem;
+        font-weight: 1000;
+
+        @include respond(tab-port) {
+          font-size: 4rem;
+        }
+
+        @include respond(phone) {
+          font-size: 2.5rem;
+        }
       }
     }
 
@@ -52,7 +60,12 @@
 
     &:nth-child(3) {
       background-color: $blue;
+
+      & > div > p {
+        font-weight: 500;
+      }
     }
+
     &:nth-child(4) {
       background-color: $blue;
 
@@ -61,12 +74,17 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
       }
+
+      & > div > p {
+        font-weight: 500;
+      }
     }
     &:nth-child(5) {
       background-color: #eaeaea;
 
       & > div > p {
         color: $black;
+        font-weight: 500;
       }
     }
     &:nth-child(6) {
@@ -77,6 +95,10 @@
         background: linear-gradient(90deg, #39d9ff, #ffc700);
         background-clip: text;
         -webkit-text-fill-color: transparent;
+      }
+
+      & > div > p {
+        font-weight: 500;
       }
     }
   }

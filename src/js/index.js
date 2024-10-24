@@ -16,11 +16,38 @@ executePageSpecificCode();
 function commonScripts() {
   const mobileNavMenu = document.querySelector(".nav__mobile");
   const checkbox = document.querySelector(".checkbox");
-  console.log(mobileNavMenu);
   mobileNavMenu.addEventListener("click", (e) => {
     if (e.target.classList.contains("nav__link")) {
       checkbox.checked = false;
     }
+  });
+
+  // =================
+
+  const chipLabelsBlock = document.querySelector(".chip__labels");
+  const chipLabelsArr = document.querySelectorAll(".chip__label");
+
+  chipLabelsBlock.addEventListener("click", (e) => {
+    if (e.target.classList.contains("chip__label")) {
+      chipLabelsArr.forEach((label) =>
+        label.classList.remove("chip__label--active")
+      );
+      e.target.classList.add("chip__label--active");
+    }
+  });
+
+  document.querySelectorAll(".view__rb").forEach((radio) => {
+    radio.addEventListener("change", function () {
+      document.querySelectorAll(".chip__label").forEach((label) => {
+        label.classList.remove("chip__label--active");
+      });
+
+      const activeLabel = document.querySelector(`label[for="${this.id}"]`);
+
+      if (activeLabel) {
+        activeLabel.classList.add("chip__label--active");
+      }
+    });
   });
 }
 

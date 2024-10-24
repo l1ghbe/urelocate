@@ -58,13 +58,16 @@
       </header>
       
       <main class="main">
-        <section class="service__hero u-margin-bottom-section">
+        <section
+          class="service__hero service__hero--blue-line u-margin-bottom-section"
+        >
           <h1 class="service__heading">
             <span>Доступ к прочим</span> сервисам
           </h1>
-          <div class="service__card service__card--light">
+          <div class="service__card">
             <div class="service__card-preview">
               <video
+                playsinline
                 class="service__card-video"
                 muted="muted"
                 autoplay="autoplay"
@@ -75,17 +78,13 @@
                   type="video/webm"
                 />
               </video>
-              <div
-                class="service__card-content-block service__card-content-block--light"
-              >
+              <div class="service__card-content-block">
                 <div class="service__card-price">
                   <span class="service__card-price-past">от $79</span>
                   <span class="service__card-price-present">$49</span>
                   <span class="service__card-sale">-51%</span>
                 </div>
-                <a
-                  class="service__card-btn service__card-btn--light"
-                  href="services.html/#customer-form"
+                <a class="service__card-btn" href="services.html/#customer-form"
                   >Оставить заявку</a
                 >
               </div>
@@ -98,7 +97,7 @@
           </h1>
           <div class="blue-secton__content">
             <div class="blue-secton__text">
-              <h2 class="heading-secondary u-margin-bottom-common">
+              <h2 class="regular-heading u-margin-bottom-common">
                 Как это работает?
               </h2>
               <p>
@@ -122,7 +121,7 @@
         <section class="transparent-section u-margin-bottom-section">
           <div class="transparent-section__item">
             <div class="content">
-              <h2 class="heading-secondary u-margin-bottom-common">
+              <h2 class="regular-heading u-margin-bottom-common">
                 Для дизайнеров
               </h2>
               <p class="big-paragraph">
@@ -133,7 +132,7 @@
                 для вашей работы
               </p>
             </div>
-            <div class="image-block">
+            <div class="image-block custom-services">
               <img
                 class="image"
                 src="./assets/img/dist/designers.webp"
@@ -145,7 +144,7 @@
             class="transparent-section__item transparent-section__item--reversed"
           >
             <div class="content">
-              <h2 class="heading-secondary u-margin-bottom-common">
+              <h2 class="regular-heading u-margin-bottom-common">
                 Для пользователей ИИ
               </h2>
               <p class="big-paragraph">
@@ -155,7 +154,7 @@
                 модели. С нашим севером это снова станет доступным
               </p>
             </div>
-            <div class="image-block">
+            <div class="image-block custom-services">
               <img
                 class="image"
                 src="./assets/img/dist/ai.webp"
@@ -165,7 +164,7 @@
           </div>
           <div class="transparent-section__item">
             <div class="content">
-              <h2 class="heading-secondary u-margin-bottom-common">
+              <h2 class="regular-heading u-margin-bottom-common">
                 Для таргетологов
               </h2>
               <p class="big-paragraph">
@@ -176,7 +175,7 @@
                 интересные заказы и расширить географию заказчиков
               </p>
             </div>
-            <div class="image-block">
+            <div class="image-block custom-services">
               <img
                 class="image"
                 src="./assets/img/dist/target.webp"
@@ -188,7 +187,7 @@
             class="transparent-section__item transparent-section__item--reversed"
           >
             <div class="content">
-              <h2 class="heading-secondary u-margin-bottom-common">
+              <h2 class="regular-heading u-margin-bottom-common">
                 Для товарного бизнеса
               </h2>
               <p class="big-paragraph">
@@ -197,7 +196,7 @@
                 перспективы развития с Amazon, Shopify или Etsy
               </p>
             </div>
-            <div class="image-block">
+            <div class="image-block custom-services">
               <img
                 class="image"
                 src="./assets/img/dist/box.webp"
@@ -209,9 +208,7 @@
         <section class="black-section u-margin-bottom-section">
           <div class="black-section__content">
             <div class="black-section__item">
-              <h2
-                class="heading-secondary u-text-center u-margin-bottom-common"
-              >
+              <h2 class="regular-heading u-text-center u-margin-bottom-common">
                 И мнооооооооого других сервисов
               </h2>
               <p class="big-paragraph u-text-center">
@@ -330,11 +327,11 @@
         </section>
         <section id="customer-form" class="purchase u-margin-bottom-section">
           <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
-            Хотите приобрести наши услуги?
+            Хотите приобрести<br />наши услуги?
           </h1>
           <div class="purchase__form">
             <div class="form__text">
-              <h2 class="heading-primary">Ответим на все ваши вопросы</h2>
+              <h2 class="form__heading">Ответим на все ваши вопросы</h2>
               <p class="form__paragraph">
                 Получите консультацию по интересующим вас вопросам связанным с
                 зарубежным фрилансом и обходом блокировок фриланс-бирж
@@ -498,8 +495,6 @@
           <a href="udocs.html">Документы</a>
           <a href="index.html#instructions">Инструкции</a>
           <a href="index.html#clients">Отзывы</a>
-        </div>
-        <div class="footer__center">
           <a href="index.html#contacts">Контакты</a>
           <a href="blog.html">Блог</a>
         </div>

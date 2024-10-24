@@ -4,6 +4,31 @@
     justify-content: center;
     gap: 5rem;
 
+    &--purple-line {
+      background: url("../assets/img/dist/icons/purple-line.svg") no-repeat
+        bottom 30% right 90%;
+
+      @include respond(tab-port) {
+        background: none;
+      }
+    }
+    &--grey-line {
+      background: url("../assets/img/dist/icons/grey-line.svg") no-repeat bottom
+        30% right 90%;
+
+      @include respond(tab-port) {
+        background: none;
+      }
+    }
+    &--blue-line {
+      background: url("../assets/img/dist/icons/blue-line.svg") no-repeat bottom
+        30% right 90%;
+
+      @include respond(tab-port) {
+        background: none;
+      }
+    }
+
     @include respond(tab-port) {
       flex-direction: column;
       align-items: center;

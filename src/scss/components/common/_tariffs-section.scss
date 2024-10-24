@@ -21,6 +21,10 @@
     color: $white;
     background-color: $blue;
 
+    & > .info {
+      font-weight: 600;
+    }
+
     & .services__sale {
       color: $white;
       background-color: #22db35;

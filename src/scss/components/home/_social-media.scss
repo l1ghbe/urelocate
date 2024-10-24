@@ -1,21 +1,24 @@
 .social-media-section {
-  padding: 5rem;
-  border-radius: 3.2rem;
-  background-color: $black;
-
   &__content {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     gap: 5rem;
+    padding: 4rem;
+    border-radius: 3.2rem;
+    background-color: $black;
 
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       flex-direction: column;
       justify-content: center;
     }
   }
 
   &-heading {
-    @include respond(tab-port) {
+    max-width: 40%;
+    font-weight: 700;
+    @include respond(tab-land) {
+      max-width: 100%;
       text-align: center;
     }
   }

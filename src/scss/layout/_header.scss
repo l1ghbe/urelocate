@@ -20,7 +20,7 @@ header {
 .nav {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-start;
+  align-items: center;
   padding: 0px 1rem;
   gap: 5.5rem;
   margin-left: auto;
@@ -29,24 +29,20 @@ header {
   &__mobile {
     display: none;
     max-width: fit-content;
-    margin-left: auto;
-    margin-right: 2.4rem;
+    // margin-left: auto;
+    margin-left: 4.4rem;
     margin-top: 15rem;
-    text-align: right;
+    // text-align: right;
     @include respond(tab-port) {
       position: relative;
-
       display: flex;
       flex-direction: column;
-      // align-items: flex-end;
-
       gap: 4rem;
-
-      // z-index: 1000;
       font-size: 2.5rem;
+    }
 
-      // right: 3.5rem;
-      // top: 13rem;
+    @include respond(phone) {
+      margin-left: 2.5rem;
     }
   }
 

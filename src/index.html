@@ -58,33 +58,26 @@
       </header>
       
       <main class="main">
-        <section class="instruments u-margin-bottom-section">
+        <!--include home/instruments.html -->
+        <section class="journey u-margin-bottom-section">
           <div class="text-content">
             <p class="heading-primary u-text-white">
-              Лучшие инструменты для дизайна снова доступны
+              Начни свой путь на зарубежном фрилансе
             </p>
             <div class="tags">
-              <div>Envato</div>
-              <div>Canva</div>
-              <div>Shutterstock</div>
-              <div>Figma</div>
-              <div>Adobe</div>
-              <div>AutoDesk</div>
+              <span class="tag">upwork</span>
             </div>
           </div>
           <div class="image-content">
-            <video
-              playsinline
-              muted="muted"
-              autoplay="autoplay"
-              loop="loop"
-              class="main-image-icon"
-            >
-              <source
-                src="./assets/img/dist/videos/MainPageOne.webm"
-                type="video/webm"
-              />
-            </video>
+            <div class="small">
+              <img src="./assets/img/dist/icons/upwork-logo.svg" alt="upwork-icon" />
+            </div>
+            <div class="big">
+              <picture>
+                <source srcset="./assets/img/dist/journey.webp" type="image/webp" />
+                <img src="./assets/img/dist/journey.png" alt="journey-icon" />
+              </picture>
+            </div>
           </div>
         </section>
         
@@ -373,11 +366,11 @@
         <!-- include home/feedback.html -->
         <section id="customer-form" class="purchase u-margin-bottom-section">
           <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
-            Хотите приобрести наши услуги?
+            Хотите приобрести<br />наши услуги?
           </h1>
           <div class="purchase__form">
             <div class="form__text">
-              <h2 class="heading-primary">Ответим на все ваши вопросы</h2>
+              <h2 class="form__heading">Ответим на все ваши вопросы</h2>
               <p class="form__paragraph">
                 Получите консультацию по интересующим вас вопросам связанным с
                 зарубежным фрилансом и обходом блокировок фриланс-бирж
@@ -427,7 +420,9 @@
           </h1>
           <div class="instructions__chips u-margin-bottom-heading">
             <div class="chip__labels">
-              <label for="tag-1" class="chip__label">Регистрация на UpWork</label>
+              <label for="tag-1" class="chip__label chip__label--active"
+                >Регистрация на UpWork</label
+              >
               <label for="tag-2" class="chip__label">
                 Разблокировка аккаунта UpWork
               </label>
@@ -486,7 +481,7 @@
             </div>
             <div class="view__content">
               <div class="view__text">
-                <h2 class="instructions-view-heading heading-secondary">
+                <h2 class="instructions-view-heading view-heading heading-secondary">
                   Поможет вам в регистрации нового акаунта на UpWork
                 </h2>
                 <p class="instructions-view-paragraph big-paragraph">
@@ -582,12 +577,15 @@
           <div class="blog-section__content">
             <div class="blog-section__huge-block">
               <div class="blog-section__huge-block__content">
-                <span class="blog-section__chip">Психология</span>
+                <div>
+                  <span class="blog__chip">Фриланс</span>
+                  <span class="blog__chip">Гайды</span>
+                </div>
                 <div class="blog-section__bottom-block">
-                  <h2 class="huge-paragraph">
-                    Как фрилансеру сохранить свою психику и не выгореть
-                  </h2>
-                  <a href="blog-article.html" class="blog-section__btn-link">Читать</a>
+                  <h2 class="huge-paragraph">Как выйти на фриланс новичку</h2>
+                  <a href="blog-article-1.html" class="blog-section__btn-link"
+                    >Читать</a
+                  >
                 </div>
               </div>
             </div>
@@ -619,8 +617,11 @@
         
         <section class="community-section u-margin-bottom-section">
           <div class="community-section__content">
-            <h1 class="heading-secondary u-text-center u-text-white">
-              Ламповое и готовое помочь коммьюнти
+            <h1 class="community-section__heading u-text-center u-text-white">
+              Ламповое и готовое помочь
+              <a class="community-section__link" href="https://discord.gg/PertUXuZRb"
+                >коммьюнти</a
+              >
             </h1>
           </div>
         
@@ -639,7 +640,7 @@
         
         <section class="ref-program-section u-margin-bottom-section">
           <div class="ref-program-section__content u-text-white">
-            <h1 class="heading-secondary">Реферальная программа</h1>
+            <h1 class="regular-heading">Реферальная программа</h1>
             <p class="big-paragraph">
               Мы всегда открыты к новому сотрудничеству и готовы обсудить с вами
               индивидуальные условия реферальной системы. Приводите к нам ваших друзей и
@@ -725,13 +726,15 @@
           </div>
         </section>
         
-        <section id="contacts" class="social-media-section u-margin-bottom-section">
+        <section id="contacts" class="u-margin-bottom-section">
+          <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
+            Связь с нами и наши социальные сети
+          </h1>
           <div class="social-media-section__content">
-            <div class="social-media-section__text">
-              <h1 class="social-media-section-heading heading-primary u-text-white">
-                Связь с нами и наши социальные сети
-              </h1>
-            </div>
+            <h1 class="social-media-section-heading heading-primary u-text-white">
+              Присоединяйтесь к нам в соц сетях
+            </h1>
+        
             <div class="social-media-section__icons">
               <a href="https://t.me/upworkrelocate"
                 ><img src="./assets/img/dist/TelegramLogo.webp"
@@ -898,8 +901,6 @@
           <a href="udocs.html">Документы</a>
           <a href="index.html#instructions">Инструкции</a>
           <a href="index.html#clients">Отзывы</a>
-        </div>
-        <div class="footer__center">
           <a href="index.html#contacts">Контакты</a>
           <a href="blog.html">Блог</a>
         </div>
