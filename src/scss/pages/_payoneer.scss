@@ -145,6 +145,10 @@
         min-height: 24rem;
       }
 
+      @include respond(phone) {
+        min-height: 40rem;
+      }
+
       // & > p {
       //   padding: 2rem;
       //   backdrop-filter: blur(1rem);
@@ -158,6 +162,10 @@
         height: 100%;
         object-fit: cover;
         object-position: top;
+
+        @include respond(tab-port) {
+          object-position: top left;
+        }
       }
     }
   }
