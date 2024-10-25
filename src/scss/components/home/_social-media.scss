@@ -12,6 +12,11 @@
       flex-direction: column;
       justify-content: center;
     }
+
+    @include respond(tab-port) {
+      gap: 3rem;
+      padding: 3rem;
+    }
   }
 
   &-heading {

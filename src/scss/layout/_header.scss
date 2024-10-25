@@ -78,6 +78,7 @@ header {
 
 .mobile-menu {
   & > .checkbox {
+    display: none;
     appearance: none;
   }
   & > label > div {
@@ -100,4 +101,9 @@ header {
     background-color: $white;
     transition: 0.3s ease-in-out;
   }
+}
+
+noindex {
+  display: flex;
+  align-items: center;
 }
