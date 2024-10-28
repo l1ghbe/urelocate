@@ -80,13 +80,18 @@
         >
       </div>
       <div class="view__video-block">
-        <picture class="instructions-view__video view__video">
-          <img
-            class="instructions-view-videoSrc"
-            src="./assets/img/dist/instr-1.webp"
-            type="video/webp"
+        <video
+          playsinline
+          muted="muted"
+          autoplay="autoplay"
+          loop="loop"
+          class="instructions-view__video view__video instructions-view-videoSrc"
+        >
+          <source
+            src="./assets/img/dist/videos/registration.webm"
+            type="video/webm"
           />
-        </picture>
+        </video>
       </div>
     </div>
   </div>
