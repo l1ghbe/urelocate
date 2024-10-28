@@ -52,7 +52,7 @@ header {
 
   &__item {
     display: flex;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 
   &__link {
@@ -61,6 +61,7 @@ header {
     font-size: inherit;
 
     &--mobile {
+      font-size: 2.5rem;
       line-height: 2.5rem;
       padding-left: 1.5rem;
     }
@@ -69,13 +70,6 @@ header {
   &__image {
     width: 2.5rem;
     height: 2.5rem;
-    &--services {
-    }
-
-    &--blog {
-    }
-    &--info {
-    }
   }
 }
 
