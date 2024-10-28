@@ -2,43 +2,43 @@
   "tag-1": {
     "heading": "Поможет вам в регистрации нового аккаунта на UpWork",
     "paragraph": "Скачивайте нашу полезную инструкцию в формате PDF и начинайте свой путь на UpWork",
-    "instructionLink": "##",
+    "instructionLink": "./../assets/pdf/registration-verification.pdf",
     "videoSrc": "./../assets/img/dist/instr-1.webp"
   },
   "tag-2": {
     "heading": "Поможет вам в разблокировке уже существующего аккаунта UpWork",
     "paragraph": "Скачивайте нашу полезную инструкцию в формате PDF и продолжайте свой путь на UpWork",
-    "instructionLink": "##",
+    "instructionLink": "./../assets/pdf/unblock.pdf",
     "videoSrc": "./../assets/img/dist/instr-2.webp"
   },
   "tag-3": {
     "heading": "Поможем вам вывести заработанные деньги с биржи UpWork / Fiverr",
     "paragraph": "Скачивайте нашу полезную инструкцию в формате PDF и узнайте про вывод средств",
-    "instructionLink": "##",
+    "instructionLink": "./../assets/pdf/withdraw.pdf",
     "videoSrc": "./../assets/img/dist/instr-3.webp"
   },
   "tag-4": {
     "heading": "Поможет вам в регистрации нового аккаунта Payoneer",
     "paragraph": "Скачивайте нашу полезную инструкцию в формате PDF и получите доступ к Payoneer",
-    "instructionLink": "tag-1",
+    "instructionLink": "#NEEDTORECEIVEDOC",
     "videoSrc": "./../assets/img/dist/instr-4.webp"
   },
   "tag-5": {
     "heading": "Поможет вам в заполнении профиля на бирже UpWork",
     "paragraph": "Скачивайте нашу полезную инструкцию в формате PDF и узнайте как зацепить внимание заказчика",
-    "instructionLink": "tag-2",
+    "instructionLink": "./../assets/pdf/profile.pdf",
     "videoSrc": "./../assets/img/dist/instr-5.webp"
   },
   "tag-6": {
     "heading": "Поможем вам при покупке Connects на UpWork",
     "paragraph": "Скачивайте нашу полезную инструкцию в формате PDF и узнайте как пополнить баланс коннектов на UpWork",
-    "instructionLink": "##",
+    "instructionLink": "./../assets/pdf/connects.pdf",
     "videoSrc": "./../assets/img/dist/instr-6.webp"
   },
   "tag-7": {
     "heading": "Поможет вам для заполнения обязательной налоговой информации»",
     "paragraph": "Скачивайте нашу полезную инструкцию в формате PDF и заполняйте налоговую информацию грамотно",
-    "instructionLink": "##",
+    "instructionLink": "./assets/pdf/legal-info.pdf",
     "videoSrc": "./../assets/img/dist/instr-7.webp"
   }
 }

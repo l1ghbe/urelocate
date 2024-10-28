@@ -19,7 +19,14 @@
   <body>
     <div class="wrapper">
       <header>
-        <div class="header-logo"><a href="/">URelocate</a></div>
+        <div class="header-logo">
+          <a href="/"
+            ><img
+              class="header-logo__image"
+              src="./assets/img/dist/icons/logo.svg"
+              alt="logo"
+          /></a>
+        </div>
       
         <nav class="nav">
           <h5 class="nav__item">
@@ -42,14 +49,31 @@
             <div class="background">
               <nav class="nav__mobile">
                 <h5 class="nav__item">
-                  <a class="nav__link" href="/#services">Услуги</a>
+                  <img
+                    class="nav__image nav__image--services"
+                    src="./assets/img/dist/icons/goods.svg"
+                    alt="services"
+                  />
+                  <a class="nav__link nav__link--mobile" href="/#services">Услуги</a>
                 </h5>
                 <h5 class="nav__item">
-                  <a class="nav__link" href="blog.html">Блог</a>
+                  <img
+                    class="nav__image nav__image--blog"
+                    src="./assets/img/dist/icons/blog-pencil.svg"
+                    alt="blog-icon"
+                  />
+                  <a class="nav__link nav__link--mobile" href="blog.html">Блог</a>
                 </h5>
                 <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
                 <h5 class="nav__item">
-                  <a class="nav__link" href="/#instructions">Инструкции</a>
+                  <img
+                    class="nav__image nav__image--info"
+                    src="./assets/img/dist/icons/info.svg"
+                    alt="info-icon"
+                  />
+                  <a class="nav__link nav__link--mobile" href="/#instructions"
+                    >Инструкции</a
+                  >
                 </h5>
               </nav>
             </div>
@@ -410,7 +434,7 @@
                   id="guarantees"
                 />
         
-                <label class="heading-secondary accordion__label" for="guarantees">
+                <label class="accordion__label" for="guarantees">
                   <p>К каким сервисам можно получить доступ?</p>
                   <div class="accordion__control">
                     <span class="accordion__vertical-line"></span>
@@ -437,7 +461,7 @@
                   id="document"
                 />
         
-                <label class="heading-secondary accordion__label" for="document">
+                <label class="accordion__label" for="document">
                   <p>
                     Консультируете ли вы по всем сервисам, к которым открывается доступ?
                   </p>
@@ -465,7 +489,7 @@
                   id="timing"
                 />
         
-                <label class="heading-secondary accordion__label" for="timing">
+                <label class="accordion__label" for="timing">
                   <p>Где взять иностранный номер телефона для регистрации?</p>
                   <div class="accordion__control">
                     <span class="accordion__vertical-line"></span>
