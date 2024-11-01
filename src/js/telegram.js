@@ -9,9 +9,6 @@ fetch("./config/config.json")
       .addEventListener("submit", function (event) {
         event.preventDefault();
 
-        const botToken = TOKEN;
-        const chatId = CHAT_ID;
-
         const name = document.getElementById("form-name").value;
         const telegram = document.getElementById("form-tg").value;
         const email = document.getElementById("form-email").value;
@@ -23,13 +20,13 @@ Telegram: @${telegram}
 Почта: ${email}
     `;
 
-        fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+        fetch(`https://api.telegram.org/bot${TOKEN}/sendMessage`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            chat_id: chatId,
+            chat_id: CHAT_ID,
             text: message,
             parse_mode: "HTML",
           }),

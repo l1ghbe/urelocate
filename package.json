@@ -14,7 +14,6 @@
   "devDependencies": {
     "@types/gulp-terser": "^1.2.6",
     "browser-sync": "^3.0.2",
-    "dotenv": "^16.4.5",
     "gulp": "^5.0.0",
     "gulp-autoprefixer": "^9.0.0",
     "gulp-avif": "^1.1.1",
