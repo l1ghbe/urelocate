@@ -11,6 +11,10 @@
   border-radius: 3.2rem;
   background: #228cdb;
 
+  &-heading {
+    font-weight: 600;
+  }
+
   @include respond(tab-port) {
     padding: 3.5rem;
     flex-direction: column;
