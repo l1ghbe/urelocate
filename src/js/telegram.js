@@ -27,22 +27,24 @@ function handleFormSubmit(event, token, chatId) {
   const name = document.getElementById("form-name").value.trim();
   const telegram = document.getElementById("form-tg").value.trim();
   const email = document.getElementById("form-email").value.trim();
+  const comment = document.getElementById("form-comment").value.trim();
 
   if (!name || !telegram || !email) {
     alert("Пожалуйста, заполните все необходимые поля.");
     return;
   }
 
-  const message = createTelegramMessage(name, telegram, email);
+  const message = createTelegramMessage(name, telegram, email, comment);
   sendTelegramMessage(token, chatId, message);
 }
 
-function createTelegramMessage(name, telegram, email) {
+function createTelegramMessage(name, telegram, email, comment) {
   return `
     Новая заявка 📧:
 Имя: ${name}
 Telegram: @${telegram}
 Почта: ${email}
+Комментарий: ${comment}
   `;
 }
 

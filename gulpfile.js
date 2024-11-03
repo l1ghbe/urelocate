@@ -20,6 +20,7 @@ function watching() {
   watch(["./src/components/**/*.html", "./src/pages/**/*.html"], pages);
   watch(["./src/scss/**/*.scss"], styles);
   watch(["./src/js/index.js"], scripts);
+  watch(["./src/js/telegram.js"], scripts);
   watch(["./src/**/*.html"]).on("change", browserSync.reload);
 }
 
