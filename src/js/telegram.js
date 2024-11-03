@@ -62,6 +62,7 @@ function sendTelegramMessage(token, chatId, message) {
     .then((data) => {
       if (data.ok) {
         alert("Сообщение отправлено успешно!");
+        resetForm();
       } else {
         console.error("Error response from Telegram API:", data);
         alert("Возникла ошибка при отправке формы.");
@@ -71,4 +72,9 @@ function sendTelegramMessage(token, chatId, message) {
       console.error("Network error:", error);
       alert("Возникла ошибка. Попробуйте снова.");
     });
+}
+
+function resetForm() {
+  const form = document.getElementById("telegramForm");
+  form.reset();
 }
