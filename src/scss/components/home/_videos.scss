@@ -3,6 +3,13 @@
     display: flex;
     gap: 1.8rem;
 
+    &-item {
+      border-radius: 3.2rem;
+      width: 100%;
+      min-height: 18rem;
+      overflow: hidden;
+    }
+
     @include respond(tab-port) {
       flex-direction: column;
     }
@@ -21,18 +28,17 @@
 
   &__right {
     width: 50%;
-    min-height: 18rem;
-    flex: 1 1 50%;
+
+    & > iframe {
+      @include respond(tab-port) {
+        min-height: 26rem;
+      }
+    }
 
     @include respond(tab-port) {
       order: -1;
+      width: 100%;
+      min-height: 25rem;
     }
-  }
-
-  &__grid-item {
-    border-radius: 3.2rem;
-    width: 100%;
-    min-height: 18rem;
-    overflow: hidden;
   }
 }

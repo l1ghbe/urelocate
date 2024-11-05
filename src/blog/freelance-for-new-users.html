@@ -1,13 +1,86 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--=include head-content.html -->
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    
+    <link rel="stylesheet" href="./css/style.min.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="./../css/style.min.css" />
     <title>Blog Article</title>
   </head>
   <body>
     <div class="wrapper">
-      <!--=include header.html -->
+      <header>
+        <div class="header-logo">
+          <a href="/"
+            ><img
+              class="header-logo__image"
+              src="./assets/img/dist/icons/logo.svg"
+              alt="logo"
+          /></a>
+        </div>
+      
+        <nav class="nav">
+          <h5 class="nav__item">
+            <a class="nav__link" href="/#services">Услуги</a>
+          </h5>
+          <h5 class="nav__item"><a class="nav__link" href="blog.html">Блог</a></h5>
+          <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
+          <h5 class="nav__item">
+            <a class="nav__link" href="/#instructions">Инструкции</a>
+          </h5>
+        </nav>
+      
+        <noindex>
+          <div class="mobile-menu">
+            <input id="checkbox-burger" class="checkbox" type="checkbox" />
+            <label for="checkbox-burger">
+              <div class="checkbox-box"></div>
+            </label>
+      
+            <div class="background">
+              <nav class="nav__mobile">
+                <h5 class="nav__item">
+                  <img
+                    class="nav__image nav__image--services"
+                    src="./assets/img/dist/icons/goods.svg"
+                    alt="services"
+                  />
+                  <a class="nav__link nav__link--mobile" href="/#services">Услуги</a>
+                </h5>
+                <h5 class="nav__item">
+                  <img
+                    class="nav__image nav__image--blog"
+                    src="./assets/img/dist/icons/blog-pencil.svg"
+                    alt="blog-icon"
+                  />
+                  <a class="nav__link nav__link--mobile" href="blog.html">Блог</a>
+                </h5>
+                <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
+                <h5 class="nav__item">
+                  <img
+                    class="nav__image nav__image--info"
+                    src="./assets/img/dist/icons/info.svg"
+                    alt="info-icon"
+                  />
+                  <a class="nav__link nav__link--mobile" href="/#instructions"
+                    >Инструкции</a
+                  >
+                </h5>
+              </nav>
+            </div>
+          </div>
+        </noindex>
+      </header>
+      
       <main class="main">
         <section class="blog-article u-margin-bottom-section">
           <div class="blog-article__back-btn">
@@ -230,7 +303,74 @@
         </section>
       </main>
     </div>
-    <!--= include footer.html -->
+    <footer class="footer">
+      <div class="footer__info">
+        <div class="footer__left">
+          <a href="userver.html">Уникальный UServer</a>
+          <a href="udocs.html">Документы</a>
+          <a href="index.html#instructions">Инструкции</a>
+          <a href="index.html#clients">Отзывы</a>
+          <a href="index.html#contacts">Контакты</a>
+          <a href="blog.html">Блог</a>
+        </div>
+        <div class="footer__right">
+          <div class="footer__social">
+            <a href="mailto:urelocate@gmail.com">urelocate@gmail.com</a>
+            <div class="footer__icons">
+              <a href="https://t.me/upworkrelocate" target="_blank">
+                <picture class="footer__social-icon">
+                  <source
+                    type="image/webp"
+                    srcset="./assets/img/dist/TelegramLogo.webp"
+                  />
+                  <img src="./assets/img/dist/TelegramLogo.png" alt="tg-icon" />
+                </picture>
+              </a>
+              <a href="https://www.youtube.com/@URelocate" target="_blank">
+                <picture class="footer__social-icon">
+                  <source
+                    type="image/webp"
+                    srcset="./assets/img/dist/YouTubeLogo.webp"
+                  />
+                  <img src="./assets/img/dist/YouTubeLogo.png" alt="tg-icon" />
+                </picture>
+              </a>
+              <a href="https://www.instagram.com/upwork.relocate" target="_blank">
+                <picture class="footer__social-icon">
+                  <source
+                    type="image/webp"
+                    srcset="./assets/img/dist/InstagramLogo.webp"
+                  />
+                  <img src="./assets/img/dist/InstagramLogo.png" alt="tg-icon" />
+                </picture>
+              </a>
+              <a href="https://vk.com/urelocate" target="_blank">
+                <picture class="footer__social-icon">
+                  <source
+                    type="image/webp"
+                    srcset="./assets/img/dist/VKLogo.webp"
+                  />
+                  <img src="./assets/img/dist/VKLogo.png" alt="tg-icon" />
+                </picture>
+              </a>
+              <a href="https://discord.gg/PertUXuZRb" target="_blank">
+                <picture class="footer__social-icon">
+                  <source
+                    type="image/webp"
+                    srcset="./assets/img/dist/DiscordLogo.webp"
+                  />
+                  <img src="./assets/img/dist/DiscordLogo.png" alt="tg-icon" />
+                </picture>
+              </a>
+            </div>
+          </div>
+          <div class="footer__copyright">
+            <p>© URelocate, 2024</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
     <script src="./js/index.min.js"></script>
   </body>
 </html>
