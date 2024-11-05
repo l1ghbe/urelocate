@@ -4,6 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/img/dist/icons/burger.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/img/dist/icons/close.svg"
+      type="image/svg+xml"
+    />
+    
     <link rel="stylesheet" href="./css/style.min.css" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -283,7 +296,14 @@
               <div
                 class="why-payoneer-section__item why-payoneer-section__item-map"
               >
-                <img src="./assets/img/dist/MapVert.webp" alt="location-img" />
+                <picture>
+                  <source
+                    srcset="./assets/img/dist/vmap-wt.webp"
+                    type="image/webp"
+                  />
+                  <img src="./assets/img/dist/vmap-wt.png" alt="location-img" />
+                </picture>
+
                 <p>СЕРВИС РАБОТАЕТ С ГРАЖДАНАМИ ИЗ РФ И РБ</p>
               </div>
             </div>

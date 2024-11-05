@@ -4,6 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/img/dist/icons/burger.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/img/dist/icons/close.svg"
+      type="image/svg+xml"
+    />
+    
     <link rel="stylesheet" href="./css/style.min.css" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -250,7 +263,9 @@
               >
                 <div><span>СЕРВИС №1</span> по обходу блокировок</div>
                 <div class="why-unblock-section__item-subunion">
-                  <div><span>0</span>БЛОКИРОВОК АККАУНТОВ</div>
+                  <div class="account-blocked">
+                    <span>0</span>блокировок аккаунтов
+                  </div>
                   <div>
                     <span>БОЛЕЕ 800</span>кейсов успешной
                     регистрации/разблокировки
@@ -292,7 +307,19 @@
             </div>
             <div class="why-unblock-section__content-right">
               <div class="why-udocs-section__item why-udocs-section__item-map">
-                <img src="./assets/img/dist/MapVert.webp" alt="location-img" />
+                <picture>
+                  <source
+                    media="(max-width: 600px)"
+                    srcset="./assets/img/dist/map-mobile.webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./assets/img/dist/MapVert.webp"
+                    type="image/webp"
+                  />
+                  <img src="./assets/img/dist/MapVert.webp" alt="map" />
+                </picture>
+
                 <div>
                   <p>локация</p>
                   <p>польша</p>

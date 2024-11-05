@@ -185,10 +185,7 @@
               >
                 <p>Подходит для множества сервисов</p>
                 <div>
-                  <img
-                    src="../assets/img/dist/icons/services.svg"
-                    alt="services-icon"
-                  />
+                  <img src="../assets/img/dist/logos.png" alt="services-icon" />
                 </div>
               </div>
               <div
@@ -209,7 +206,23 @@
             </div>
             <div class="why-udocs-section__content-right">
               <div class="why-udocs-section__item why-udocs-section__item-map">
-                <img src="./assets/img/dist/MapVert.webp" alt="location-img" />
+                <picture>
+                  <source
+                    media="(max-width: 600px)"
+                    srcset="./assets/img/dist/vmap-wt.webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./assets/img/dist/MapVert.webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./assets/img/dist/vmap-wt.webp"
+                    type="image/webp"
+                  />
+                  <img src="./assets/img/dist/vmap-wt.png" alt="location-img" />
+                </picture>
+
                 <div>
                   <p>локация</p>
                   <p>польша</p>

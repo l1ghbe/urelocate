@@ -3,6 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/img/dist/icons/burger.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/img/dist/icons/close.svg"
+      type="image/svg+xml"
+    />
 
     <link rel="stylesheet" href="./css/style.min.css" />
 
@@ -90,7 +102,7 @@
         <!--include home/instruments.html -->
         <section class="journey u-margin-bottom-section">
           <div class="text-content">
-            <p class="heading-primary u-text-white">
+            <p class="heading-primary instruments-heading u-text-white">
               Начни свой путь на зарубежном фрилансе
             </p>
             <div class="tags">
@@ -556,13 +568,18 @@
                 >
               </div>
               <div class="view__video-block">
-                <picture class="instructions-view__video view__video">
-                  <img
-                    class="instructions-view-videoSrc"
-                    src="./assets/img/dist/instr-1.webp"
-                    type="video/webp"
+                <video
+                  playsinline
+                  muted="muted"
+                  autoplay="autoplay"
+                  loop="loop"
+                  class="instructions-view__video view__video instructions-view-videoSrc"
+                >
+                  <source
+                    src="./assets/img/dist/videos/registration.webm"
+                    type="video/webm"
                   />
-                </picture>
+                </video>
               </div>
             </div>
           </div>
@@ -598,8 +615,9 @@
             </div>
             <div class="statistics__grid-item">
               <div class="u-text-center">
-                <h3 class="">150-250К</h3>
                 <p>среднестатистический заработок</p>
+                <h3 class="">150-250К</h3>
+                <p>рублей в месяц</p>
               </div>
             </div>
             <div class="statistics__grid-item">
@@ -673,7 +691,7 @@
               <a
                 class="community-section__link"
                 href="https://discord.gg/PertUXuZRb"
-                >коммьюнти</a
+                >комьюнти</a
               >
             </h1>
           </div>
@@ -726,7 +744,7 @@
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/eIbfSp76mdM?si=cfoyA_jLCitg7erX"
+                  src="https://www.youtube.com/embed/CkB9955Va6s?si=OcmawMTMA5DYxx31"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -750,7 +768,7 @@
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/1JMJbxLw0-c?si=qHr4hj3XGgz2ekEu"
+                  src="https://www.youtube.com/embed/m-J7QhTXXAU?si=wjXdVkI0cMa5ytgS"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -762,7 +780,7 @@
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/TATdx8NU7YI?si=O7AzVPVxGRhFLszc"
+                  src="https://www.youtube.com/embed/Hknq3wZCAGM?si=pDDkWW4H6NZWs61o"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
