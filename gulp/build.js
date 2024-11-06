@@ -1,4 +1,4 @@
-import { dest, parallel, series, src, watch } from "gulp";
+import { dest, series, src } from "gulp";
 import clean from "gulp-clean";
 
 function cleanDist() {
@@ -9,6 +9,7 @@ function building() {
   return src(
     [
       "./src/assets/img/dist/**/*.*",
+      "./src/assets/pdf/*.*",
       // "./src/assets/fonts/*.*",
       // "./src/assets/json/*.json",
       "./src/css/style.min.css",
