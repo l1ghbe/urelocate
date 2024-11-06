@@ -1,38 +1,44 @@
 {
   "tag-1": {
-    "heading": "Поможет вам в регистрации нового акаунта на UpWork",
+    "heading": "Поможет вам в регистрации нового аккаунта на UpWork",
     "paragraph": "Скачивайте нашу полезную инструкцию в формате PDF и начинайте свой путь на UpWork",
-    "instructionLink": "##",
-    "videoSrc": "./assets/img/dist/videos/PayoneerPrvw.webm"
+    "instructionLink": "./../assets/pdf/registration-verification.pdf",
+    "videoSrc": "./assets/img/dist/videos/registration.webm"
   },
   "tag-2": {
-    "heading": "TAG-2 CONTENT",
-    "paragraph": "TAG-2 Скачивайте нашу полезную инструкцию в формате PDF и начинайте свой путь на UpWork",
-    "instructionLink": "##",
-    "videoSrc": "./assets/img/dist/videos/UServer.webm"
+    "heading": "Поможет вам в разблокировке уже существующего аккаунта UpWork",
+    "paragraph": "Скачивайте нашу полезную инструкцию в формате PDF и продолжайте свой путь на UpWork",
+    "instructionLink": "./../assets/pdf/unblock.pdf",
+    "videoSrc": "./assets/img/dist/videos/unblock.webm"
   },
   "tag-3": {
-    "heading": "TAG-3",
-    "paragraph": "TAG-3",
-    "instructionLink": "##",
-    "videoSrc": "./assets/img/dist/videos/PayoneerPrvw.webm"
+    "heading": "Поможем вам вывести заработанные деньги с биржи UpWork / Fiverr",
+    "paragraph": "Скачивайте нашу полезную инструкцию в формате PDF и узнайте про вывод средств",
+    "instructionLink": "./../assets/pdf/withdraw.pdf",
+    "videoSrc": "./assets/img/dist/videos/withdraw.webm"
   },
   "tag-4": {
-    "heading": "TAG-4",
-    "paragraph": "TAG-4",
-    "instructionLink": "tag-1",
-    "videoSrc": "./assets/img/dist/videos/UServer.webm"
+    "heading": "Поможет вам в регистрации нового аккаунта Payoneer",
+    "paragraph": "Скачивайте нашу полезную инструкцию в формате PDF и получите доступ к Payoneer",
+    "instructionLink": "#NEEDTORECEIVEDOC",
+    "videoSrc": "./assets/img/dist/videos/payoneer.webm"
   },
   "tag-5": {
-    "heading": "TAG-5",
-    "paragraph": "TAG-5",
-    "instructionLink": "tag-2",
-    "videoSrc": "./assets/img/dist/videos/PayoneerPrvw.webm"
+    "heading": "Поможет вам в заполнении профиля на бирже UpWork",
+    "paragraph": "Скачивайте нашу полезную инструкцию в формате PDF и узнайте как зацепить внимание заказчика",
+    "instructionLink": "./../assets/pdf/profile.pdf",
+    "videoSrc": "./assets/img/dist/videos/profile.webm"
   },
   "tag-6": {
-    "heading": "TAG-6",
-    "paragraph": "TAG-6",
-    "instructionLink": "##",
-    "videoSrc": "./assets/img/dist/videos/UServer.webm"
+    "heading": "Поможем вам при покупке Connects на UpWork",
+    "paragraph": "Скачивайте нашу полезную инструкцию в формате PDF и узнайте как пополнить баланс коннектов на UpWork",
+    "instructionLink": "./../assets/pdf/connects.pdf",
+    "videoSrc": "./assets/img/dist/videos/connects.webm"
+  },
+  "tag-7": {
+    "heading": "Поможет вам для заполнения обязательной налоговой информации»",
+    "paragraph": "Скачивайте нашу полезную инструкцию в формате PDF и заполняйте налоговую информацию грамотно",
+    "instructionLink": "./assets/pdf/legal-info.pdf",
+    "videoSrc": "./assets/img/dist/videos/taxes.webm"
   }
 }

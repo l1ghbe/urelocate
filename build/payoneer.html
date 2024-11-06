@@ -4,6 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/img/dist/icons/burger.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/img/dist/icons/close.svg"
+      type="image/svg+xml"
+    />
+    
     <link rel="stylesheet" href="./css/style.min.css" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,28 +32,78 @@
   <body>
     <div class="wrapper">
       <header>
-        <div class="header-logo"><a href="/">URelocate</a></div>
+        <div class="header-logo">
+          <a href="/">
+            <img
+              class="header-logo__image"
+              src="./assets/img/dist/icons/logo.svg"
+              alt="logo"
+            />
+          </a>
+        </div>
+      
         <nav class="nav">
           <h5 class="nav__item">
             <a class="nav__link" href="/#services">Услуги</a>
           </h5>
           <h5 class="nav__item"><a class="nav__link" href="blog.html">Блог</a></h5>
-          <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5>
+          <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
           <h5 class="nav__item">
             <a class="nav__link" href="/#instructions">Инструкции</a>
           </h5>
         </nav>
-        <div class="burger-menu">
-          <img src="./assets/img/dist/icons/burger.svg" alt="menu-icon" />
-        </div>
+      
+        <noindex>
+          <div class="mobile-menu">
+            <input id="checkbox-burger" class="checkbox" type="checkbox" />
+            <label for="checkbox-burger">
+              <div class="checkbox-box"></div>
+            </label>
+      
+            <div class="background">
+              <nav class="nav__mobile">
+                <h5 class="nav__item">
+                  <img
+                    class="nav__image nav__image--services"
+                    src="./assets/img/dist/icons/goods.svg"
+                    alt="services"
+                  />
+                  <a class="nav__link nav__link--mobile" href="/#services">Услуги</a>
+                </h5>
+                <h5 class="nav__item">
+                  <img
+                    class="nav__image nav__image--blog"
+                    src="./assets/img/dist/icons/blog-pencil.svg"
+                    alt="blog-icon"
+                  />
+                  <a class="nav__link nav__link--mobile" href="blog.html">Блог</a>
+                </h5>
+                <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
+                <h5 class="nav__item">
+                  <img
+                    class="nav__image nav__image--info"
+                    src="./assets/img/dist/icons/info.svg"
+                    alt="info-icon"
+                  />
+                  <a class="nav__link nav__link--mobile" href="/#instructions"
+                    >Инструкции</a
+                  >
+                </h5>
+              </nav>
+            </div>
+          </div>
+        </noindex>
       </header>
       
       <main class="main">
-        <section class="service__hero u-margin-bottom-section">
+        <section
+          class="service__hero service__hero--purple-line u-margin-bottom-section"
+        >
           <h1 class="service__heading"><span>Регистрация</span> payoneer</h1>
-          <div class="service__card service__card--light">
+          <div class="service__card">
             <div class="service__card-preview">
               <video
+                playsinline
                 class="service__card-video"
                 muted="muted"
                 autoplay="autoplay"
@@ -51,15 +114,13 @@
                   type="video/webm"
                 />
               </video>
-              <div
-                class="service__card-content-block service__card-content-block--light"
-              >
+              <div class="service__card-content-block">
                 <div class="service__card-price">
                   <span class="service__card-price-past">от $119</span>
                   <span class="service__card-price-present">$85</span>
                   <span class="service__card-sale">-30%</span>
                 </div>
-                <a class="service__card-btn service__card-btn--light" href="##"
+                <a class="service__card-btn" href="payoneer.html#customer-form"
                   >Оставить заявку</a
                 >
               </div>
@@ -72,7 +133,7 @@
           </h1>
           <div class="blue-secton__content">
             <div class="blue-secton__text">
-              <h2 class="heading-secondary u-margin-bottom-common">
+              <h2 class="regular-heading u-margin-bottom-common">
                 Вывод средств несмотря на санкции
               </h2>
               <p>
@@ -98,7 +159,7 @@
         <section class="transparent-section u-margin-bottom-section">
           <div class="transparent-section__item u-margin-bottom-heading">
             <div class="content">
-              <h2 class="heading-secondary u-margin-bottom-common">
+              <h2 class="regular-heading u-margin-bottom-common">
                 Оплата зарубежных покупок
               </h2>
               <p class="big-paragraph">
@@ -109,7 +170,7 @@
                 привязав к Apple или Google Pay
               </p>
             </div>
-            <div class="image-block">
+            <div class="image-block custom-payoneer">
               <img
                 class="image"
                 src="./assets/img/dist/icons/payment.svg"
@@ -118,10 +179,10 @@
             </div>
           </div>
           <div
-            class="transparent-section__item transparent-section__item--reversed"
+            class="transparent-section__item transparent-section__item--reversed transparent-section__item--custom"
           >
             <div class="content">
-              <h2 class="heading-secondary u-margin-bottom-common">
+              <h2 class="regular-heading u-margin-bottom-common">
                 Как создать аккаунт
               </h2>
               <p class="big-paragraph">
@@ -133,7 +194,7 @@
                 наш менеджер поможет вам во всем разобраться
               </p>
             </div>
-            <div class="image-block">
+            <div class="image-block custom-payoneer">
               <img
                 class="image"
                 src="./assets/img/dist/icons/Form.svg"
@@ -146,9 +207,7 @@
         <section class="black-section u-margin-bottom-section">
           <div class="black-section__content black-section__content--dissected">
             <div class="black-section__item">
-              <h2
-                class="heading-secondary u-text-center u-margin-bottom-common"
-              >
+              <h2 class="regular-heading u-text-center u-margin-bottom-common">
                 Получение денег на карты РФ
               </h2>
               <p class="big-paragraph u-text-center">
@@ -159,9 +218,7 @@
               </p>
             </div>
             <div class="black-section__item">
-              <h2
-                class="heading-secondary u-text-center u-margin-bottom-common"
-              >
+              <h2 class="regular-heading u-text-center u-margin-bottom-common">
                 Получение денег на карты РБ
               </h2>
               <p class="big-paragraph u-text-center">
@@ -206,7 +263,11 @@
               <div
                 class="why-payoneer-section__item why-payoneer-section__item-method"
               >
-                <img src="./assets/img/dist/wallet.webp" alt="wallet-icon" />
+                <img
+                  class="inverted"
+                  src="./assets/img/dist/icons/credit-card.svg"
+                  alt="wallet-icon"
+                />
                 <p>
                   Почти безальтернативный метод вывода денег для граждан РФ и РБ
                 </p>
@@ -236,7 +297,14 @@
               <div
                 class="why-payoneer-section__item why-payoneer-section__item-map"
               >
-                <img src="./assets/img/dist/MapVert.webp" alt="location-img" />
+                <picture>
+                  <source
+                    srcset="./assets/img/dist/vmap-wt.webp"
+                    type="image/webp"
+                  />
+                  <img src="./assets/img/dist/vmap-wt.png" alt="location-img" />
+                </picture>
+
                 <p>СЕРВИС РАБОТАЕТ С ГРАЖДАНАМИ ИЗ РФ И РБ</p>
               </div>
             </div>
@@ -258,7 +326,9 @@
                 <span class="services__sale">-18%</span>
               </div>
 
-              <a href="##" class="btn">Оставить заявку</a>
+              <a href="payoneer.html#customer-form" class="btn"
+                >Оставить заявку</a
+              >
             </div>
 
             <div class="tariffs-section__item">
@@ -270,17 +340,19 @@
                 <span class="services__sale">-20%</span>
               </div>
 
-              <a href="##" class="btn">Оставить заявку</a>
+              <a href="payoneer.html#customer-form" class="btn"
+                >Оставить заявку</a
+              >
             </div>
           </div>
         </section>
-        <section class="purchase u-margin-bottom-section">
+        <section id="customer-form" class="purchase u-margin-bottom-section">
           <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
-            Хотите приобрести наши услуги?
+            Хотите приобрести<br />наши услуги?
           </h1>
           <div class="purchase__form">
             <div class="form__text">
-              <h2 class="heading-primary">Ответим на все ваши вопросы</h2>
+              <h2 class="form__heading">Ответим на все ваши вопросы</h2>
               <p class="form__paragraph">
                 Получите консультацию по интересующим вас вопросам связанным с
                 зарубежным фрилансом и обходом блокировок фриланс-бирж
@@ -312,6 +384,13 @@
                   required
                   placeholder="E-mail"
                 />
+                <textarea
+                  id="form-comment"
+                  type="text"
+                  name="comment"
+                  class="form__field"
+                  placeholder="Комментарий"
+                ></textarea>
               </div>
               <div class="form__buttons">
                 <button type="submit" class="form__btn">Отправить</button>
@@ -359,7 +438,7 @@
                   id="verification"
                 />
         
-                <label class="heading-secondary accordion__label" for="verification">
+                <label class="accordion__label" for="verification">
                   <p>Какие сроки полной верификации Payoneer?</p>
                   <div class="accordion__control">
                     <span class="accordion__vertical-line"></span>
@@ -383,7 +462,7 @@
                   id="document"
                 />
         
-                <label class="heading-secondary accordion__label" for="document">
+                <label class="accordion__label" for="document">
                   <p>Что будет, если документ не примут?</p>
                   <div class="accordion__control">
                     <span class="accordion__vertical-line"></span>
@@ -408,7 +487,7 @@
                   id="reg"
                 />
         
-                <label class="heading-secondary accordion__label" for="reg">
+                <label class="accordion__label" for="reg">
                   <p>Можно ли регистрироваться на паспорт РФ/РБ?</p>
                   <div class="accordion__control">
                     <span class="accordion__vertical-line"></span>
@@ -431,7 +510,7 @@
                   id="phone"
                 />
         
-                <label class="heading-secondary accordion__label" for="phone">
+                <label class="accordion__label" for="phone">
                   <p>Где взять иностранный номер телефона для регистрации?</p>
                   <div class="accordion__control">
                     <span class="accordion__vertical-line"></span>
@@ -455,21 +534,12 @@
     <footer class="footer">
       <div class="footer__info">
         <div class="footer__left">
-          <a href="userver.html">UServer</a>
-          <a href="udocs.html">UDocs</a>
-          <a href="#">UpWork</a>
-          <a href="profile-check.html">Разбор профиля</a>
-          <a href="payoneer.html">Payoneer</a>
+          <a href="userver.html">Уникальный UServer</a>
+          <a href="udocs.html">Документы</a>
+          <a href="index.html#instructions">Инструкции</a>
           <a href="index.html#clients">Отзывы</a>
-          <a href="index.html#instr">Инструкции</a>
-        </div>
-        <div class="footer__center">
-          <a href="#">Контакты</a>
-          <a href="#">О Нас</a>
+          <a href="index.html#contacts">Контакты</a>
           <a href="blog.html">Блог</a>
-          <a href="#">Партнерская программа</a>
-          <a href="#">Скидки</a>
-          <a href="#">Оплата</a>
         </div>
         <div class="footer__right">
           <div class="footer__social">
@@ -484,7 +554,7 @@
                   <img src="./assets/img/dist/TelegramLogo.png" alt="tg-icon" />
                 </picture>
               </a>
-              <a href="https://t.me/upworkrelocate" target="_blank">
+              <a href="https://www.youtube.com/@URelocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
                     type="image/webp"
@@ -493,7 +563,7 @@
                   <img src="./assets/img/dist/YouTubeLogo.png" alt="tg-icon" />
                 </picture>
               </a>
-              <a href="https://t.me/upworkrelocate" target="_blank">
+              <a href="https://www.instagram.com/upwork.relocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
                     type="image/webp"
@@ -502,7 +572,7 @@
                   <img src="./assets/img/dist/InstagramLogo.png" alt="tg-icon" />
                 </picture>
               </a>
-              <a href="https://t.me/upworkrelocate" target="_blank">
+              <a href="https://vk.com/urelocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
                     type="image/webp"
@@ -511,7 +581,7 @@
                   <img src="./assets/img/dist/VKLogo.png" alt="tg-icon" />
                 </picture>
               </a>
-              <a href="https://t.me/upworkrelocate" target="_blank">
+              <a href="https://discord.gg/PertUXuZRb" target="_blank">
                 <picture class="footer__social-icon">
                   <source
                     type="image/webp"
