@@ -20,7 +20,7 @@
   "tag-4": {
     "heading": "Поможет вам в регистрации нового аккаунта Payoneer",
     "paragraph": "Скачивайте нашу полезную инструкцию в формате PDF и получите доступ к Payoneer",
-    "instructionLink": "#NEEDTORECEIVEDOC",
+    "instructionLink": "./../assets/pdf/payoneer-registration.pdf",
     "videoSrc": "./assets/img/dist/videos/payoneer.webm"
   },
   "tag-5": {
