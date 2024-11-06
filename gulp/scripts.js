@@ -7,7 +7,7 @@ const browserSync = browserSyncModule.create();
 
 export function scripts() {
   return (
-    src("./src/js/index.js")
+    src(["./src/js/index.js", "./src/js/telegram.js"])
       // .pipe(
       //   plumber({
       //     errorHandler: function (err) {

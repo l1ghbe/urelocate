@@ -4,6 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/img/dist/icons/burger.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/img/dist/icons/close.svg"
+      type="image/svg+xml"
+    />
+    
     <link rel="stylesheet" href="./css/style.min.css" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,30 +32,80 @@
   <body>
     <div class="wrapper">
       <header>
-        <div class="header-logo"><a href="/">URelocate</a></div>
+        <div class="header-logo">
+          <a href="/">
+            <img
+              class="header-logo__image"
+              src="./assets/img/dist/icons/logo.svg"
+              alt="logo"
+            />
+          </a>
+        </div>
+      
         <nav class="nav">
           <h5 class="nav__item">
             <a class="nav__link" href="/#services">Услуги</a>
           </h5>
           <h5 class="nav__item"><a class="nav__link" href="blog.html">Блог</a></h5>
-          <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5>
+          <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
           <h5 class="nav__item">
             <a class="nav__link" href="/#instructions">Инструкции</a>
           </h5>
         </nav>
-        <div class="burger-menu">
-          <img src="./assets/img/dist/icons/burger.svg" alt="menu-icon" />
-        </div>
+      
+        <noindex>
+          <div class="mobile-menu">
+            <input id="checkbox-burger" class="checkbox" type="checkbox" />
+            <label for="checkbox-burger">
+              <div class="checkbox-box"></div>
+            </label>
+      
+            <div class="background">
+              <nav class="nav__mobile">
+                <h5 class="nav__item">
+                  <img
+                    class="nav__image nav__image--services"
+                    src="./assets/img/dist/icons/goods.svg"
+                    alt="services"
+                  />
+                  <a class="nav__link nav__link--mobile" href="/#services">Услуги</a>
+                </h5>
+                <h5 class="nav__item">
+                  <img
+                    class="nav__image nav__image--blog"
+                    src="./assets/img/dist/icons/blog-pencil.svg"
+                    alt="blog-icon"
+                  />
+                  <a class="nav__link nav__link--mobile" href="blog.html">Блог</a>
+                </h5>
+                <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
+                <h5 class="nav__item">
+                  <img
+                    class="nav__image nav__image--info"
+                    src="./assets/img/dist/icons/info.svg"
+                    alt="info-icon"
+                  />
+                  <a class="nav__link nav__link--mobile" href="/#instructions"
+                    >Инструкции</a
+                  >
+                </h5>
+              </nav>
+            </div>
+          </div>
+        </noindex>
       </header>
       
       <main class="main">
-        <section class="service__hero u-margin-bottom-section">
+        <section
+          class="service__hero service__hero--grey-line u-margin-bottom-section"
+        >
           <h1 class="service__heading">
             <span>регистрация / разблокировка</span> на upwork и fiver
           </h1>
-          <div class="service__card service__card--light">
+          <div class="service__card">
             <div class="service__card-preview">
               <video
+                playsinline
                 class="service__card-video"
                 muted="muted"
                 autoplay="autoplay"
@@ -53,15 +116,13 @@
                   type="video/webm"
                 />
               </video>
-              <div
-                class="service__card-content-block service__card-content-block--light"
-              >
+              <div class="service__card-content-block">
                 <div class="service__card-price">
                   <span class="service__card-price-past">от $129</span>
                   <span class="service__card-price-present">$89</span>
                   <span class="service__card-sale">-31%</span>
                 </div>
-                <a class="service__card-btn service__card-btn--light" href="##"
+                <a class="service__card-btn" href="unblock.html#customer-form"
                   >Оставить заявку</a
                 >
               </div>
@@ -74,7 +135,7 @@
           </h1>
           <div class="blue-secton__content">
             <div class="blue-secton__text">
-              <h2 class="heading-secondary u-margin-bottom-common">
+              <h2 class="regular-heading u-margin-bottom-common">
                 Почему именно зарубежный фриланс
               </h2>
               <p>
@@ -101,7 +162,7 @@
         <section class="transparent-section u-margin-bottom-section">
           <div class="transparent-section__item">
             <div class="content">
-              <h2 class="heading-secondary u-margin-bottom-common">
+              <h2 class="regular-heading u-margin-bottom-common">
                 Обход блокировок
               </h2>
 
@@ -133,9 +194,7 @@
         <section class="black-section u-margin-bottom-section">
           <div class="black-section__content black-section__content--dissected">
             <div class="black-section__item">
-              <h2
-                class="heading-secondary u-text-center u-margin-bottom-common"
-              >
+              <h2 class="regular-heading u-text-center u-margin-bottom-common">
                 У меня нет аккаунта
               </h2>
               <p class="big-paragraph u-text-center">
@@ -148,9 +207,7 @@
               </p>
             </div>
             <div class="black-section__item">
-              <h2
-                class="heading-secondary u-text-center u-margin-bottom-common"
-              >
+              <h2 class="regular-heading u-text-center u-margin-bottom-common">
                 У меня был аккаунт на бирже
               </h2>
               <p class="big-paragraph u-text-center">
@@ -166,7 +223,7 @@
         </section>
         <section class="background-section u-margin-bottom-section">
           <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
-            Полное Сопровождение
+            Полное cопровождение
           </h1>
           <div class="background-section__content">
             <div class="background-section__text big-paragraph">
@@ -207,7 +264,9 @@
               >
                 <div><span>СЕРВИС №1</span> по обходу блокировок</div>
                 <div class="why-unblock-section__item-subunion">
-                  <div><span>0</span>БЛОКИРОВОК АККАУНТОВ</div>
+                  <div class="account-blocked">
+                    <span>0</span>блокировок аккаунтов
+                  </div>
                   <div>
                     <span>БОЛЕЕ 800</span>кейсов успешной
                     регистрации/разблокировки
@@ -249,7 +308,19 @@
             </div>
             <div class="why-unblock-section__content-right">
               <div class="why-udocs-section__item why-udocs-section__item-map">
-                <img src="./assets/img/dist/MapVert.webp" alt="location-img" />
+                <picture>
+                  <source
+                    media="(max-width: 600px)"
+                    srcset="./assets/img/dist/map-mobile.webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./assets/img/dist/MapVert.webp"
+                    type="image/webp"
+                  />
+                  <img src="./assets/img/dist/MapVert.webp" alt="map" />
+                </picture>
+
                 <div>
                   <p>локация</p>
                   <p>польша</p>
@@ -284,7 +355,9 @@
                 <span class="services__sale">-15%</span>
               </div>
 
-              <a href="##" class="btn">Оставить заявку</a>
+              <a href="unblock.html/#customer-form" class="btn"
+                >Оставить заявку</a
+              >
             </div>
 
             <div class="tariffs-section__item">
@@ -296,7 +369,9 @@
                 <span class="services__sale">-17%</span>
               </div>
 
-              <a href="##" class="btn">Оставить заявку</a>
+              <a href="unblock.html/#customer-form" class="btn"
+                >Оставить заявку</a
+              >
             </div>
             <div class="tariffs-section__item">
               <p class="info">Аренда UServer на 3 месяца</p>
@@ -307,17 +382,19 @@
                 <span class="services__sale">-25%</span>
               </div>
 
-              <a href="##" class="btn">Оставить заявку</a>
+              <a href="unblock.html/#customer-form" class="btn"
+                >Оставить заявку</a
+              >
             </div>
           </div>
         </section>
-        <section class="purchase u-margin-bottom-section">
+        <section id="customer-form" class="purchase u-margin-bottom-section">
           <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
-            Хотите приобрести наши услуги?
+            Хотите приобрести<br />наши услуги?
           </h1>
           <div class="purchase__form">
             <div class="form__text">
-              <h2 class="heading-primary">Ответим на все ваши вопросы</h2>
+              <h2 class="form__heading">Ответим на все ваши вопросы</h2>
               <p class="form__paragraph">
                 Получите консультацию по интересующим вас вопросам связанным с
                 зарубежным фрилансом и обходом блокировок фриланс-бирж
@@ -349,6 +426,13 @@
                   required
                   placeholder="E-mail"
                 />
+                <textarea
+                  id="form-comment"
+                  type="text"
+                  name="comment"
+                  class="form__field"
+                  placeholder="Комментарий"
+                ></textarea>
               </div>
               <div class="form__buttons">
                 <button type="submit" class="form__btn">Отправить</button>
@@ -396,7 +480,7 @@
                   id="guarantees"
                 />
         
-                <label class="heading-secondary accordion__label" for="guarantees">
+                <label class="accordion__label" for="guarantees">
                   <p>Какие сроки полной верификации UpWork?</p>
                   <div class="accordion__control">
                     <span class="accordion__vertical-line"></span>
@@ -419,7 +503,7 @@
                   id="document"
                 />
         
-                <label class="heading-secondary accordion__label" for="document">
+                <label class="accordion__label" for="document">
                   <p>Что будет, если документ при верификации не примут?</p>
                   <div class="accordion__control">
                     <span class="accordion__vertical-line"></span>
@@ -444,7 +528,7 @@
                   id="timing"
                 />
         
-                <label class="heading-secondary accordion__label" for="timing">
+                <label class="accordion__label" for="timing">
                   <p>Можно ли регистрироваться на паспорт РФ/РБ?</p>
                   <div class="accordion__control">
                     <span class="accordion__vertical-line"></span>
@@ -469,7 +553,7 @@
                   id="document-types"
                 />
         
-                <label class="heading-secondary accordion__label" for="document-types">
+                <label class="accordion__label" for="document-types">
                   <p>Где взять иностранный номер телефона для регистрации?</p>
                   <div class="accordion__control">
                     <span class="accordion__vertical-line"></span>
@@ -494,7 +578,7 @@
                   id="reg"
                 />
         
-                <label class="heading-secondary accordion__label" for="reg">
+                <label class="accordion__label" for="reg">
                   <p>Можно ли регестрироваться на UpWork и Fiverr, если нет 18 лет?</p>
                   <div class="accordion__control">
                     <span class="accordion__vertical-line"></span>
@@ -521,7 +605,7 @@
                   id="cases"
                 />
         
-                <label class="heading-secondary accordion__label" for="cases">
+                <label class="accordion__label" for="cases">
                   <p>
                     Существуют ли случаи, когда аккаунт UpWork нельзя разблокировать?
                   </p>
@@ -550,7 +634,7 @@
                   id="compulsory"
                 />
         
-                <label class="heading-secondary accordion__label" for="compulsory">
+                <label class="accordion__label" for="compulsory">
                   <p>
                     Обязательно ли проходить верификацию и регистрировать аккаунт на
                     свои данные?
@@ -581,21 +665,12 @@
     <footer class="footer">
       <div class="footer__info">
         <div class="footer__left">
-          <a href="userver.html">UServer</a>
-          <a href="udocs.html">UDocs</a>
-          <a href="#">UpWork</a>
-          <a href="profile-check.html">Разбор профиля</a>
-          <a href="payoneer.html">Payoneer</a>
+          <a href="userver.html">Уникальный UServer</a>
+          <a href="udocs.html">Документы</a>
+          <a href="index.html#instructions">Инструкции</a>
           <a href="index.html#clients">Отзывы</a>
-          <a href="index.html#instr">Инструкции</a>
-        </div>
-        <div class="footer__center">
-          <a href="#">Контакты</a>
-          <a href="#">О Нас</a>
+          <a href="index.html#contacts">Контакты</a>
           <a href="blog.html">Блог</a>
-          <a href="#">Партнерская программа</a>
-          <a href="#">Скидки</a>
-          <a href="#">Оплата</a>
         </div>
         <div class="footer__right">
           <div class="footer__social">
@@ -610,7 +685,7 @@
                   <img src="./assets/img/dist/TelegramLogo.png" alt="tg-icon" />
                 </picture>
               </a>
-              <a href="https://t.me/upworkrelocate" target="_blank">
+              <a href="https://www.youtube.com/@URelocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
                     type="image/webp"
@@ -619,7 +694,7 @@
                   <img src="./assets/img/dist/YouTubeLogo.png" alt="tg-icon" />
                 </picture>
               </a>
-              <a href="https://t.me/upworkrelocate" target="_blank">
+              <a href="https://www.instagram.com/upwork.relocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
                     type="image/webp"
@@ -628,7 +703,7 @@
                   <img src="./assets/img/dist/InstagramLogo.png" alt="tg-icon" />
                 </picture>
               </a>
-              <a href="https://t.me/upworkrelocate" target="_blank">
+              <a href="https://vk.com/urelocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
                     type="image/webp"
@@ -637,7 +712,7 @@
                   <img src="./assets/img/dist/VKLogo.png" alt="tg-icon" />
                 </picture>
               </a>
-              <a href="https://t.me/upworkrelocate" target="_blank">
+              <a href="https://discord.gg/PertUXuZRb" target="_blank">
                 <picture class="footer__social-icon">
                   <source
                     type="image/webp"

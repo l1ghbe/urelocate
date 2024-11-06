@@ -3,6 +3,7 @@
   justify-content: space-between;
   border-radius: 3.2rem;
   background-color: $blue;
+  overflow: hidden;
 
   @include respond(tab-port) {
     flex-direction: column;
@@ -70,6 +71,9 @@
   }
 
   .big {
+    aspect-ratio: 1;
+    width: auto;
+    max-height: 41.6rem;
     & > picture > img {
       border-top-left-radius: 3.2rem;
       border-top-right-radius: 3.2rem;

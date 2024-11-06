@@ -4,6 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/img/dist/icons/burger.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/img/dist/icons/close.svg"
+      type="image/svg+xml"
+    />
+    
     <link rel="stylesheet" href="./css/style.min.css" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,19 +26,19 @@
       rel="stylesheet"
     />
     
-    <link rel="stylesheet" href="./../css/style.min.css" />
     <title>Blog Article</title>
   </head>
   <body>
     <div class="wrapper">
       <header>
         <div class="header-logo">
-          <a href="/"
-            ><img
+          <a href="/">
+            <img
               class="header-logo__image"
               src="./assets/img/dist/icons/logo.svg"
               alt="logo"
-          /></a>
+            />
+          </a>
         </div>
       
         <nav class="nav">
@@ -372,5 +385,27 @@
     </footer>
     
     <script src="./js/index.min.js"></script>
+    <script>
+      document
+        .querySelector(".blog-article__btn")
+        .addEventListener("click", () => {
+          if (navigator.share) {
+            navigator
+              .share({
+                title: "Как выйти на фриланс новичку",
+                text: "Что делать, если ты новичок и хочешь начать фрилансить? Как выйти на фриланс? Ответ в этой статье",
+                url: "https://urelocate.netlify.app/freelance-for-new-users.html",
+              })
+              .then(() => {
+                console.log("Content shared successfully");
+              })
+              .catch((error) => {
+                console.error("Error sharing content:", error);
+              });
+          } else {
+            alert("Sharing is not supported on this browser.");
+          }
+        });
+    </script>
   </body>
 </html>

@@ -4,6 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/img/dist/icons/burger.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/img/dist/icons/close.svg"
+      type="image/svg+xml"
+    />
+    
     <link rel="stylesheet" href="./css/style.min.css" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,50 +32,96 @@
   <body>
     <div class="wrapper">
       <header>
-        <div class="header-logo"><a href="/">URelocate</a></div>
+        <div class="header-logo">
+          <a href="/">
+            <img
+              class="header-logo__image"
+              src="./assets/img/dist/icons/logo.svg"
+              alt="logo"
+            />
+          </a>
+        </div>
+      
         <nav class="nav">
           <h5 class="nav__item">
             <a class="nav__link" href="/#services">Услуги</a>
           </h5>
           <h5 class="nav__item"><a class="nav__link" href="blog.html">Блог</a></h5>
-          <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5>
+          <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
           <h5 class="nav__item">
             <a class="nav__link" href="/#instructions">Инструкции</a>
           </h5>
         </nav>
-        <div class="burger-menu">
-          <img src="./assets/img/dist/icons/burger.svg" alt="menu-icon" />
-        </div>
+      
+        <noindex>
+          <div class="mobile-menu">
+            <input id="checkbox-burger" class="checkbox" type="checkbox" />
+            <label for="checkbox-burger">
+              <div class="checkbox-box"></div>
+            </label>
+      
+            <div class="background">
+              <nav class="nav__mobile">
+                <h5 class="nav__item">
+                  <img
+                    class="nav__image nav__image--services"
+                    src="./assets/img/dist/icons/goods.svg"
+                    alt="services"
+                  />
+                  <a class="nav__link nav__link--mobile" href="/#services">Услуги</a>
+                </h5>
+                <h5 class="nav__item">
+                  <img
+                    class="nav__image nav__image--blog"
+                    src="./assets/img/dist/icons/blog-pencil.svg"
+                    alt="blog-icon"
+                  />
+                  <a class="nav__link nav__link--mobile" href="blog.html">Блог</a>
+                </h5>
+                <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
+                <h5 class="nav__item">
+                  <img
+                    class="nav__image nav__image--info"
+                    src="./assets/img/dist/icons/info.svg"
+                    alt="info-icon"
+                  />
+                  <a class="nav__link nav__link--mobile" href="/#instructions"
+                    >Инструкции</a
+                  >
+                </h5>
+              </nav>
+            </div>
+          </div>
+        </noindex>
       </header>
       
       <main class="main">
-        <section class="instruments u-margin-bottom-section">
+        <!--include home/instruments.html -->
+        <section class="journey u-margin-bottom-section">
           <div class="text-content">
-            <p class="heading-primary u-text-white">
-              Лучшие инструменты для дизайна снова доступны
+            <p class="heading-primary instruments-heading u-text-white">
+              Начни свой путь на зарубежном фрилансе
             </p>
             <div class="tags">
-              <div>Envato</div>
-              <div>Canva</div>
-              <div>Shutterstock</div>
-              <div>Figma</div>
-              <div>Adobe</div>
-              <div>AutoDesk</div>
+              <span class="tag">upwork</span>
             </div>
           </div>
           <div class="image-content">
-            <video
-              playsinline
-              muted="muted"
-              autoplay="autoplay"
-              loop="loop"
-              class="main-image-icon"
-            >
-              <source
-                src="./assets/img/dist/videos/MainPageOne.webm"
-                type="video/webm"
-              />
-            </video>
+            <div class="small">
+              <picture>
+                <source srcset="./assets/img/dist/upwork-logo.webp" type="image/webp" />
+                <img src="./assets/img/dist/upwork-logo.png" alt="upwork-icon" />
+              </picture>
+            </div>
+            <div class="big">
+              <picture>
+                <source
+                  srcset="./assets/img/dist/upwork-landing.webp"
+                  type="image/webp"
+                />
+                <img src="./assets/img/dist/upwork-landing.png" alt="journey-icon" />
+              </picture>
+            </div>
           </div>
         </section>
         
@@ -109,7 +168,9 @@
                 </div>
         
                 <div class="services__btns u-margin-top-paragraph u-text-white">
-                  <button class="services__btn">Оставить заявку</button>
+                  <button class="services__btn">
+                    <a href="/#customer-form">Оставить заявку</a>
+                  </button>
                   <button class="services__btn services__more">
                     <a href="./userver.html"> Подробнее </a>
                   </button>
@@ -152,7 +213,9 @@
                 </div>
         
                 <div class="services__btns u-margin-top-paragraph u-text-white">
-                  <button class="services__btn">Оставить заявку</button>
+                  <button class="services__btn">
+                    <a href="/#customer-form">Оставить заявку</a>
+                  </button>
                   <button class="services__btn services__more">
                     <a href="./udocs.html"> Подробнее </a>
                   </button>
@@ -195,7 +258,9 @@
                 </div>
         
                 <div class="services__btns u-margin-top-paragraph u-text-white">
-                  <button class="services__btn">Оставить заявку</button>
+                  <button class="services__btn">
+                    <a href="/#customer-form">Оставить заявку</a>
+                  </button>
                   <button class="services__btn services__more">
                     <a href="./unblock.html"> Подробнее </a>
                   </button>
@@ -238,7 +303,9 @@
                 </div>
         
                 <div class="services__btns u-margin-top-paragraph u-text-white">
-                  <button class="services__btn">Оставить заявку</button>
+                  <button class="services__btn">
+                    <a href="/#customer-form">Оставить заявку</a>
+                  </button>
                   <button class="services__btn services__more">
                     <a href="./payoneer.html"> Подробнее </a>
                   </button>
@@ -282,7 +349,9 @@
                 </div>
         
                 <div class="services__btns u-margin-top-paragraph u-text-white">
-                  <button class="services__btn">Оставить заявку</button>
+                  <button class="services__btn">
+                    <a href="/#customer-form">Оставить заявку</a>
+                  </button>
                   <button class="services__btn services__more">
                     <a href="./review.html"> Подробнее </a>
                   </button>
@@ -326,7 +395,9 @@
                 </div>
         
                 <div class="services__btns u-margin-top-paragraph u-text-white">
-                  <button class="services__btn">Оставить заявку</button>
+                  <button class="services__btn">
+                    <a href="/#customer-form">Оставить заявку</a>
+                  </button>
                   <button class="services__btn services__more">
                     <a href="./services.html"> Подробнее </a>
                   </button>
@@ -336,30 +407,14 @@
           </div>
         </section>
         
-        <section class="feedback u-margin-bottom-section">
+        <!-- include home/feedback.html -->
+        <section id="customer-form" class="purchase u-margin-bottom-section">
           <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
-            Нам доверяют свои аккаунты
-          </h1>
-          <div class="swiper u-margin-bottom-heading">
-            <div class="swiper__container"></div>
-          </div>
-          <div class="swiper__controls">
-            <button class="swiper__control">
-              <img src="./assets/img/dist/icons/left-chevrone.svg" alt="left" />
-            </button>
-            <button class="swiper__control">
-              <img src="./assets/img/dist/icons/right-chevrone.svg" alt="right" />
-            </button>
-          </div>
-        </section>
-        
-        <section class="purchase u-margin-bottom-section">
-          <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
-            Хотите приобрести наши услуги?
+            Хотите приобрести<br />наши услуги?
           </h1>
           <div class="purchase__form">
             <div class="form__text">
-              <h2 class="heading-primary">Ответим на все ваши вопросы</h2>
+              <h2 class="form__heading">Ответим на все ваши вопросы</h2>
               <p class="form__paragraph">
                 Получите консультацию по интересующим вас вопросам связанным с
                 зарубежным фрилансом и обходом блокировок фриланс-бирж
@@ -391,6 +446,13 @@
                   required
                   placeholder="E-mail"
                 />
+                <textarea
+                  id="form-comment"
+                  type="text"
+                  name="comment"
+                  class="form__field"
+                  placeholder="Комментарий"
+                ></textarea>
               </div>
               <div class="form__buttons">
                 <button type="submit" class="form__btn">Отправить</button>
@@ -409,14 +471,17 @@
           </h1>
           <div class="instructions__chips u-margin-bottom-heading">
             <div class="chip__labels">
-              <label for="tag-1" class="chip__label">Регистрация на UpWork</label>
+              <label for="tag-1" class="chip__label chip__label--active"
+                >Регистрация на UpWork</label
+              >
               <label for="tag-2" class="chip__label">
                 Разблокировка аккаунта UpWork
               </label>
               <label for="tag-3" class="chip__label">Вывод денег с UpWork</label>
               <label for="tag-4" class="chip__label">Регистрация Payoneer</label>
-              <label for="tag-5" class="chip__label">Регистрация на Bybit</label>
-              <label for="tag-6" class="chip__label">Оформление профиля UpWork</label>
+              <label for="tag-5" class="chip__label">Оформление профиля UpWork</label>
+              <label for="tag-6" class="chip__label">Покупка коннектов на UpWork</label>
+              <label for="tag-7" class="chip__label">Налоговая информация</label>
             </div>
           </div>
           <div class="instructions__view">
@@ -458,30 +523,39 @@
                 name="radio"
                 id="tag-6"
               />
+              <input
+                class="view__rb instructions-view__rb"
+                type="radio"
+                name="radio"
+                id="tag-7"
+              />
             </div>
             <div class="view__content">
               <div class="view__text">
-                <h2 class="instructions-view-heading heading-secondary">
+                <h2 class="instructions-view-heading view-heading heading-secondary">
                   Поможет вам в регистрации нового акаунта на UpWork
                 </h2>
                 <p class="instructions-view-paragraph big-paragraph">
                   Скачивайте нашу полезную инструкцию в формате PDF и начинайте свой
                   путь на UpWork
                 </p>
-                <a href="#" class="view__btn view-inctruction-link"
+                <a
+                  href="./assets/pdf/registration-verification.pdf"
+                  class="view__btn view-inctruction-link"
+                  download
                   >Получить инструкцию</a
                 >
               </div>
               <div class="view__video-block">
                 <video
+                  playsinline
                   muted="muted"
                   autoplay="autoplay"
                   loop="loop"
-                  class="instructions-view__video view__video"
+                  class="instructions-view__video view__video instructions-view-videoSrc"
                 >
                   <source
-                    class="instructions-view-videoSrc"
-                    src="./assets/img/dist/videos/PayoneerPrvw.webm"
+                    src="./assets/img/dist/videos/registration.webm"
                     type="video/webm"
                   />
                 </video>
@@ -520,8 +594,9 @@
             </div>
             <div class="statistics__grid-item">
               <div class="u-text-center">
-                <h3 class="">150-250К</h3>
                 <p>среднестатистический заработок</p>
+                <h3 class="">150-250К</h3>
+                <p>рублей в месяц</p>
               </div>
             </div>
             <div class="statistics__grid-item">
@@ -542,76 +617,7 @@
           </div>
         </section>
         
-        <section class="courses u-margin-bottom-section">
-          <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
-            Полезные курсы от URelocate
-          </h1>
-          <div class="courses__content">
-            <div class="chip__labels">
-              <label for="courses-tag-1" class="chip__label courses__label"
-                >Регистрация на UpWork</label
-              >
-              <label for="courses-tag-2" class="chip__label courses__label">
-                Разблокировка аккаунта UpWork
-              </label>
-              <label for="courses-tag-3" class="chip__label courses__label"
-                >Вывод денег с UpWork</label
-              >
-            </div>
-        
-            <div class="view__content courses__view__content">
-              <div class="courses-view__rbs">
-                <input
-                  class="view__rb courses-view__rb"
-                  type="radio"
-                  name="radio"
-                  id="courses-tag-1"
-                  checked
-                />
-                <input
-                  class="view__rb courses-view__rb"
-                  type="radio"
-                  name="radio"
-                  id="courses-tag-2"
-                />
-                <input
-                  class="view__rb courses-view__rb"
-                  type="radio"
-                  name="radio"
-                  id="courses-tag-3"
-                />
-              </div>
-        
-              <div class="view__text courses__text">
-                <h2 class="course-view-heading heading-secondary">
-                  Подробнейший курс по старту на UpWork
-                </h2>
-                <p class="course-view-paragraph big-paragraph">
-                  Полный гайд по быстрому старту на UpWork. Внутри основы работы,
-                  полезные советы, подводные камни, памятки и таблицы, а так же очень
-                  много текстовых и видео гайдов.
-                </p>
-                <a href="#" class="view__btn view-course-link">Приобрести курс</a>
-              </div>
-              <div class="view__video-block courses__video-block">
-                <video
-                  playsinline
-                  muted="muted"
-                  autoplay="autoplay"
-                  loop="loop"
-                  class="course-view__video view__video"
-                >
-                  <source
-                    class="view-videoSrc course-view-videoSrc"
-                    src="./assets/img/dist/videos/PayoneerPrvw.webm"
-                    type="video/webm"
-                  />
-                </video>
-              </div>
-            </div>
-          </div>
-        </section>
-        
+        <!-- include home/courses.html -->
         <section class="blog-section u-margin-bottom-section">
           <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
             Наш полезный блог
@@ -619,12 +625,15 @@
           <div class="blog-section__content">
             <div class="blog-section__huge-block">
               <div class="blog-section__huge-block__content">
-                <span class="blog-section__chip">Психология</span>
+                <div>
+                  <span class="blog__chip">Фриланс</span>
+                  <span class="blog__chip">Гайды</span>
+                </div>
                 <div class="blog-section__bottom-block">
-                  <h2 class="huge-paragraph">
-                    Как фрилансеру сохранить свою психику и не выгореть
-                  </h2>
-                  <a href="##" class="blog-section__btn-link">Читать</a>
+                  <h2 class="huge-paragraph">Как выйти на фриланс новичку</h2>
+                  <a href="freelance-for-new-users.html" class="blog-section__btn-link"
+                    >Читать</a
+                  >
                 </div>
               </div>
             </div>
@@ -656,8 +665,11 @@
         
         <section class="community-section u-margin-bottom-section">
           <div class="community-section__content">
-            <h1 class="heading-secondary u-text-center u-text-white">
-              Ламповое и готовое помочь коммьюнти
+            <h1 class="community-section__heading u-text-center u-text-white">
+              Ламповое и готовое помочь
+              <a class="community-section__link" href="https://discord.gg/PertUXuZRb"
+                >комьюнти</a
+              >
             </h1>
           </div>
         
@@ -676,7 +688,7 @@
         
         <section class="ref-program-section u-margin-bottom-section">
           <div class="ref-program-section__content u-text-white">
-            <h1 class="heading-secondary">Реферальная программа</h1>
+            <h1 class="regular-heading">Реферальная программа</h1>
             <p class="big-paragraph">
               Мы всегда открыты к новому сотрудничеству и готовы обсудить с вами
               индивидуальные условия реферальной системы. Приводите к нам ваших друзей и
@@ -702,7 +714,7 @@
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/eIbfSp76mdM?si=cfoyA_jLCitg7erX"
+                  src="https://www.youtube.com/embed/CkB9955Va6s?si=OcmawMTMA5DYxx31"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -726,7 +738,7 @@
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/1JMJbxLw0-c?si=qHr4hj3XGgz2ekEu"
+                  src="https://www.youtube.com/embed/m-J7QhTXXAU?si=wjXdVkI0cMa5ytgS"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -738,7 +750,7 @@
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/TATdx8NU7YI?si=O7AzVPVxGRhFLszc"
+                  src="https://www.youtube.com/embed/Hknq3wZCAGM?si=pDDkWW4H6NZWs61o"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -762,19 +774,33 @@
           </div>
         </section>
         
-        <section class="social-media-section u-margin-bottom-section">
+        <section id="contacts" class="u-margin-bottom-section">
+          <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
+            Связь с нами и наши социальные сети
+          </h1>
           <div class="social-media-section__content">
-            <div class="social-media-section__text">
-              <h1 class="social-media-section-heading heading-primary u-text-white">
-                Связь с нами и наши социальные сети
-              </h1>
-            </div>
+            <h1 class="social-media-section-heading heading-primary u-text-white">
+              Присоединяйтесь к нам в соц сетях
+            </h1>
+        
             <div class="social-media-section__icons">
-              <img src="./assets/img/dist//TelegramLogo.webp" />
-              <img src="./assets/img/dist//YouTubeLogo.webp" />
-              <img src="./assets/img/dist//InstagramLogo.webp" />
-              <img src="./assets/img/dist//VKLogo.webp" />
-              <img src="./assets/img/dist//DiscordLogo.webp" />
+              <a href="https://t.me/upworkrelocate"
+                ><img src="./assets/img/dist/TelegramLogo.webp"
+              /></a>
+              <a href="https://www.youtube.com/@URelocate"
+                ><img src="./assets/img/dist/YouTubeLogo.webp"
+              /></a>
+              <a
+                href="
+              https://www.instagram.com/upwork.relocate/"
+                ><img src="./assets/img/dist/InstagramLogo.webp"
+              /></a>
+              <a href="https://vk.com/urelocate"
+                ><img src="./assets/img/dist/VKLogo.webp"
+              /></a>
+              <a href="https://discord.gg/PertUXuZRb"
+                ><img src="./assets/img/dist/DiscordLogo.webp"
+              /></a>
             </div>
           </div>
         </section>
@@ -814,7 +840,7 @@
                   id="guarantees"
                 />
         
-                <label class="heading-secondary accordion__label" for="guarantees">
+                <label class="accordion__label" for="guarantees">
                   <p>Какие у вас гарантии?</p>
                   <div class="accordion__control">
                     <span class="accordion__vertical-line"></span>
@@ -840,7 +866,7 @@
                   id="linux"
                 />
         
-                <label class="heading-secondary accordion__label" for="linux">
+                <label class="accordion__label" for="linux">
                   <p>У меня Linux, будет работать?</p>
                   <div class="accordion__control">
                     <span class="accordion__vertical-line"></span>
@@ -864,10 +890,7 @@
                   id="connection-timing"
                 />
         
-                <label
-                  class="heading-secondary accordion__label"
-                  for="connection-timing"
-                >
+                <label class="accordion__label" for="connection-timing">
                   <p>В какие сроки будет выдано подключение после покупки?</p>
                   <div class="accordion__control">
                     <span class="accordion__vertical-line"></span>
@@ -890,7 +913,7 @@
                   id="server-error"
                 />
         
-                <label class="heading-secondary accordion__label" for="server-error">
+                <label class="accordion__label" for="server-error">
                   <p>Что будет, если на сервере произойдет сбой?</p>
                   <div class="accordion__control">
                     <span class="accordion__vertical-line"></span>
@@ -919,21 +942,12 @@
     <footer class="footer">
       <div class="footer__info">
         <div class="footer__left">
-          <a href="userver.html">UServer</a>
-          <a href="udocs.html">UDocs</a>
-          <a href="#">UpWork</a>
-          <a href="profile-check.html">Разбор профиля</a>
-          <a href="payoneer.html">Payoneer</a>
+          <a href="userver.html">Уникальный UServer</a>
+          <a href="udocs.html">Документы</a>
+          <a href="index.html#instructions">Инструкции</a>
           <a href="index.html#clients">Отзывы</a>
-          <a href="index.html#instr">Инструкции</a>
-        </div>
-        <div class="footer__center">
-          <a href="#">Контакты</a>
-          <a href="#">О Нас</a>
+          <a href="index.html#contacts">Контакты</a>
           <a href="blog.html">Блог</a>
-          <a href="#">Партнерская программа</a>
-          <a href="#">Скидки</a>
-          <a href="#">Оплата</a>
         </div>
         <div class="footer__right">
           <div class="footer__social">
@@ -948,7 +962,7 @@
                   <img src="./assets/img/dist/TelegramLogo.png" alt="tg-icon" />
                 </picture>
               </a>
-              <a href="https://t.me/upworkrelocate" target="_blank">
+              <a href="https://www.youtube.com/@URelocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
                     type="image/webp"
@@ -957,7 +971,7 @@
                   <img src="./assets/img/dist/YouTubeLogo.png" alt="tg-icon" />
                 </picture>
               </a>
-              <a href="https://t.me/upworkrelocate" target="_blank">
+              <a href="https://www.instagram.com/upwork.relocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
                     type="image/webp"
@@ -966,7 +980,7 @@
                   <img src="./assets/img/dist/InstagramLogo.png" alt="tg-icon" />
                 </picture>
               </a>
-              <a href="https://t.me/upworkrelocate" target="_blank">
+              <a href="https://vk.com/urelocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
                     type="image/webp"
@@ -975,7 +989,7 @@
                   <img src="./assets/img/dist/VKLogo.png" alt="tg-icon" />
                 </picture>
               </a>
-              <a href="https://t.me/upworkrelocate" target="_blank">
+              <a href="https://discord.gg/PertUXuZRb" target="_blank">
                 <picture class="footer__social-icon">
                   <source
                     type="image/webp"

@@ -4,6 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/img/dist/icons/burger.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/img/dist/icons/close.svg"
+      type="image/svg+xml"
+    />
+    
     <link rel="stylesheet" href="./css/style.min.css" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,30 +32,80 @@
   <body>
     <div class="wrapper">
       <header>
-        <div class="header-logo"><a href="/">URelocate</a></div>
+        <div class="header-logo">
+          <a href="/">
+            <img
+              class="header-logo__image"
+              src="./assets/img/dist/icons/logo.svg"
+              alt="logo"
+            />
+          </a>
+        </div>
+      
         <nav class="nav">
           <h5 class="nav__item">
             <a class="nav__link" href="/#services">Услуги</a>
           </h5>
           <h5 class="nav__item"><a class="nav__link" href="blog.html">Блог</a></h5>
-          <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5>
+          <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
           <h5 class="nav__item">
             <a class="nav__link" href="/#instructions">Инструкции</a>
           </h5>
         </nav>
-        <div class="burger-menu">
-          <img src="./assets/img/dist/icons/burger.svg" alt="menu-icon" />
-        </div>
+      
+        <noindex>
+          <div class="mobile-menu">
+            <input id="checkbox-burger" class="checkbox" type="checkbox" />
+            <label for="checkbox-burger">
+              <div class="checkbox-box"></div>
+            </label>
+      
+            <div class="background">
+              <nav class="nav__mobile">
+                <h5 class="nav__item">
+                  <img
+                    class="nav__image nav__image--services"
+                    src="./assets/img/dist/icons/goods.svg"
+                    alt="services"
+                  />
+                  <a class="nav__link nav__link--mobile" href="/#services">Услуги</a>
+                </h5>
+                <h5 class="nav__item">
+                  <img
+                    class="nav__image nav__image--blog"
+                    src="./assets/img/dist/icons/blog-pencil.svg"
+                    alt="blog-icon"
+                  />
+                  <a class="nav__link nav__link--mobile" href="blog.html">Блог</a>
+                </h5>
+                <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
+                <h5 class="nav__item">
+                  <img
+                    class="nav__image nav__image--info"
+                    src="./assets/img/dist/icons/info.svg"
+                    alt="info-icon"
+                  />
+                  <a class="nav__link nav__link--mobile" href="/#instructions"
+                    >Инструкции</a
+                  >
+                </h5>
+              </nav>
+            </div>
+          </div>
+        </noindex>
       </header>
       
       <main class="main">
-        <section class="service__hero u-margin-bottom-section">
+        <section
+          class="service__hero service__hero--blue-line u-margin-bottom-section"
+        >
           <h1 class="service__heading">
             <span>Доступ к прочим</span> сервисам
           </h1>
-          <div class="service__card service__card--light">
+          <div class="service__card">
             <div class="service__card-preview">
               <video
+                playsinline
                 class="service__card-video"
                 muted="muted"
                 autoplay="autoplay"
@@ -53,15 +116,13 @@
                   type="video/webm"
                 />
               </video>
-              <div
-                class="service__card-content-block service__card-content-block--light"
-              >
+              <div class="service__card-content-block">
                 <div class="service__card-price">
                   <span class="service__card-price-past">от $79</span>
                   <span class="service__card-price-present">$49</span>
                   <span class="service__card-sale">-51%</span>
                 </div>
-                <a class="service__card-btn service__card-btn--light" href="##"
+                <a class="service__card-btn" href="services.html/#customer-form"
                   >Оставить заявку</a
                 >
               </div>
@@ -74,7 +135,7 @@
           </h1>
           <div class="blue-secton__content">
             <div class="blue-secton__text">
-              <h2 class="heading-secondary u-margin-bottom-common">
+              <h2 class="regular-heading u-margin-bottom-common">
                 Как это работает?
               </h2>
               <p>
@@ -98,7 +159,7 @@
         <section class="transparent-section u-margin-bottom-section">
           <div class="transparent-section__item">
             <div class="content">
-              <h2 class="heading-secondary u-margin-bottom-common">
+              <h2 class="regular-heading u-margin-bottom-common">
                 Для дизайнеров
               </h2>
               <p class="big-paragraph">
@@ -109,7 +170,7 @@
                 для вашей работы
               </p>
             </div>
-            <div class="image-block">
+            <div class="image-block custom-services">
               <img
                 class="image"
                 src="./assets/img/dist/designers.webp"
@@ -121,7 +182,7 @@
             class="transparent-section__item transparent-section__item--reversed"
           >
             <div class="content">
-              <h2 class="heading-secondary u-margin-bottom-common">
+              <h2 class="regular-heading u-margin-bottom-common">
                 Для пользователей ИИ
               </h2>
               <p class="big-paragraph">
@@ -131,7 +192,7 @@
                 модели. С нашим севером это снова станет доступным
               </p>
             </div>
-            <div class="image-block">
+            <div class="image-block custom-services">
               <img
                 class="image"
                 src="./assets/img/dist/ai.webp"
@@ -141,7 +202,7 @@
           </div>
           <div class="transparent-section__item">
             <div class="content">
-              <h2 class="heading-secondary u-margin-bottom-common">
+              <h2 class="regular-heading u-margin-bottom-common">
                 Для таргетологов
               </h2>
               <p class="big-paragraph">
@@ -152,7 +213,7 @@
                 интересные заказы и расширить географию заказчиков
               </p>
             </div>
-            <div class="image-block">
+            <div class="image-block custom-services">
               <img
                 class="image"
                 src="./assets/img/dist/target.webp"
@@ -164,7 +225,7 @@
             class="transparent-section__item transparent-section__item--reversed"
           >
             <div class="content">
-              <h2 class="heading-secondary u-margin-bottom-common">
+              <h2 class="regular-heading u-margin-bottom-common">
                 Для товарного бизнеса
               </h2>
               <p class="big-paragraph">
@@ -173,7 +234,7 @@
                 перспективы развития с Amazon, Shopify или Etsy
               </p>
             </div>
-            <div class="image-block">
+            <div class="image-block custom-services">
               <img
                 class="image"
                 src="./assets/img/dist/box.webp"
@@ -185,9 +246,7 @@
         <section class="black-section u-margin-bottom-section">
           <div class="black-section__content">
             <div class="black-section__item">
-              <h2
-                class="heading-secondary u-text-center u-margin-bottom-common"
-              >
+              <h2 class="regular-heading u-text-center u-margin-bottom-common">
                 И мнооооооооого других сервисов
               </h2>
               <p class="big-paragraph u-text-center">
@@ -284,7 +343,9 @@
                 <span class="services__sale">-17%</span>
               </div>
 
-              <a href="##" class="btn">Оставить заявку</a>
+              <a href="services.html/#customer-form" class="btn"
+                >Оставить заявку</a
+              >
             </div>
 
             <div class="tariffs-section__item">
@@ -296,17 +357,19 @@
                 <span class="services__sale">-25%</span>
               </div>
 
-              <a href="##" class="btn">Оставить заявку</a>
+              <a href="services.html/#customer-form" class="btn"
+                >Оставить заявку</a
+              >
             </div>
           </div>
         </section>
-        <section class="purchase u-margin-bottom-section">
+        <section id="customer-form" class="purchase u-margin-bottom-section">
           <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
-            Хотите приобрести наши услуги?
+            Хотите приобрести<br />наши услуги?
           </h1>
           <div class="purchase__form">
             <div class="form__text">
-              <h2 class="heading-primary">Ответим на все ваши вопросы</h2>
+              <h2 class="form__heading">Ответим на все ваши вопросы</h2>
               <p class="form__paragraph">
                 Получите консультацию по интересующим вас вопросам связанным с
                 зарубежным фрилансом и обходом блокировок фриланс-бирж
@@ -338,6 +401,13 @@
                   required
                   placeholder="E-mail"
                 />
+                <textarea
+                  id="form-comment"
+                  type="text"
+                  name="comment"
+                  class="form__field"
+                  placeholder="Комментарий"
+                ></textarea>
               </div>
               <div class="form__buttons">
                 <button type="submit" class="form__btn">Отправить</button>
@@ -385,7 +455,7 @@
                   id="guarantees"
                 />
         
-                <label class="heading-secondary accordion__label" for="guarantees">
+                <label class="accordion__label" for="guarantees">
                   <p>К каким сервисам можно получить доступ?</p>
                   <div class="accordion__control">
                     <span class="accordion__vertical-line"></span>
@@ -412,7 +482,7 @@
                   id="document"
                 />
         
-                <label class="heading-secondary accordion__label" for="document">
+                <label class="accordion__label" for="document">
                   <p>
                     Консультируете ли вы по всем сервисам, к которым открывается доступ?
                   </p>
@@ -440,7 +510,7 @@
                   id="timing"
                 />
         
-                <label class="heading-secondary accordion__label" for="timing">
+                <label class="accordion__label" for="timing">
                   <p>Где взять иностранный номер телефона для регистрации?</p>
                   <div class="accordion__control">
                     <span class="accordion__vertical-line"></span>
@@ -466,21 +536,12 @@
     <footer class="footer">
       <div class="footer__info">
         <div class="footer__left">
-          <a href="userver.html">UServer</a>
-          <a href="udocs.html">UDocs</a>
-          <a href="#">UpWork</a>
-          <a href="profile-check.html">Разбор профиля</a>
-          <a href="payoneer.html">Payoneer</a>
+          <a href="userver.html">Уникальный UServer</a>
+          <a href="udocs.html">Документы</a>
+          <a href="index.html#instructions">Инструкции</a>
           <a href="index.html#clients">Отзывы</a>
-          <a href="index.html#instr">Инструкции</a>
-        </div>
-        <div class="footer__center">
-          <a href="#">Контакты</a>
-          <a href="#">О Нас</a>
+          <a href="index.html#contacts">Контакты</a>
           <a href="blog.html">Блог</a>
-          <a href="#">Партнерская программа</a>
-          <a href="#">Скидки</a>
-          <a href="#">Оплата</a>
         </div>
         <div class="footer__right">
           <div class="footer__social">
@@ -495,7 +556,7 @@
                   <img src="./assets/img/dist/TelegramLogo.png" alt="tg-icon" />
                 </picture>
               </a>
-              <a href="https://t.me/upworkrelocate" target="_blank">
+              <a href="https://www.youtube.com/@URelocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
                     type="image/webp"
@@ -504,7 +565,7 @@
                   <img src="./assets/img/dist/YouTubeLogo.png" alt="tg-icon" />
                 </picture>
               </a>
-              <a href="https://t.me/upworkrelocate" target="_blank">
+              <a href="https://www.instagram.com/upwork.relocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
                     type="image/webp"
@@ -513,7 +574,7 @@
                   <img src="./assets/img/dist/InstagramLogo.png" alt="tg-icon" />
                 </picture>
               </a>
-              <a href="https://t.me/upworkrelocate" target="_blank">
+              <a href="https://vk.com/urelocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
                     type="image/webp"
@@ -522,7 +583,7 @@
                   <img src="./assets/img/dist/VKLogo.png" alt="tg-icon" />
                 </picture>
               </a>
-              <a href="https://t.me/upworkrelocate" target="_blank">
+              <a href="https://discord.gg/PertUXuZRb" target="_blank">
                 <picture class="footer__social-icon">
                   <source
                     type="image/webp"
