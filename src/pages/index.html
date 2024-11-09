@@ -3,6 +3,10 @@
   <head>
     <!--=include head-content.html -->
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>URelocate</title>
   </head>
   <body>
@@ -12,7 +16,7 @@
         <!--include home/instruments.html -->
         <!--=include home//services-slider/start-journey.html -->
         <!--=include home/services.html -->
-        <!-- include home/feedback.html -->
+        <!--=include home/feedback.html -->
         <!--=include common/form.html -->
         <!--=include home/instructions.html -->
         <!--=include home/statistics.html -->
@@ -26,6 +30,21 @@
       </main>
     </div>
     <!--= include footer.html -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/index.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".slick").slick({
+          centerMode: true,
+          waitForAnimate: false,
+          variableWidth: true,
+        });
+      });
+    </script>
   </body>
 </html>
