@@ -102,8 +102,8 @@
         to bottom,
         rgba(0, 0, 0, 0.4) 0%,
         rgba(0, 0, 0, 0) 30%,
-        rgba(0, 0, 0, 0) 70%,
-        rgba(0, 0, 0, 0.4) 100%
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0.5) 100%
       );
     }
   }
@@ -126,8 +126,8 @@
       z-index: 2;
       display: flex;
       flex-direction: column;
-      height: 92%;
-      padding: 0rem 0.5rem;
+      height: 96%;
+      padding: 1rem 0.5rem;
       text-align: center;
       color: $white;
       font-size: 1.6rem;
