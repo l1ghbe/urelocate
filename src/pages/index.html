@@ -30,55 +30,20 @@
       </main>
     </div>
     <!--= include footer.html -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/index.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-      const swiper = new Swiper(".swiper", {
-        // Optional parameters
-        // direction: "vertical",
-        // autoHeight: true,
-        loop: true,
-        slidesPerView: 5,
-        spaceBetween: 18,
-
-        centeredSlides: true,
-
-        // If we need pagination
-        // pagination: {
-        //   el: ".swiper-pagination",
-        // },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper__control-next",
-          prevEl: ".swiper__control-prev",
-          clickable: true,
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-          el: ".swiper-scrollbar",
-        },
-      });
-
-      const swiperSlides = document.querySelectorAll(".swiper-slide");
-
-      const swiperControls = document.querySelector(".swiper__controls");
-
-      // console.log(swiperControls);
-
-      swiperControls.addEventListener("click", (e) => {
-        console.log(e.currentTarget);
-        if (e.target.classList.contains("swiper__control-icon")) {
-          const i = swiper.realIndex;
-          console.log("activeElement: ", swiperSlides[i + 3]);
-          // swiperSlides.forEach((slide) => {
-          //   slide.classList.remove("swiper-slide--active");
-          // });
-          // swiperSlides[i].classList.add("swiper-slide--active");
-          console.log("ACTIVE_INDEX: ", i);
-        }
+      $(document).ready(function () {
+        $(".slick").slick({
+          centerMode: true,
+          waitForAnimate: false,
+          variableWidth: true,
+        });
       });
     </script>
   </body>
