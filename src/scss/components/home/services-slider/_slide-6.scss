@@ -1,0 +1,46 @@
+.slide-6 {
+  background-color: $blue;
+
+  .image-content {
+    position: relative;
+    padding: 5rem 0;
+    padding-right: 4.4rem;
+    // padding-bottom: 20rem;
+
+    @include respond(tab-port) {
+      width: 80%;
+      margin: 0 auto;
+    }
+    @include respond(phone) {
+      width: 100%;
+    }
+
+    .first {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 8rem;
+      width: 100%;
+      height: auto;
+
+      @include respond(tab-port) {
+        padding-bottom: 0;
+      }
+    }
+
+    .second {
+      position: absolute;
+      top: 26%;
+      left: -25%;
+
+      @include respond(tab-land) {
+        display: none;
+      }
+    }
+
+    @include respond(tab-port) {
+      justify-content: center;
+      padding: 3.2rem;
+    }
+  }
+}

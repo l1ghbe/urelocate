@@ -1,12 +1,13 @@
-.journey {
+.service-slide {
   display: flex;
   justify-content: space-between;
+  max-height: 50rem;
   border-radius: 3.2rem;
-  background-color: $blue;
   overflow: hidden;
 
   @include respond(tab-port) {
     flex-direction: column;
+    max-height: 70rem;
   }
 
   .text-content {
@@ -19,7 +20,7 @@
 
     @include respond(tab-port) {
       max-width: 100%;
-      padding: 1.8rem;
+      padding: 3.2rem;
     }
   }
 
@@ -44,39 +45,6 @@
         padding: 0.8rem 1.8rem;
         font-size: 1.6rem;
       }
-    }
-  }
-
-  .image-content {
-    display: flex;
-    gap: 2rem;
-    align-items: start;
-    padding-top: 8.4rem;
-    padding-right: 5rem;
-
-    @include respond(tab-port) {
-      justify-content: center;
-      padding: 1.8rem;
-      padding-bottom: 0;
-    }
-  }
-
-  .small {
-    width: 16.6rem;
-    height: 16.6rem;
-
-    & > img {
-      width: 100%;
-    }
-  }
-
-  .big {
-    aspect-ratio: 1;
-    width: auto;
-    max-height: 41.6rem;
-    & > picture > img {
-      border-top-left-radius: 3.2rem;
-      border-top-right-radius: 3.2rem;
     }
   }
 }
