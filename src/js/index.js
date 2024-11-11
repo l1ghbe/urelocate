@@ -52,8 +52,6 @@ function commonScripts() {
 }
 
 function initializeHomePageScripts() {
-  // FEEDBACK SECTION
-
   // HOME INSTRUCTION SECTION
 
   const instructionsradioButtonsBlock = document.querySelector(
