@@ -13,14 +13,16 @@
     <div class="wrapper">
       <!--=include header.html -->
       <main class="main">
-        <div class="slick slick-hero">
-          <!--=include home//services-slider/slide-1.html -->
-          <!--=include home//services-slider/slide-2.html -->
-          <!--=include home//services-slider/slide-3.html -->
-          <!--=include home//services-slider/slide-4.html -->
-          <!--=include home//services-slider/slide-5.html -->
-          <!--=include home//services-slider/slide-6.html -->
-          <!--=include home//services-slider/slide-7.html -->
+        <div class="slick-hero-wrapper">
+          <div class="slick slick-hero">
+            <!--=include home//services-slider/slide-1.html -->
+            <!--=include home//services-slider/slide-2.html -->
+            <!--=include home//services-slider/slide-3.html -->
+            <!--=include home//services-slider/slide-4.html -->
+            <!--=include home//services-slider/slide-5.html -->
+            <!--=include home//services-slider/slide-6.html -->
+            <!--=include home//services-slider/slide-7.html -->
+          </div>
         </div>
 
         <!--=include home/services.html -->
@@ -47,7 +49,12 @@
 
     <script>
       $(document).ready(function () {
-        $(".slick-hero").slick({});
+        $(".slick-hero").slick({
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          speed: 1200,
+        });
       });
       $(document).ready(function () {
         $(".slick-feedback").slick({
