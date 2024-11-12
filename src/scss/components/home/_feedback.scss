@@ -8,7 +8,11 @@
 }
 
 .slick {
-  height: 37rem;
+  height: 100%;
+
+  &-wrapper {
+    height: 37rem;
+  }
 
   &-arrow {
     position: absolute;

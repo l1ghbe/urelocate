@@ -13,8 +13,16 @@
     <div class="wrapper">
       <!--=include header.html -->
       <main class="main">
-        <!--include home/instruments.html -->
-        <!--=include home//services-slider/slide-6.html -->
+        <div class="slick slick-hero">
+          <!--=include home//services-slider/slide-1.html -->
+          <!--=include home//services-slider/slide-2.html -->
+          <!--=include home//services-slider/slide-3.html -->
+          <!--=include home//services-slider/slide-4.html -->
+          <!--=include home//services-slider/slide-5.html -->
+          <!--=include home//services-slider/slide-6.html -->
+          <!--=include home//services-slider/slide-7.html -->
+        </div>
+
         <!--=include home/services.html -->
         <!--=include home/feedback.html -->
         <!--=include common/form.html -->
@@ -39,7 +47,10 @@
 
     <script>
       $(document).ready(function () {
-        $(".slick").slick({
+        $(".slick-hero").slick({});
+      });
+      $(document).ready(function () {
+        $(".slick-feedback").slick({
           centerMode: true,
           waitForAnimate: false,
           variableWidth: true,
