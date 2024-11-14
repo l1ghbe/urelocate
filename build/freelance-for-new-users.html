@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     
-    <link
+    <!-- <link
       rel="preload"
       as="image"
       href="./assets/img/dist/icons/burger.svg"
@@ -15,7 +15,7 @@
       as="image"
       href="./assets/img/dist/icons/close.svg"
       type="image/svg+xml"
-    />
+    /> -->
     
     <link rel="stylesheet" href="./css/style.min.css" />
     
@@ -34,6 +34,7 @@
         <div class="header-logo">
           <a href="/">
             <img
+              fetchpriority="high"
               class="header-logo__image"
               src="./assets/img/dist/icons/logo.svg"
               alt="logo"
@@ -386,6 +387,7 @@
     
     <script src="./js/index.min.js"></script>
     <script>
+      const baseURL = window.location.origin;
       document
         .querySelector(".blog-article__btn")
         .addEventListener("click", () => {
@@ -394,7 +396,7 @@
               .share({
                 title: "Как выйти на фриланс новичку",
                 text: "Что делать, если ты новичок и хочешь начать фрилансить? Как выйти на фриланс? Ответ в этой статье",
-                url: "https://urelocate.netlify.app/freelance-for-new-users.html",
+                url: `${baseURL}/freelance-for-new-users.html`,
               })
               .then(() => {
                 console.log("Content shared successfully");

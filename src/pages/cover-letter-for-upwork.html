@@ -375,6 +375,8 @@
 
     <script src="./js/index.min.js"></script>
     <script>
+      const baseURL = window.location.origin;
+
       document
         .querySelector(".blog-article__btn")
         .addEventListener("click", () => {
@@ -383,7 +385,7 @@
               .share({
                 title: "Как составить резюме для UpWork? (Cover Letter)",
                 text: "После прочтения этой статьи вы научитесь грамотно составлять резюме на американском фриланс сайте upwork и возьмете ваш первый заказ, либо же увеличите количество взятых заказов.",
-                url: "https://urelocate.netlify.app/cover-letter-for-upwork.html",
+                url: `${baseURL}/cover-letter-for-upwork.html`,
               })
               .then(() => {
                 console.log("Content shared successfully");

@@ -387,6 +387,7 @@
     
     <script src="./js/index.min.js"></script>
     <script>
+      const baseURL = window.location.origin;
       document
         .querySelector(".blog-article__btn")
         .addEventListener("click", () => {
@@ -395,7 +396,7 @@
               .share({
                 title: "Как выйти на фриланс новичку",
                 text: "Что делать, если ты новичок и хочешь начать фрилансить? Как выйти на фриланс? Ответ в этой статье",
-                url: "https://urelocate.netlify.app/freelance-for-new-users.html",
+                url: `${baseURL}/freelance-for-new-users.html`,
               })
               .then(() => {
                 console.log("Content shared successfully");
