@@ -1,3 +1,9 @@
+@keyframes loading {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 .services {
   &__list {
     display: grid;
@@ -20,8 +26,29 @@
   }
 
   &__preview {
+    position: relative;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    border-radius: 18px;
+    background-color: #5a5a5a;
+    // background-color: #e2e2e2;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform: translateX(-100%);
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+      );
+      animation: loading 1.5s infinite;
+    }
   }
 
   &__content {
@@ -93,10 +120,10 @@
 }
 
 .prod-icon-cont {
+  position: relative;
+  z-index: 1;
   flex: 1 0 0;
   align-self: stretch;
-  border-radius: 18px;
-  box-shadow: inset 5px 5px 5px 5px grey;
 }
 
 .prod-price {

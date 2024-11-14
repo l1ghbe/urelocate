@@ -82,23 +82,25 @@ function initializeHomePageScripts() {
       return response.json();
     })
     .then((instructionsSourses) => {
-      instructionsradioButtonsBlock.addEventListener("click", (event) => {
-        if (event.target && event.target.type === "radio") {
-          const instructionId = event.target.id;
-          try {
-            const { heading, paragraph, instructionLink, videoSrc } =
-              instructionsSourses[instructionId];
+      if (instructionsradioButtonsBlock) {
+        instructionsradioButtonsBlock.addEventListener("click", (event) => {
+          if (event.target && event.target.type === "radio") {
+            const instructionId = event.target.id;
+            try {
+              const { heading, paragraph, instructionLink, videoSrc } =
+                instructionsSourses[instructionId];
 
-            instructionsHeadingEl.textContent = heading;
-            instructionsParagraphEl.textContent = paragraph;
-            instructionLinkEl.href = instructionLink;
-            instructionsVideoSrcEl.src = videoSrc;
-            instructionsVideoEl.load();
-          } catch (error) {
-            console.error(error);
+              instructionsHeadingEl.textContent = heading;
+              instructionsParagraphEl.textContent = paragraph;
+              instructionLinkEl.href = instructionLink;
+              instructionsVideoSrcEl.src = videoSrc;
+              instructionsVideoEl.load();
+            } catch (error) {
+              console.error(error);
+            }
           }
-        }
-      });
+        });
+      }
     });
 
   // HOME COURSES SECTION
