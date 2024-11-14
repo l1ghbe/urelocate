@@ -101,6 +101,7 @@
     font-weight: 600;
     background-color: $white;
     transition: 0.3s;
+    cursor: pointer;
 
     &:hover {
       background-color: rgba($black, 0.8);
