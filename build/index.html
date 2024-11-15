@@ -42,16 +42,7 @@
       rel="preload"
       href="./assets/img/dist/upwork-landing.avif"
       as="image"
-    />
-    <link
-      rel="preload"
-      href="./assets/img/dist/upwork-landing.avif"
-      as="image"
-    />
-    <link
-      rel="preload"
-      href="./assets/img/dist/upwork-landing.webp"
-      as="image"
+      type="image/avif"
     />
 
     <meta name="description" content="Помощь в регистрации на Upwork и " />
@@ -63,6 +54,7 @@
         <div class="header-logo">
           <a href="/">
             <img
+              decoding="sync"
               fetchpriority="high"
               class="header-logo__image"
               src="./assets/img/dist/icons/logo.svg"
@@ -86,13 +78,23 @@
           <div class="mobile-menu">
             <input id="checkbox-burger" class="checkbox" type="checkbox" />
             <label for="checkbox-burger">
-              <div class="checkbox-box"></div>
+              <div class="checkbox-box">
+                <img
+                  fetchpriority="high"
+                  loading="eager"
+                  class="mobile-menu-icon"
+                  src="./assets/img/dist/icons/burger.svg"
+                  alt="burger-icon"
+                />
+              </div>
             </label>
       
             <div class="background">
               <nav class="nav__mobile">
                 <h5 class="nav__item">
                   <img
+                    decoding="async"
+                    loading="lazy"
                     class="nav__image nav__image--services"
                     src="./assets/img/dist/icons/goods.svg"
                     alt="services"
@@ -101,6 +103,8 @@
                 </h5>
                 <h5 class="nav__item">
                   <img
+                    decoding="async"
+                    loading="lazy"
                     class="nav__image nav__image--blog"
                     src="./assets/img/dist/icons/blog-pencil.svg"
                     alt="blog-icon"
@@ -110,6 +114,8 @@
                 <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
                 <h5 class="nav__item">
                   <img
+                    decoding="async"
+                    loading="lazy"
                     class="nav__image nav__image--info"
                     src="./assets/img/dist/icons/info.svg"
                     alt="info-icon"
@@ -151,6 +157,26 @@
                 <div class="big">
                   <picture>
                     <source
+                      media="(max-width: 600px)"
+                      srcset="./assets/img/dist/upwork-landing-mobile.avif"
+                      type="image/avif"
+                    />
+                    <source
+                      media="(max-width: 600px)"
+                      srcset="./assets/img/dist/upwork-landing-mobile.webp"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./assets/img/dist/upwork-landing-tablet.avif"
+                      type="image/avif"
+                    />
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./assets/img/dist/upwork-landing-tablet.webp"
+                      type="image/webp"
+                    />
+                    <source
                       srcset="./assets/img/dist/upwork-landing.avif"
                       type="image/avif"
                     />
@@ -159,9 +185,9 @@
                       type="image/webp"
                     />
                     <img
+                      loading="eager"
                       fetchpriority="high"
-                      width="416"
-                      width="416"
+                      width="480"
                       src="./assets/img/dist/upwork-landing.png"
                       alt="journey-icon"
                     />
@@ -1507,11 +1533,12 @@
       </div>
     </footer>
     
-    <script
+    <!-- <script
+      async
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <script src="./js/index.min.js"></script>
 
     <script>
