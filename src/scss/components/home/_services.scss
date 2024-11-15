@@ -29,10 +29,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    min-height: 20rem;
     overflow: hidden;
     border-radius: 18px;
     background-color: #5a5a5a;
-    // background-color: #e2e2e2;
 
     &::after {
       content: "";
@@ -124,6 +124,7 @@
   z-index: 1;
   flex: 1 0 0;
   align-self: stretch;
+  object-fit: cover;
 }
 
 .prod-price {

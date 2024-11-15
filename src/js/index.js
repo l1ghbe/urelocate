@@ -14,11 +14,25 @@ function executePageSpecificCode() {
 executePageSpecificCode();
 
 function commonScripts() {
+  const mobileMenuIcon = document.querySelector(".mobile-menu-icon");
   const mobileNavMenu = document.querySelector(".nav__mobile");
   const checkbox = document.querySelector(".checkbox");
   mobileNavMenu.addEventListener("click", (e) => {
     if (e.target.classList.contains("nav__link")) {
       checkbox.checked = false;
+    }
+  });
+
+  // const src = mobileMenuIcon.getAttribute("src");
+  // console.log(src.endsWith("burger.svg"));
+
+  mobileMenuIcon.addEventListener("click", () => {
+    const src = mobileMenuIcon.getAttribute("src");
+    if (src.endsWith("close.svg")) {
+      mobileMenuIcon.setAttribute("src", "./assets/img/dist/icons/burger.svg");
+    }
+    if (src.endsWith("burger.svg")) {
+      mobileMenuIcon.setAttribute("src", "./assets/img/dist/icons/close.svg");
     }
   });
 

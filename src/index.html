@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
@@ -16,13 +16,19 @@
       href="./assets/img/dist/icons/close.svg"
       type="image/svg+xml"
     /> -->
-    
+    <link rel="preload" href="./css/style.min.css" as="style" />
     <link rel="stylesheet" href="./css/style.min.css" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
     
@@ -31,6 +37,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <link
+      rel="preload"
+      href="./assets/img/dist/upwork-landing.avif"
+      as="image"
+      type="image/avif"
+    />
+
+    <meta name="description" content="Помощь в регистрации на Upwork и " />
     <title>URelocate</title>
   </head>
   <body>
@@ -39,6 +54,7 @@
         <div class="header-logo">
           <a href="/">
             <img
+              decoding="sync"
               fetchpriority="high"
               class="header-logo__image"
               src="./assets/img/dist/icons/logo.svg"
@@ -62,13 +78,23 @@
           <div class="mobile-menu">
             <input id="checkbox-burger" class="checkbox" type="checkbox" />
             <label for="checkbox-burger">
-              <div class="checkbox-box"></div>
+              <div class="checkbox-box">
+                <img
+                  fetchpriority="high"
+                  loading="eager"
+                  class="mobile-menu-icon"
+                  src="./assets/img/dist/icons/burger.svg"
+                  alt="burger-icon"
+                />
+              </div>
             </label>
       
             <div class="background">
               <nav class="nav__mobile">
                 <h5 class="nav__item">
                   <img
+                    decoding="async"
+                    loading="lazy"
                     class="nav__image nav__image--services"
                     src="./assets/img/dist/icons/goods.svg"
                     alt="services"
@@ -77,6 +103,8 @@
                 </h5>
                 <h5 class="nav__item">
                   <img
+                    decoding="async"
+                    loading="lazy"
                     class="nav__image nav__image--blog"
                     src="./assets/img/dist/icons/blog-pencil.svg"
                     alt="blog-icon"
@@ -86,6 +114,8 @@
                 <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
                 <h5 class="nav__item">
                   <img
+                    decoding="async"
+                    loading="lazy"
                     class="nav__image nav__image--info"
                     src="./assets/img/dist/icons/info.svg"
                     alt="info-icon"
@@ -101,7 +131,7 @@
       </header>
       
       <main class="main">
-        <div class="slick-hero-wrapper">
+        <!-- <div class="slick-hero-wrapper">
           <div class="slick slick-hero">
             <section class="service-slide slide-1 u-margin-bottom-section">
               <div class="text-content">
@@ -127,6 +157,26 @@
                 <div class="big">
                   <picture>
                     <source
+                      media="(max-width: 600px)"
+                      srcset="./assets/img/dist/upwork-landing-mobile.avif"
+                      type="image/avif"
+                    />
+                    <source
+                      media="(max-width: 600px)"
+                      srcset="./assets/img/dist/upwork-landing-mobile.webp"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./assets/img/dist/upwork-landing-tablet.avif"
+                      type="image/avif"
+                    />
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./assets/img/dist/upwork-landing-tablet.webp"
+                      type="image/webp"
+                    />
+                    <source
                       srcset="./assets/img/dist/upwork-landing.avif"
                       type="image/avif"
                     />
@@ -135,7 +185,9 @@
                       type="image/webp"
                     />
                     <img
+                      loading="eager"
                       fetchpriority="high"
+                      width="480"
                       src="./assets/img/dist/upwork-landing.png"
                       alt="journey-icon"
                     />
@@ -399,7 +451,7 @@
             </section>
             
           </div>
-        </div>
+        </div> -->
 
         <section class="services u-margin-bottom-section">
           <h1
@@ -412,6 +464,7 @@
             <div class="services__item">
               <div class="services__preview">
                 <video
+                  height="100%"
                   preload="none"
                   playsinline
                   muted="muted"
@@ -458,6 +511,7 @@
             <div class="services__item">
               <div class="services__preview">
                 <video
+                  preload="none"
                   playsinline
                   muted="muted"
                   autoplay="autoplay"
@@ -503,6 +557,7 @@
             <div class="services__item">
               <div class="services__preview">
                 <video
+                  preload="none"
                   playsinline
                   muted="muted"
                   autoplay="autoplay"
@@ -548,6 +603,7 @@
             <div class="services__item">
               <div class="services__preview">
                 <video
+                  preload="none"
                   playsinline
                   muted="muted"
                   autoplay="autoplay"
@@ -593,6 +649,7 @@
             <div class="services__item">
               <div class="services__preview">
                 <video
+                  preload="none"
                   playsinline
                   muted="muted"
                   autoplay="autoplay"
@@ -639,6 +696,7 @@
             <div class="services__item">
               <div class="services__preview">
                 <video
+                  preload="none"
                   playsinline
                   muted="muted"
                   autoplay="autoplay"
@@ -981,6 +1039,7 @@
               </div>
               <div class="view__video-block">
                 <video
+                  preload="none"
                   playsinline
                   muted="muted"
                   autoplay="autoplay"
@@ -1007,6 +1066,7 @@
             </div>
             <div class="statistics__grid-item">
               <video
+                preload="none"
                 playsinline
                 muted="muted"
                 autoplay="autoplay"
@@ -1078,7 +1138,9 @@
               </div>
               <div class="blog-section__arrow">
                 <a class="blog-section__arrow-link" href="./blog.html">
+                  <span>Посетить блог</span>
                   <svg
+                    aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     width="152"
                     height="30"
@@ -1108,6 +1170,7 @@
         
           <div class="community-section__video-block">
             <video
+              preload="none"
               playsinline
               muted="muted"
               autoplay="autoplay"
@@ -1228,21 +1291,21 @@
         
             <div class="social-media-section__icons">
               <a href="https://t.me/upworkrelocate"
-                ><img src="./assets/img/dist/TelegramLogo.webp"
+                ><img src="./assets/img/dist/TelegramLogo.webp" alt="social-media-icon"
               /></a>
               <a href="https://www.youtube.com/@URelocate"
-                ><img src="./assets/img/dist/YouTubeLogo.webp"
+                ><img src="./assets/img/dist/YouTubeLogo.webp" alt="social-media-icon"
               /></a>
-              <a
-                href="
-              https://www.instagram.com/upwork.relocate/"
-                ><img src="./assets/img/dist/InstagramLogo.webp"
+              <a href="https://www.instagram.com/upwork.relocate/"
+                ><img
+                  src="./assets/img/dist/InstagramLogo.webp"
+                  alt="social-media-icon"
               /></a>
               <a href="https://vk.com/urelocate"
-                ><img src="./assets/img/dist/VKLogo.webp"
+                ><img src="./assets/img/dist/VKLogo.webp" alt="social-media-icon"
               /></a>
               <a href="https://discord.gg/PertUXuZRb"
-                ><img src="./assets/img/dist/DiscordLogo.webp"
+                ><img src="./assets/img/dist/DiscordLogo.webp" alt="social-media-icon"
               /></a>
             </div>
           </div>

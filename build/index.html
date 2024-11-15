@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
@@ -16,13 +16,19 @@
       href="./assets/img/dist/icons/close.svg"
       type="image/svg+xml"
     /> -->
-    
+    <link rel="preload" href="./css/style.min.css" as="style" />
     <link rel="stylesheet" href="./css/style.min.css" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
     
@@ -31,6 +37,24 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <link
+      rel="preload"
+      href="./assets/img/dist/upwork-landing.avif"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="./assets/img/dist/upwork-landing.avif"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="./assets/img/dist/upwork-landing.webp"
+      as="image"
+    />
+
+    <meta name="description" content="Помощь в регистрации на Upwork и " />
     <title>URelocate</title>
   </head>
   <body>
@@ -115,17 +139,32 @@
               <div class="image-content">
                 <div class="small">
                   <picture>
+                    <source srcset="./assets/img/dist/upwork-logo.avif" type="image/avif" />
                     <source srcset="./assets/img/dist/upwork-logo.webp" type="image/webp" />
-                    <img src="./assets/img/dist/upwork-logo.png" alt="upwork-icon" />
+                    <img
+                      fetchpriority="high"
+                      src="./assets/img/dist/upwork-logo.png"
+                      alt="upwork-icon"
+                    />
                   </picture>
                 </div>
                 <div class="big">
                   <picture>
                     <source
+                      srcset="./assets/img/dist/upwork-landing.avif"
+                      type="image/avif"
+                    />
+                    <source
                       srcset="./assets/img/dist/upwork-landing.webp"
                       type="image/webp"
                     />
-                    <img src="./assets/img/dist/upwork-landing.png" alt="journey-icon" />
+                    <img
+                      fetchpriority="high"
+                      width="416"
+                      width="416"
+                      src="./assets/img/dist/upwork-landing.png"
+                      alt="journey-icon"
+                    />
                   </picture>
                 </div>
               </div>
@@ -143,10 +182,15 @@
               <div class="image-content">
                 <picture>
                   <source
+                    srcset="./assets/img/dist/upwork-landing.avif"
+                    type="image/avif"
+                  />
+                  <source
                     srcset="./assets/img/dist/services-slide-2.webp"
                     type="image/webp"
                   />
                   <img
+                    decoding="async"
                     data-lazy="./assets/img/dist/services-slide-2.png"
                     alt="journey-icon"
                   />
@@ -169,18 +213,27 @@
                 <div class="left">
                   <picture>
                     <source
-                      srcset="./assets/img/dist/services-slide-3-1.webp"
+                      type="image/avif"
+                      srcset="./assets/img/dist/services-slide-3-1.avif"
+                    />
+                    <source
                       type="image/webp"
+                      srcset="./assets/img/dist/services-slide-3-1.webp"
                     />
                     <img
+                      decoding="async"
                       data-lazy="./assets/img/dist/services-slide-3-1.png"
                       alt="journey-icon"
                     />
                   </picture>
                   <picture>
                     <source
-                      srcset="./assets/img/dist/services-slide-3-2.webp"
+                      type="image/avif"
+                      srcset="./assets/img/dist/services-slide-3-2.avif"
+                    />
+                    <source
                       type="image/webp"
+                      srcset="./assets/img/dist/services-slide-3-2.webp"
                     />
                     <img
                       data-lazy="./assets/img/dist/services-slide-3-2.png"
@@ -191,8 +244,12 @@
                 <div class="center">
                   <picture>
                     <source
-                      srcset="./assets/img/dist/services-slide-3-3.webp"
+                      type="image/avif"
+                      srcset="./assets/img/dist/services-slide-3-3.avif"
+                    />
+                    <source
                       type="image/webp"
+                      srcset="./assets/img/dist/services-slide-3-3.webp"
                     />
                     <img
                       data-lazy="./assets/img/dist/services-slide-3-3.png"
@@ -203,8 +260,12 @@
                 <div class="right">
                   <picture>
                     <source
-                      srcset="./assets/img/dist/services-slide-3-4.webp"
+                      type="image/avif"
+                      srcset="./assets/img/dist/services-slide-3-4.avif"
+                    />
+                    <source
                       type="image/webp"
+                      srcset="./assets/img/dist/services-slide-3-4.webp"
                     />
                     <img
                       data-lazy="./assets/img/dist/services-slide-3-4.png"
@@ -213,8 +274,12 @@
                   </picture>
                   <picture>
                     <source
-                      srcset="./assets/img/dist/services-slide-3-5.webp"
+                      type="image/avif"
+                      srcset="./assets/img/dist/services-slide-3-5.avif"
+                    />
+                    <source
                       type="image/webp"
+                      srcset="./assets/img/dist/services-slide-3-5.webp"
                     />
                     <img
                       data-lazy="./assets/img/dist/services-slide-3-5.png"
@@ -240,10 +305,15 @@
               <div class="image-content">
                 <picture>
                   <source
-                    srcset="./assets/img/dist/services-slide-4.webp"
+                    type="image/avif"
+                    srcset="./assets/img/dist/services-slide-4.avif"
+                  />
+                  <source
                     type="image/webp"
+                    srcset="./assets/img/dist/services-slide-4.webp"
                   />
                   <img
+                    decoding="async"
                     data-lazy="./assets/img/dist/services-slide-4.png"
                     alt="journey-icon"
                   />
@@ -264,10 +334,18 @@
               <div class="image-content">
                 <picture>
                   <source
-                    data-lazy="./assets/img/dist/services-slide-5.webp"
+                    srcset="./assets/img/dist/services-slide-5.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="./assets/img/dist/services-slide-5.webp"
                     type="image/webp"
                   />
-                  <img src="./assets/img/dist/services-slide-5.png" alt="journey-icon" />
+                  <img
+                    decoding="async"
+                    data-lazy="./assets/img/dist/services-slide-5.png"
+                    alt="journey-icon"
+                  />
                 </picture>
               </div>
             </section>
@@ -284,10 +362,15 @@
               <div class="image-content">
                 <picture class="first">
                   <source
+                    srcset="./assets/img/dist/services-slide-6-2.avif"
+                    type="image/avif"
+                  />
+                  <source
                     srcset="./assets/img/dist/services-slide-6-2.webp"
                     type="image/webp"
                   />
                   <img
+                    decoding="async"
                     data-lazy="./assets/img/dist/services-slide-6-2.png"
                     alt="journey-icon"
                   />
@@ -295,10 +378,15 @@
             
                 <picture class="second">
                   <source
+                    srcset="./assets/img/dist/services-slide-6-1.avif"
+                    type="image/avif"
+                  />
+                  <source
                     srcset="./assets/img/dist/services-slide-6-1.webp"
                     type="image/webp"
                   />
                   <img
+                    decoding="async"
                     data-lazy="./assets/img/dist/services-slide-6-1.png"
                     alt="journey-icon"
                   />
@@ -321,9 +409,14 @@
                 <picture>
                   <source
                     srcset="./assets/img/dist/services-slide-7.webp"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="./assets/img/dist/services-slide-7.webp"
                     type="image/webp"
                   />
                   <img
+                    decoding="async"
                     data-lazy="./assets/img/dist/services-slide-7.png"
                     alt="journey-icon"
                   />
@@ -345,6 +438,7 @@
             <div class="services__item">
               <div class="services__preview">
                 <video
+                  height="100%"
                   preload="none"
                   playsinline
                   muted="muted"
@@ -391,6 +485,7 @@
             <div class="services__item">
               <div class="services__preview">
                 <video
+                  preload="none"
                   playsinline
                   muted="muted"
                   autoplay="autoplay"
@@ -436,6 +531,7 @@
             <div class="services__item">
               <div class="services__preview">
                 <video
+                  preload="none"
                   playsinline
                   muted="muted"
                   autoplay="autoplay"
@@ -481,6 +577,7 @@
             <div class="services__item">
               <div class="services__preview">
                 <video
+                  preload="none"
                   playsinline
                   muted="muted"
                   autoplay="autoplay"
@@ -526,6 +623,7 @@
             <div class="services__item">
               <div class="services__preview">
                 <video
+                  preload="none"
                   playsinline
                   muted="muted"
                   autoplay="autoplay"
@@ -572,6 +670,7 @@
             <div class="services__item">
               <div class="services__preview">
                 <video
+                  preload="none"
                   playsinline
                   muted="muted"
                   autoplay="autoplay"
@@ -640,8 +739,13 @@
                   </p>
                 </div>
                 <picture class="slick__picture">
+                  <source type="image/avif" srcset="./assets/img/dist/veronica.avif" />
                   <source type="image/webp" srcset="./assets/img/dist/veronica.webp" />
-                  <img data-lazy="./assets/img/dist/veronica.png" alt="user-photo" />
+                  <img
+                    decoding="async"
+                    data-lazy="./assets/img/dist/veronica.png"
+                    alt="user-photo"
+                  />
                 </picture>
               </div>
         
@@ -659,8 +763,13 @@
                   </p>
                 </div>
                 <picture class="slick__picture">
+                  <source type="image/avif" srcset="./assets/img/dist/mishele.avif" />
                   <source type="image/webp" srcset="./assets/img/dist/mishele.webp" />
-                  <img data-lazy="./assets/img/dist/mishele.png" alt="user-photo" />
+                  <img
+                    decoding="async"
+                    data-lazy="./assets/img/dist/mishele.png"
+                    alt="user-photo"
+                  />
                 </picture>
               </div>
               <div class="slick-slide">
@@ -680,8 +789,13 @@
                   </p>
                 </div>
                 <picture class="slick__picture">
+                  <source type="image/avif" srcset="./assets/img/dist/boris.avif" />
                   <source type="image/webp" srcset="./assets/img/dist/boris.webp" />
-                  <img data-lazy="./assets/img/dist/boris.jpg" alt="user-photo" />
+                  <img
+                    decoding="async"
+                    data-lazy="./assets/img/dist/boris.jpg"
+                    alt="user-photo"
+                  />
                 </picture>
               </div>
               <div class="slick-slide">
@@ -698,8 +812,13 @@
                   </p>
                 </div>
                 <picture class="slick__picture">
+                  <source type="image/avif" srcset="./assets/img/dist/anastasia.avif" />
                   <source type="image/webp" srcset="./assets/img/dist/anastasia.webp" />
-                  <img data-lazy="./assets/img/dist/anastasia.jpg" alt="user-photo" />
+                  <img
+                    decoding="async"
+                    data-lazy="./assets/img/dist/anastasia.jpg"
+                    alt="user-photo"
+                  />
                 </picture>
               </div>
               <div class="slick-slide">
@@ -717,8 +836,13 @@
                   </p>
                 </div>
                 <picture class="slick__picture">
+                  <source type="image/avif" srcset="./assets/img/dist/anton.avif" />
                   <source type="image/webp" srcset="./assets/img/dist/anton.webp" />
-                  <img data-lazy="./assets/img/dist/anton.jpg" alt="user-photo" />
+                  <img
+                    decoding="async"
+                    data-lazy="./assets/img/dist/anton.jpg"
+                    alt="user-photo"
+                  />
                 </picture>
               </div>
               <div class="slick-slide">
@@ -736,8 +860,13 @@
                   </p>
                 </div>
                 <picture class="slick__picture">
+                  <source type="image/avif" srcset="./assets/img/dist/serge.avif" />
                   <source type="image/webp" srcset="./assets/img/dist/serge.webp" />
-                  <img data-lazy="./assets/img/dist/mishel.jpg" alt="user-photo" />
+                  <img
+                    decoding="async"
+                    data-lazy="./assets/img/dist/mishel.jpg"
+                    alt="user-photo"
+                  />
                 </picture>
               </div>
             </div>
@@ -884,6 +1013,7 @@
               </div>
               <div class="view__video-block">
                 <video
+                  preload="none"
                   playsinline
                   muted="muted"
                   autoplay="autoplay"
@@ -910,6 +1040,7 @@
             </div>
             <div class="statistics__grid-item">
               <video
+                preload="none"
                 playsinline
                 muted="muted"
                 autoplay="autoplay"
@@ -981,7 +1112,9 @@
               </div>
               <div class="blog-section__arrow">
                 <a class="blog-section__arrow-link" href="./blog.html">
+                  <span>Посетить блог</span>
                   <svg
+                    aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     width="152"
                     height="30"
@@ -1011,6 +1144,7 @@
         
           <div class="community-section__video-block">
             <video
+              preload="none"
               playsinline
               muted="muted"
               autoplay="autoplay"
@@ -1034,8 +1168,13 @@
           </div>
           <div class="ref-program-section__image">
             <picture>
+              <source type="image/avif" srcset="./assets/img/dist/referral.avif" />
               <source src="./assets/img/dist/referral.webp" type="image/webp" />
-              <img src="./assets/img/dist/referral.png" alt="ref-program-image" />
+              <img
+                decoding="async"
+                src="./assets/img/dist/referral.png"
+                alt="ref-program-image"
+              />
             </picture>
           </div>
         </section>
@@ -1126,21 +1265,21 @@
         
             <div class="social-media-section__icons">
               <a href="https://t.me/upworkrelocate"
-                ><img src="./assets/img/dist/TelegramLogo.webp"
+                ><img src="./assets/img/dist/TelegramLogo.webp" alt="social-media-icon"
               /></a>
               <a href="https://www.youtube.com/@URelocate"
-                ><img src="./assets/img/dist/YouTubeLogo.webp"
+                ><img src="./assets/img/dist/YouTubeLogo.webp" alt="social-media-icon"
               /></a>
-              <a
-                href="
-              https://www.instagram.com/upwork.relocate/"
-                ><img src="./assets/img/dist/InstagramLogo.webp"
+              <a href="https://www.instagram.com/upwork.relocate/"
+                ><img
+                  src="./assets/img/dist/InstagramLogo.webp"
+                  alt="social-media-icon"
               /></a>
               <a href="https://vk.com/urelocate"
-                ><img src="./assets/img/dist/VKLogo.webp"
+                ><img src="./assets/img/dist/VKLogo.webp" alt="social-media-icon"
               /></a>
               <a href="https://discord.gg/PertUXuZRb"
-                ><img src="./assets/img/dist/DiscordLogo.webp"
+                ><img src="./assets/img/dist/DiscordLogo.webp" alt="social-media-icon"
               /></a>
             </div>
           </div>
@@ -1297,6 +1436,10 @@
               <a href="https://t.me/upworkrelocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/TelegramLogo.avif"
+                  />
+                  <source
                     type="image/webp"
                     srcset="./assets/img/dist/TelegramLogo.webp"
                   />
@@ -1305,6 +1448,10 @@
               </a>
               <a href="https://www.youtube.com/@URelocate" target="_blank">
                 <picture class="footer__social-icon">
+                  <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/YouTubeLogo.avif"
+                  />
                   <source
                     type="image/webp"
                     srcset="./assets/img/dist/YouTubeLogo.webp"
@@ -1315,6 +1462,10 @@
               <a href="https://www.instagram.com/upwork.relocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/InstagramLogo.avif"
+                  />
+                  <source
                     type="image/webp"
                     srcset="./assets/img/dist/InstagramLogo.webp"
                   />
@@ -1324,6 +1475,10 @@
               <a href="https://vk.com/urelocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/VKLogo.avif"
+                  />
+                  <source
                     type="image/webp"
                     srcset="./assets/img/dist/VKLogo.webp"
                   />
@@ -1332,6 +1487,10 @@
               </a>
               <a href="https://discord.gg/PertUXuZRb" target="_blank">
                 <picture class="footer__social-icon">
+                  <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/DiscordLogo.avif"
+                  />
                   <source
                     type="image/webp"
                     srcset="./assets/img/dist/DiscordLogo.webp"
@@ -1360,9 +1519,9 @@
         $(".slick-hero").slick({
           // infinite: false,
           arrows: false,
-          autoplay: true,
-          autoplaySpeed: 4000,
-          speed: 1200,
+          // autoplay: true,
+          // autoplaySpeed: 4000,
+          // speed: 1200,
         });
       });
       $(document).ready(function () {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
@@ -16,13 +16,19 @@
       href="./assets/img/dist/icons/close.svg"
       type="image/svg+xml"
     /> -->
-    
+    <link rel="preload" href="./css/style.min.css" as="style" />
     <link rel="stylesheet" href="./css/style.min.css" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
     
@@ -35,6 +41,7 @@
         <div class="header-logo">
           <a href="/">
             <img
+              decoding="sync"
               fetchpriority="high"
               class="header-logo__image"
               src="./assets/img/dist/icons/logo.svg"
@@ -58,13 +65,23 @@
           <div class="mobile-menu">
             <input id="checkbox-burger" class="checkbox" type="checkbox" />
             <label for="checkbox-burger">
-              <div class="checkbox-box"></div>
+              <div class="checkbox-box">
+                <img
+                  fetchpriority="high"
+                  loading="eager"
+                  class="mobile-menu-icon"
+                  src="./assets/img/dist/icons/burger.svg"
+                  alt="burger-icon"
+                />
+              </div>
             </label>
       
             <div class="background">
               <nav class="nav__mobile">
                 <h5 class="nav__item">
                   <img
+                    decoding="async"
+                    loading="lazy"
                     class="nav__image nav__image--services"
                     src="./assets/img/dist/icons/goods.svg"
                     alt="services"
@@ -73,6 +90,8 @@
                 </h5>
                 <h5 class="nav__item">
                   <img
+                    decoding="async"
+                    loading="lazy"
                     class="nav__image nav__image--blog"
                     src="./assets/img/dist/icons/blog-pencil.svg"
                     alt="blog-icon"
@@ -82,6 +101,8 @@
                 <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
                 <h5 class="nav__item">
                   <img
+                    decoding="async"
+                    loading="lazy"
                     class="nav__image nav__image--info"
                     src="./assets/img/dist/icons/info.svg"
                     alt="info-icon"
@@ -321,7 +342,17 @@
             </div>
             <div class="why-services-section__content-right">
               <div class="why-udocs-section__item why-udocs-section__item-map">
-                <img src="./assets/img/dist/MapVert.webp" alt="location-img" />
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/vmap-wt.avif"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="./assets/img/dist/vmap-wt.webp"
+                  />
+                  <img src="./assets/img/dist/vmap-wt.png" alt="location-img" />
+                </picture>
                 <div>
                   <p>локация</p>
                   <p>польша</p>
