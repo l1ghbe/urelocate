@@ -9,10 +9,10 @@
       display: flex;
       flex-wrap: wrap;
       gap: 1.8rem;
+      height: 100%;
     }
 
     &-right {
-      // min-height: 30rem;
       flex: 1 1 30rem;
       min-width: 30%;
 
@@ -70,7 +70,7 @@
 
       & > ul {
         text-align: left;
-        list-style-image: url("../assets/img/dist/icons/doc-icon.svg");
+        // list-style: none;
         list-style-position: outside;
         padding-left: 1.8rem;
 
@@ -79,12 +79,11 @@
         }
 
         & > li {
-          padding-left: 1rem;
-          line-height: 100%;
-          font-size: 1.8rem;
-          &::marker {
-            font-size: 1.8em;
-          }
+          padding-left: 3.5rem;
+          list-style: none;
+          background-image: url("../assets/img/dist/icons/doc-icon.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
         }
       }
     }
