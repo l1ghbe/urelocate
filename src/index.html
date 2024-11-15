@@ -116,7 +116,11 @@
                 <div class="small">
                   <picture>
                     <source srcset="./assets/img/dist/upwork-logo.webp" type="image/webp" />
-                    <img src="./assets/img/dist/upwork-logo.png" alt="upwork-icon" />
+                    <img
+                      fetchpriority="high"
+                      src="./assets/img/dist/upwork-logo.png"
+                      alt="upwork-icon"
+                    />
                   </picture>
                 </div>
                 <div class="big">
@@ -125,7 +129,11 @@
                       srcset="./assets/img/dist/upwork-landing.webp"
                       type="image/webp"
                     />
-                    <img src="./assets/img/dist/upwork-landing.png" alt="journey-icon" />
+                    <img
+                      fetchpriority="high"
+                      src="./assets/img/dist/upwork-landing.png"
+                      alt="journey-icon"
+                    />
                   </picture>
                 </div>
               </div>
@@ -147,6 +155,7 @@
                     type="image/webp"
                   />
                   <img
+                    decoding="async"
                     data-lazy="./assets/img/dist/services-slide-2.png"
                     alt="journey-icon"
                   />
@@ -173,6 +182,7 @@
                       type="image/webp"
                     />
                     <img
+                      decoding="async"
                       data-lazy="./assets/img/dist/services-slide-3-1.png"
                       alt="journey-icon"
                     />
@@ -244,6 +254,7 @@
                     type="image/webp"
                   />
                   <img
+                    decoding="async"
                     data-lazy="./assets/img/dist/services-slide-4.png"
                     alt="journey-icon"
                   />
@@ -264,10 +275,14 @@
               <div class="image-content">
                 <picture>
                   <source
-                    data-lazy="./assets/img/dist/services-slide-5.webp"
+                    srcset="./assets/img/dist/services-slide-5.webp"
                     type="image/webp"
                   />
-                  <img src="./assets/img/dist/services-slide-5.png" alt="journey-icon" />
+                  <img
+                    decoding="async"
+                    data-lazy="./assets/img/dist/services-slide-5.png"
+                    alt="journey-icon"
+                  />
                 </picture>
               </div>
             </section>
@@ -288,6 +303,7 @@
                     type="image/webp"
                   />
                   <img
+                    decoding="async"
                     data-lazy="./assets/img/dist/services-slide-6-2.png"
                     alt="journey-icon"
                   />
@@ -299,6 +315,7 @@
                     type="image/webp"
                   />
                   <img
+                    decoding="async"
                     data-lazy="./assets/img/dist/services-slide-6-1.png"
                     alt="journey-icon"
                   />
@@ -324,6 +341,7 @@
                     type="image/webp"
                   />
                   <img
+                    decoding="async"
                     data-lazy="./assets/img/dist/services-slide-7.png"
                     alt="journey-icon"
                   />
@@ -641,7 +659,11 @@
                 </div>
                 <picture class="slick__picture">
                   <source type="image/webp" srcset="./assets/img/dist/veronica.webp" />
-                  <img data-lazy="./assets/img/dist/veronica.png" alt="user-photo" />
+                  <img
+                    decoding="async"
+                    data-lazy="./assets/img/dist/veronica.png"
+                    alt="user-photo"
+                  />
                 </picture>
               </div>
         
@@ -660,7 +682,11 @@
                 </div>
                 <picture class="slick__picture">
                   <source type="image/webp" srcset="./assets/img/dist/mishele.webp" />
-                  <img data-lazy="./assets/img/dist/mishele.png" alt="user-photo" />
+                  <img
+                    decoding="async"
+                    data-lazy="./assets/img/dist/mishele.png"
+                    alt="user-photo"
+                  />
                 </picture>
               </div>
               <div class="slick-slide">
@@ -681,7 +707,11 @@
                 </div>
                 <picture class="slick__picture">
                   <source type="image/webp" srcset="./assets/img/dist/boris.webp" />
-                  <img data-lazy="./assets/img/dist/boris.jpg" alt="user-photo" />
+                  <img
+                    decoding="async"
+                    data-lazy="./assets/img/dist/boris.jpg"
+                    alt="user-photo"
+                  />
                 </picture>
               </div>
               <div class="slick-slide">
@@ -699,7 +729,11 @@
                 </div>
                 <picture class="slick__picture">
                   <source type="image/webp" srcset="./assets/img/dist/anastasia.webp" />
-                  <img data-lazy="./assets/img/dist/anastasia.jpg" alt="user-photo" />
+                  <img
+                    decoding="async"
+                    data-lazy="./assets/img/dist/anastasia.jpg"
+                    alt="user-photo"
+                  />
                 </picture>
               </div>
               <div class="slick-slide">
@@ -718,7 +752,11 @@
                 </div>
                 <picture class="slick__picture">
                   <source type="image/webp" srcset="./assets/img/dist/anton.webp" />
-                  <img data-lazy="./assets/img/dist/anton.jpg" alt="user-photo" />
+                  <img
+                    decoding="async"
+                    data-lazy="./assets/img/dist/anton.jpg"
+                    alt="user-photo"
+                  />
                 </picture>
               </div>
               <div class="slick-slide">
@@ -737,7 +775,11 @@
                 </div>
                 <picture class="slick__picture">
                   <source type="image/webp" srcset="./assets/img/dist/serge.webp" />
-                  <img data-lazy="./assets/img/dist/mishel.jpg" alt="user-photo" />
+                  <img
+                    decoding="async"
+                    data-lazy="./assets/img/dist/mishel.jpg"
+                    alt="user-photo"
+                  />
                 </picture>
               </div>
             </div>
@@ -1360,9 +1402,9 @@
         $(".slick-hero").slick({
           // infinite: false,
           arrows: false,
-          autoplay: true,
-          autoplaySpeed: 4000,
-          speed: 1200,
+          // autoplay: true,
+          // autoplaySpeed: 4000,
+          // speed: 1200,
         });
       });
       $(document).ready(function () {
