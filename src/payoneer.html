@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
@@ -16,13 +16,19 @@
       href="./assets/img/dist/icons/close.svg"
       type="image/svg+xml"
     /> -->
-    
+    <link rel="preload" href="./css/style.min.css" as="style" />
     <link rel="stylesheet" href="./css/style.min.css" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
     
@@ -35,6 +41,7 @@
         <div class="header-logo">
           <a href="/">
             <img
+              decoding="sync"
               fetchpriority="high"
               class="header-logo__image"
               src="./assets/img/dist/icons/logo.svg"
@@ -58,13 +65,23 @@
           <div class="mobile-menu">
             <input id="checkbox-burger" class="checkbox" type="checkbox" />
             <label for="checkbox-burger">
-              <div class="checkbox-box"></div>
+              <div class="checkbox-box">
+                <img
+                  fetchpriority="high"
+                  loading="eager"
+                  class="mobile-menu-icon"
+                  src="./assets/img/dist/icons/burger.svg"
+                  alt="burger-icon"
+                />
+              </div>
             </label>
       
             <div class="background">
               <nav class="nav__mobile">
                 <h5 class="nav__item">
                   <img
+                    decoding="async"
+                    loading="lazy"
                     class="nav__image nav__image--services"
                     src="./assets/img/dist/icons/goods.svg"
                     alt="services"
@@ -73,6 +90,8 @@
                 </h5>
                 <h5 class="nav__item">
                   <img
+                    decoding="async"
+                    loading="lazy"
                     class="nav__image nav__image--blog"
                     src="./assets/img/dist/icons/blog-pencil.svg"
                     alt="blog-icon"
@@ -82,6 +101,8 @@
                 <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
                 <h5 class="nav__item">
                   <img
+                    decoding="async"
+                    loading="lazy"
                     class="nav__image nav__image--info"
                     src="./assets/img/dist/icons/info.svg"
                     alt="info-icon"
@@ -299,6 +320,10 @@
                 class="why-payoneer-section__item why-payoneer-section__item-map"
               >
                 <picture>
+                  <source
+                    srcset="./assets/img/dist/vmap-wt.avif"
+                    type="image/avif"
+                  />
                   <source
                     srcset="./assets/img/dist/vmap-wt.webp"
                     type="image/webp"
@@ -549,6 +574,10 @@
               <a href="https://t.me/upworkrelocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/TelegramLogo.avif"
+                  />
+                  <source
                     type="image/webp"
                     srcset="./assets/img/dist/TelegramLogo.webp"
                   />
@@ -557,6 +586,10 @@
               </a>
               <a href="https://www.youtube.com/@URelocate" target="_blank">
                 <picture class="footer__social-icon">
+                  <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/YouTubeLogo.avif"
+                  />
                   <source
                     type="image/webp"
                     srcset="./assets/img/dist/YouTubeLogo.webp"
@@ -567,6 +600,10 @@
               <a href="https://www.instagram.com/upwork.relocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/InstagramLogo.avif"
+                  />
+                  <source
                     type="image/webp"
                     srcset="./assets/img/dist/InstagramLogo.webp"
                   />
@@ -576,6 +613,10 @@
               <a href="https://vk.com/urelocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/VKLogo.avif"
+                  />
+                  <source
                     type="image/webp"
                     srcset="./assets/img/dist/VKLogo.webp"
                   />
@@ -584,6 +625,10 @@
               </a>
               <a href="https://discord.gg/PertUXuZRb" target="_blank">
                 <picture class="footer__social-icon">
+                  <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/DiscordLogo.avif"
+                  />
                   <source
                     type="image/webp"
                     srcset="./assets/img/dist/DiscordLogo.webp"

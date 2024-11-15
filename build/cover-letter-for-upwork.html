@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
@@ -21,6 +21,8 @@
         <div class="header-logo">
           <a href="/">
             <img
+              decoding="sync"
+              fetchpriority="high"
               class="header-logo__image"
               src="./assets/img/dist/icons/logo.svg"
               alt="logo"
@@ -43,13 +45,23 @@
           <div class="mobile-menu">
             <input id="checkbox-burger" class="checkbox" type="checkbox" />
             <label for="checkbox-burger">
-              <div class="checkbox-box"></div>
+              <div class="checkbox-box">
+                <img
+                  fetchpriority="high"
+                  loading="eager"
+                  class="mobile-menu-icon"
+                  src="./assets/img/dist/icons/burger.svg"
+                  alt="burger-icon"
+                />
+              </div>
             </label>
       
             <div class="background">
               <nav class="nav__mobile">
                 <h5 class="nav__item">
                   <img
+                    decoding="async"
+                    loading="lazy"
                     class="nav__image nav__image--services"
                     src="./assets/img/dist/icons/goods.svg"
                     alt="services"
@@ -58,6 +70,8 @@
                 </h5>
                 <h5 class="nav__item">
                   <img
+                    decoding="async"
+                    loading="lazy"
                     class="nav__image nav__image--blog"
                     src="./assets/img/dist/icons/blog-pencil.svg"
                     alt="blog-icon"
@@ -67,6 +81,8 @@
                 <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
                 <h5 class="nav__item">
                   <img
+                    decoding="async"
+                    loading="lazy"
                     class="nav__image nav__image--info"
                     src="./assets/img/dist/icons/info.svg"
                     alt="info-icon"
@@ -93,6 +109,7 @@
           </div>
           <div class="blog-article__top-content u-margin-bottom-heading">
             <picture class="picture">
+              <source type="image/avif" srcset="./assets/img/dist/blog.avif" />
               <source type="image/webp" srcset="./assets/img/dist/blog.webp" />
               <img src="./assets/img/dist/blog.png" alt="tg-icon" />
             </picture>
@@ -154,6 +171,10 @@
             <div class="bottom-content">
               <picture class="picture picture-bottom">
                 <source
+                  type="image/avif"
+                  srcset="./assets/img/dist/filter-article-2.avif"
+                />
+                <source
                   type="image/webp"
                   srcset="./assets/img/dist/filter-article-2.webp"
                 />
@@ -186,6 +207,10 @@
                 порядком больше, примерно 27000.
               </p>
               <picture class="picture picture-bottom">
+                <source
+                  type="image/avif"
+                  srcset="./assets/img/dist/search-article-2.avif"
+                />
                 <source
                   type="image/webp"
                   srcset="./assets/img/dist/search-article-2.webp"
@@ -285,6 +310,10 @@
 
               <picture class="picture picture-bottom">
                 <source
+                  type="image/avif"
+                  srcset="./assets/img/dist/ssearch-article-2.avif"
+                />
+                <source
                   type="image/webp"
                   srcset="./assets/img/dist/ssearch-article-2.webp"
                 />
@@ -332,6 +361,10 @@
               </p>
 
               <picture class="picture picture-bottom">
+                <source
+                  type="image/avif"
+                  srcset="./assets/img/dist/cv-article-2.avif"
+                />
                 <source
                   type="image/webp"
                   srcset="./assets/img/dist/cv-article-2.webp"
@@ -451,6 +484,10 @@
               <a href="https://t.me/upworkrelocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/TelegramLogo.avif"
+                  />
+                  <source
                     type="image/webp"
                     srcset="./assets/img/dist/TelegramLogo.webp"
                   />
@@ -459,6 +496,10 @@
               </a>
               <a href="https://www.youtube.com/@URelocate" target="_blank">
                 <picture class="footer__social-icon">
+                  <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/YouTubeLogo.avif"
+                  />
                   <source
                     type="image/webp"
                     srcset="./assets/img/dist/YouTubeLogo.webp"
@@ -469,6 +510,10 @@
               <a href="https://www.instagram.com/upwork.relocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/InstagramLogo.avif"
+                  />
+                  <source
                     type="image/webp"
                     srcset="./assets/img/dist/InstagramLogo.webp"
                   />
@@ -478,6 +523,10 @@
               <a href="https://vk.com/urelocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/VKLogo.avif"
+                  />
+                  <source
                     type="image/webp"
                     srcset="./assets/img/dist/VKLogo.webp"
                   />
@@ -486,6 +535,10 @@
               </a>
               <a href="https://discord.gg/PertUXuZRb" target="_blank">
                 <picture class="footer__social-icon">
+                  <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/DiscordLogo.avif"
+                  />
                   <source
                     type="image/webp"
                     srcset="./assets/img/dist/DiscordLogo.webp"
@@ -505,6 +558,8 @@
 
     <script src="./js/index.min.js"></script>
     <script>
+      const baseURL = window.location.origin;
+
       document
         .querySelector(".blog-article__btn")
         .addEventListener("click", () => {
@@ -513,7 +568,7 @@
               .share({
                 title: "Как составить резюме для UpWork? (Cover Letter)",
                 text: "После прочтения этой статьи вы научитесь грамотно составлять резюме на американском фриланс сайте upwork и возьмете ваш первый заказ, либо же увеличите количество взятых заказов.",
-                url: "https://urelocate.netlify.app/cover-letter-for-upwork.html",
+                url: `${baseURL}/cover-letter-for-upwork.html`,
               })
               .then(() => {
                 console.log("Content shared successfully");

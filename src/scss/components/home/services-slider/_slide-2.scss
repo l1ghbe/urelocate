@@ -18,6 +18,16 @@
       min-width: min-content;
     }
 
+    & > picture {
+      max-width: 50rem;
+      width: 100%;
+
+      & > img {
+        border-top-left-radius: 3.2rem;
+        border-top-right-radius: 3.2rem;
+      }
+    }
+
     // @include respond(phone) {
     //   max-width: 70%;
     // }

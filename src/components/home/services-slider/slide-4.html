@@ -13,10 +13,15 @@
   <div class="image-content">
     <picture>
       <source
-        srcset="./assets/img/dist/services-slide-4.webp"
+        type="image/avif"
+        srcset="./assets/img/dist/services-slide-4.avif"
+      />
+      <source
         type="image/webp"
+        srcset="./assets/img/dist/services-slide-4.webp"
       />
       <img
+        decoding="async"
         data-lazy="./assets/img/dist/services-slide-4.png"
         alt="journey-icon"
       />

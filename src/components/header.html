@@ -2,6 +2,7 @@
   <div class="header-logo">
     <a href="/">
       <img
+        decoding="sync"
         fetchpriority="high"
         class="header-logo__image"
         src="./assets/img/dist/icons/logo.svg"
@@ -25,13 +26,23 @@
     <div class="mobile-menu">
       <input id="checkbox-burger" class="checkbox" type="checkbox" />
       <label for="checkbox-burger">
-        <div class="checkbox-box"></div>
+        <div class="checkbox-box">
+          <img
+            fetchpriority="high"
+            loading="eager"
+            class="mobile-menu-icon"
+            src="./assets/img/dist/icons/burger.svg"
+            alt="burger-icon"
+          />
+        </div>
       </label>
 
       <div class="background">
         <nav class="nav__mobile">
           <h5 class="nav__item">
             <img
+              decoding="async"
+              loading="lazy"
               class="nav__image nav__image--services"
               src="./assets/img/dist/icons/goods.svg"
               alt="services"
@@ -40,6 +51,8 @@
           </h5>
           <h5 class="nav__item">
             <img
+              decoding="async"
+              loading="lazy"
               class="nav__image nav__image--blog"
               src="./assets/img/dist/icons/blog-pencil.svg"
               alt="blog-icon"
@@ -49,6 +62,8 @@
           <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
           <h5 class="nav__item">
             <img
+              decoding="async"
+              loading="lazy"
               class="nav__image nav__image--info"
               src="./assets/img/dist/icons/info.svg"
               alt="info-icon"

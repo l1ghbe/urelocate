@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
@@ -30,6 +30,7 @@
           </div>
           <div class="blog-article__top-content u-margin-bottom-heading">
             <picture class="picture">
+              <source type="image/avif" srcset="./assets/img/dist/blog.avif" />
               <source type="image/webp" srcset="./assets/img/dist/blog.webp" />
               <img src="./assets/img/dist/blog.png" alt="tg-icon" />
             </picture>
@@ -91,6 +92,10 @@
             <div class="bottom-content">
               <picture class="picture picture-bottom">
                 <source
+                  type="image/avif"
+                  srcset="./assets/img/dist/filter-article-2.avif"
+                />
+                <source
                   type="image/webp"
                   srcset="./assets/img/dist/filter-article-2.webp"
                 />
@@ -123,6 +128,10 @@
                 порядком больше, примерно 27000.
               </p>
               <picture class="picture picture-bottom">
+                <source
+                  type="image/avif"
+                  srcset="./assets/img/dist/search-article-2.avif"
+                />
                 <source
                   type="image/webp"
                   srcset="./assets/img/dist/search-article-2.webp"
@@ -222,6 +231,10 @@
 
               <picture class="picture picture-bottom">
                 <source
+                  type="image/avif"
+                  srcset="./assets/img/dist/ssearch-article-2.avif"
+                />
+                <source
                   type="image/webp"
                   srcset="./assets/img/dist/ssearch-article-2.webp"
                 />
@@ -269,6 +282,10 @@
               </p>
 
               <picture class="picture picture-bottom">
+                <source
+                  type="image/avif"
+                  srcset="./assets/img/dist/cv-article-2.avif"
+                />
                 <source
                   type="image/webp"
                   srcset="./assets/img/dist/cv-article-2.webp"
@@ -375,6 +392,8 @@
 
     <script src="./js/index.min.js"></script>
     <script>
+      const baseURL = window.location.origin;
+
       document
         .querySelector(".blog-article__btn")
         .addEventListener("click", () => {
@@ -383,7 +402,7 @@
               .share({
                 title: "Как составить резюме для UpWork? (Cover Letter)",
                 text: "После прочтения этой статьи вы научитесь грамотно составлять резюме на американском фриланс сайте upwork и возьмете ваш первый заказ, либо же увеличите количество взятых заказов.",
-                url: "https://urelocate.netlify.app/cover-letter-for-upwork.html",
+                url: `${baseURL}/cover-letter-for-upwork.html`,
               })
               .then(() => {
                 console.log("Content shared successfully");
