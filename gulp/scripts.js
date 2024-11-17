@@ -6,8 +6,8 @@ const browserSync = browserSyncModule.create();
 
 export function scripts() {
   return src([
-    "./src/js/index.js",
     "./src/js/telegram.js",
+    "./src/js/index.js",
     "./src/js/slick.min.js",
   ])
     .pipe(concat("index.min.js"))

@@ -9,16 +9,18 @@ fetch("./config/config.json")
 function initFormSubmission(config) {
   const TOKEN = config.privateBotToken;
   const CHAT_ID = config.privateChatId;
-  const form = document.getElementById("telegramForm");
 
   if (!TOKEN || !CHAT_ID) {
     console.error("Токен либо чат айди недоступны.");
     return;
   }
 
-  form.addEventListener("submit", (event) =>
-    handleFormSubmit(event, TOKEN, CHAT_ID)
-  );
+  const form = document.getElementById("telegramForm");
+  if (form) {
+    form.addEventListener("submit", (event) =>
+      handleFormSubmit(event, TOKEN, CHAT_ID)
+    );
+  } 
 }
 
 function handleFormSubmit(event, token, chatId) {
