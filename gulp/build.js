@@ -13,7 +13,7 @@ function building() {
       // "./src/assets/fonts/*.*",
       // "./src/assets/json/*.json",
       "./src/css/style.min.css",
-      "./src/js/index.min.js",
+      "./src/js/*.js",
       "./src/json/*.json",
       "./src/*.html",
       "!./src/pages/**/*.html",
