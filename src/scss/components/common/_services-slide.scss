@@ -4,6 +4,7 @@
   max-height: 50rem;
   border-radius: 3.2rem;
   overflow: hidden;
+  height: 100%;
 
   @include respond(tab-port) {
     flex-direction: column;
@@ -50,6 +51,7 @@
 }
 
 .slick-hero-wrapper {
+  height: 100%;
   .slick {
     &-hero {
       opacity: 0;
@@ -68,6 +70,7 @@
 
     &-track {
       display: flex;
+      align-items: stretch;
     }
 
     &-current {
@@ -77,6 +80,8 @@
     }
     &-slide {
       // display: none;
+      // justify-content: flex-start;
+      // flex: 1 0 100%;
       position: relative;
       width: 100%;
       height: 100%;
