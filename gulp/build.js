@@ -12,7 +12,7 @@ function building() {
       "./src/assets/pdf/*.*",
       // "./src/assets/fonts/*.*",
       // "./src/assets/json/*.json",
-      "./src/css/style.min.css",
+      "./src/css/*.css",
       "./src/js/*.js",
       "./src/json/*.json",
       "./src/*.html",

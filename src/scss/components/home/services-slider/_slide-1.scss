@@ -1,13 +1,13 @@
 .slide-1 {
   background-color: $blue;
   justify-content: space-between;
+
   .image-content {
     display: flex;
     gap: 2rem;
     align-items: start;
     padding-top: 8.4rem;
     padding-right: 5rem;
-
     height: 100%;
 
     @include respond(tab-port) {
@@ -38,8 +38,9 @@
     max-height: 41.6rem;
     height: 100%;
     & > picture > img {
-      border-top-left-radius: 3.2rem;
-      border-top-right-radius: 3.2rem;
+      border-radius: 3.2rem;
+      // border-top-left-radius: 3.2rem;
+      // border-top-right-radius: 3.2rem;
     }
   }
 }
