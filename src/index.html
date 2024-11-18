@@ -34,15 +34,17 @@
     
 
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
-    <link
       rel="preload"
       href="./assets/img/dist/upwork-landing.avif"
       as="image"
       type="image/avif"
+    />
+
+    <link
+      rel="preload"
+      href="./assets/img/dist/icons/logo.svg"
+      as="image"
+      type="image/svg+xml"
     />
 
     <meta name="description" content="Помощь в регистрации на Upwork и " />
@@ -60,6 +62,7 @@
               src="./assets/img/dist/icons/logo.svg"
               alt="logo"
             />
+            <!-- <h1>URelocate</h1> -->
           </a>
         </div>
       
@@ -473,7 +476,8 @@
                   class="prod-icon-cont"
                 >
                   <source
-                    src="./assets/img/dist/videos/UServerPrvw.webm"
+                    data-src="./assets/img/dist/videos/UServerPrvw.webm"
+                    src=""
                     type="video/webm"
                   />
                 </video>
@@ -519,7 +523,8 @@
                   class="prod-icon-cont"
                 >
                   <source
-                    src="./assets/img/dist/videos/UDocsPreview1.webm"
+                    data-src="./assets/img/dist/videos/UDocsPreview1.webm"
+                    src=""
                     type="video/webm"
                   />
                 </video>
@@ -565,7 +570,8 @@
                   class="prod-icon-cont"
                 >
                   <source
-                    src="./assets/img/dist/videos/UpFivPrvw.webm"
+                    src=""
+                    data-src="./assets/img/dist/videos/UpFivPrvw.webm"
                     type="video/webm"
                   />
                 </video>
@@ -611,7 +617,8 @@
                   class="prod-icon-cont"
                 >
                   <source
-                    src="./assets/img/dist/videos/PayoneerPrvw.webm"
+                    src=""
+                    data-src="./assets/img/dist/videos/PayoneerPrvw.webm"
                     type="video/webm"
                   />
                 </video>
@@ -657,7 +664,8 @@
                   class="prod-icon-cont"
                 >
                   <source
-                    src="./assets/img/dist/videos/UServerPrvw.webm"
+                    src=""
+                    data-src="./assets/img/dist/videos/UServerPrvw.webm"
                     type="video/webm"
                   />
                 </video>
@@ -704,7 +712,8 @@
                   class="prod-icon-cont"
                 >
                   <source
-                    src="./assets/img/dist/videos/OtherPreview.webm"
+                    src=""
+                    data-src="./assets/img/dist/videos/OtherPreview.webm"
                     type="video/webm"
                   />
                 </video>
@@ -890,7 +899,7 @@
                   <source type="image/webp" srcset="./assets/img/dist/serge.webp" />
                   <img
                     decoding="async"
-                    data-lazy="./assets/img/dist/mishel.jpg"
+                    data-lazy="./assets/img/dist/serge.png"
                     alt="user-photo"
                   />
                 </picture>
@@ -1110,7 +1119,7 @@
           </div>
         </section>
         
-        <!-- include home/courses.html -->
+        <!--include home/courses.html -->
         <section class="blog-section u-margin-bottom-section">
           <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
             Наш полезный блог
@@ -1290,23 +1299,77 @@
             </h1>
         
             <div class="social-media-section__icons">
-              <a href="https://t.me/upworkrelocate"
-                ><img src="./assets/img/dist/TelegramLogo.webp" alt="social-media-icon"
-              /></a>
-              <a href="https://www.youtube.com/@URelocate"
-                ><img src="./assets/img/dist/YouTubeLogo.webp" alt="social-media-icon"
-              /></a>
-              <a href="https://www.instagram.com/upwork.relocate/"
-                ><img
-                  src="./assets/img/dist/InstagramLogo.webp"
-                  alt="social-media-icon"
-              /></a>
-              <a href="https://vk.com/urelocate"
-                ><img src="./assets/img/dist/VKLogo.webp" alt="social-media-icon"
-              /></a>
-              <a href="https://discord.gg/PertUXuZRb"
-                ><img src="./assets/img/dist/DiscordLogo.webp" alt="social-media-icon"
-              /></a>
+              <a href="https://t.me/upworkrelocate">
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/TelegramLogo.avif"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="./assets/img/dist/TelegramLogo.webp"
+                  />
+                  <img
+                    src="./assets/img/dist/TelegramLogo.png"
+                    alt="social-media-icon"
+                  />
+                </picture>
+              </a>
+              <a href="https://www.youtube.com/@URelocate">
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/YouTubeLogo.avif"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="./assets/img/dist/YouTubeLogo.webp"
+                  />
+                  <img
+                    src="./assets/img/dist/YouTubeLogo.png"
+                    alt="social-media-icon"
+                  />
+                </picture>
+              </a>
+              <a href="https://www.instagram.com/upwork.relocate/">
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/InstagramLogo.avif"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="./assets/img/dist/InstagramLogo.webp"
+                  />
+                  <img
+                    src="./assets/img/dist/InstagramLogo.png"
+                    alt="social-media-icon"
+                  />
+                </picture>
+              </a>
+              <a href="https://vk.com/urelocate">
+                <picture>
+                  <source type="image/avif" srcset="./assets/img/dist/VKLogo.avif" />
+                  <source type="image/webp" srcset="./assets/img/dist/VKLogo.webp" />
+                  <img src="./assets/img/dist/VKLogo.png" alt="social-media-icon" />
+                </picture>
+              </a>
+              <a href="https://discord.gg/PertUXuZRb">
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/DiscordLogo.avif"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="./assets/img/dist/DiscordLogo.webp"
+                  />
+                  <img
+                    src="./assets/img/dist/DiscordLogo.png"
+                    alt="social-media-icon"
+                  />
+                </picture>
+              </a>
             </div>
           </div>
         </section>
@@ -1533,25 +1596,24 @@
       </div>
     </footer>
     
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/index.min.js"></script>
 
     <script>
       $(document).ready(function () {
         $(".slick-hero").slick({
-          // infinite: false,
+          infinite: false,
+          // lazyLoad: "progressive",
           arrows: false,
-          // autoplay: true,
-          // autoplaySpeed: 4000,
-          // speed: 1200,
+          autoplay: true,
+          autoplaySpeed: 4000,
+          speed: 1200,
         });
       });
       $(document).ready(function () {
         $(".slick-feedback").slick({
+          // lazyLoad: "progressive",
           centerMode: true,
           waitForAnimate: false,
           variableWidth: true,
