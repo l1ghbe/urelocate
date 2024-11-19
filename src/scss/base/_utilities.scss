@@ -12,6 +12,14 @@
   @include respond(phone) {
     margin-bottom: 3.2rem !important;
   }
+
+  &-small {
+    margin-bottom: 7rem !important;
+
+    @include respond(phone) {
+      margin-bottom: 3.2rem !important;
+    }
+  }
 }
 
 .u-margin-bottom-heading {

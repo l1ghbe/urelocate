@@ -78,7 +78,7 @@ function initializeHomePageScripts() {
         }
       });
     },
-    { rootMargin: "50px 0px 0px" }
+    { rootMargin: "200px 0px 0px" }
   );
   document.querySelectorAll(".prod-icon-cont").forEach((card) => {
     serviceCardsObserver.observe(card);
