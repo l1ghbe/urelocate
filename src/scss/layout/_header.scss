@@ -95,16 +95,6 @@ header {
   }
 }
 
-.mobile-menu {
-  position: relative;
-  display: none;
-  margin-left: auto;
-
-  @include respond(tab-port) {
-    display: block;
-  }
-}
-
 .checkbox-box {
   width: 3.2rem;
   height: 3.2rem;
@@ -117,6 +107,14 @@ header {
 }
 
 .mobile-menu {
+  position: relative;
+  display: none;
+  margin-left: auto;
+
+  @include respond(tab-port) {
+    display: block;
+  }
+
   & > .checkbox {
     display: none;
     appearance: none;
@@ -125,10 +123,6 @@ header {
     position: relative;
     z-index: 1000;
   }
-  // & > .checkbox:checked ~ label > div {
-  //   background: url("../assets/img/dist/icons/close.svg") no-repeat;
-  //   background-position: center center;
-  // }
   & > .checkbox:checked ~ .background {
     left: 0;
   }

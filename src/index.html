@@ -4,49 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     
-    <!-- <link
-      rel="preload"
-      as="image"
-      href="./assets/img/dist/icons/burger.svg"
-      type="image/svg+xml"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="./assets/img/dist/icons/close.svg"
-      type="image/svg+xml"
-    /> -->
-    <link rel="preload" href="./css/style.min.css" as="style" />
     <link rel="stylesheet" href="./css/style.min.css" />
     
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      as="style"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    
-
-    <link
-      rel="preload"
-      href="./assets/img/dist/upwork-landing.avif"
-      as="image"
-      type="image/avif"
-    />
-
-    <link
-      rel="preload"
-      href="./assets/img/dist/icons/logo.svg"
-      as="image"
-      type="image/svg+xml"
-    />
-
+    <link rel="stylesheet" href="./css/splide-core.min.css" />
     <meta name="description" content="Помощь в регистрации на Upwork и " />
     <title>URelocate</title>
   </head>
@@ -56,6 +16,8 @@
         <div class="header-logo">
           <a href="/">
             <img
+              width="3.9rem"
+              height="2.8rem"
               decoding="sync"
               fetchpriority="high"
               class="header-logo__image"
@@ -83,6 +45,8 @@
             <label for="checkbox-burger">
               <div class="checkbox-box">
                 <img
+                  width="3.2rem"
+                  width="3.2rem"
                   fetchpriority="high"
                   loading="eager"
                   class="mobile-menu-icon"
@@ -134,325 +98,300 @@
       </header>
       
       <main class="main">
-        <div class="slick-hero-wrapper">
-          <div class="slick slick-hero">
-            <section class="service-slide slide-1 u-margin-bottom-section">
-              <div class="text-content">
-                <p class="heading-primary instruments-heading u-text-white">
-                  Начни свой путь на зарубежном фрилансе
-                </p>
-                <div class="tags">
-                  <span class="tag">upwork</span>
+        <div class="splide splide-hero u-margin-bottom-section">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="service-slide splide__slide slide-1">
+                <div class="text-content">
+                  <p class="heading-primary instruments-heading u-text-white">
+                    Начни свой путь на зарубежном фрилансе
+                  </p>
+                  <div class="tags">
+                    <span class="tag">upwork</span>
+                  </div>
                 </div>
-              </div>
-              <div class="image-content">
-                <div class="small">
+                <div class="image-content">
+                  <div class="small">
+                    <picture>
+                      <source srcset="./assets/img/dist/upwork-logo.avif" type="image/avif" />
+                      <source srcset="./assets/img/dist/upwork-logo.webp" type="image/webp" />
+                      <img
+                        fetchpriority="high"
+                        src="./assets/img/dist/upwork-logo.png"
+                        alt="upwork-icon"
+                      />
+                    </picture>
+                  </div>
+                  <div class="big">
+                    <picture>
+                      <source
+                        media="(max-width: 600px)"
+                        srcset="./assets/img/dist/upwork-landing-mobile.avif"
+                        type="image/avif"
+                      />
+                      <source
+                        media="(max-width: 600px)"
+                        srcset="./assets/img/dist/upwork-landing-mobile.webp"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(max-width: 1100px)"
+                        srcset="./assets/img/dist/upwork-landing-tablet.avif"
+                        type="image/avif"
+                      />
+                      <source
+                        media="(max-width: 1100px)"
+                        srcset="./assets/img/dist/upwork-landing-tablet.webp"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="./assets/img/dist/upwork-landing.avif"
+                        type="image/avif"
+                      />
+                      <source
+                        srcset="./assets/img/dist/upwork-landing.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        loading="eager"
+                        fetchpriority="high"
+                        width="480"
+                        src="./assets/img/dist/upwork-landing.png"
+                        alt="journey-icon"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </li>
+              
+              <!--=nclude home//services-slider/slide-2.html -->
+              <li class="service-slide splide__slide slide-3">
+                <div class="text-content">
+                  <p class="heading-primary instruments-heading u-text-white">
+                    Получи полный доступ к платежной системе Payoneer
+                  </p>
+                  <div class="tags">
+                    <span class="tag">payoneer</span>
+                    <span class="tag">регистрация payoneer</span>
+                    <span class="tag">вывод средств</span>
+                  </div>
+                </div>
+                <div class="image-content">
+                  <div class="left">
+                    <picture>
+                      <source
+                        type="image/avif"
+                        srcset="./assets/img/dist/services-slide-3-1.avif"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="./assets/img/dist/services-slide-3-1.webp"
+                      />
+                      <img
+                        decoding="async"
+                        data-splide-lazy="./assets/img/dist/services-slide-3-1.png"
+                        alt="journey-icon"
+                      />
+                    </picture>
+                    <picture>
+                      <source
+                        type="image/avif"
+                        srcset="./assets/img/dist/services-slide-3-2.avif"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="./assets/img/dist/services-slide-3-2.webp"
+                      />
+                      <img
+                        data-splide-lazy="./assets/img/dist/services-slide-3-2.png"
+                        alt="journey-icon"
+                      />
+                    </picture>
+                  </div>
+                  <div class="center">
+                    <picture>
+                      <source
+                        type="image/avif"
+                        srcset="./assets/img/dist/services-slide-3-3.avif"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="./assets/img/dist/services-slide-3-3.webp"
+                      />
+                      <img
+                        data-splide-lazy="./assets/img/dist/services-slide-3-3.png"
+                        alt="journey-icon"
+                      />
+                    </picture>
+                  </div>
+                  <div class="right">
+                    <picture>
+                      <source
+                        type="image/avif"
+                        srcset="./assets/img/dist/services-slide-3-4.avif"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="./assets/img/dist/services-slide-3-4.webp"
+                      />
+                      <img
+                        data-splide-lazy="./assets/img/dist/services-slide-3-4.png"
+                        alt="journey-icon"
+                      />
+                    </picture>
+                    <picture>
+                      <source
+                        type="image/avif"
+                        srcset="./assets/img/dist/services-slide-3-5.avif"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="./assets/img/dist/services-slide-3-5.webp"
+                      />
+                      <img
+                        data-splide-lazy="./assets/img/dist/services-slide-3-5.png"
+                        alt="journey-icon"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </section>
+              
+              <li class="service-slide splide__slide slide-4">
+                <div class="text-content">
+                  <p class="heading-primary instruments-heading u-text-white">
+                    Передовые ИИ сервисы теперь доступны
+                  </p>
+                  <div class="tags">
+                    <span class="tag">dall-E</span>
+                    <span class="tag">chat gpt-4</span>
+                    <span class="tag">midjorney</span>
+                    <span class="tag">leonardo</span>
+                  </div>
+                </div>
+                <div class="image-content">
                   <picture>
-                    <source srcset="./assets/img/dist/upwork-logo.avif" type="image/avif" />
-                    <source srcset="./assets/img/dist/upwork-logo.webp" type="image/webp" />
-                    <img
-                      fetchpriority="high"
-                      src="./assets/img/dist/upwork-logo.png"
-                      alt="upwork-icon"
-                    />
-                  </picture>
-                </div>
-                <div class="big">
-                  <picture>
-                    <source
-                      media="(max-width: 600px)"
-                      srcset="./assets/img/dist/upwork-landing-mobile.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      media="(max-width: 600px)"
-                      srcset="./assets/img/dist/upwork-landing-mobile.webp"
-                      type="image/webp"
-                    />
-                    <source
-                      media="(max-width: 1100px)"
-                      srcset="./assets/img/dist/upwork-landing-tablet.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      media="(max-width: 1100px)"
-                      srcset="./assets/img/dist/upwork-landing-tablet.webp"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="./assets/img/dist/upwork-landing.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="./assets/img/dist/upwork-landing.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="eager"
-                      fetchpriority="high"
-                      width="480"
-                      src="./assets/img/dist/upwork-landing.png"
-                      alt="journey-icon"
-                    />
-                  </picture>
-                </div>
-              </div>
-            </section>
-            
-            <section class="service-slide slide-2 u-margin-bottom-section">
-              <div class="text-content">
-                <p class="heading-primary instruments-heading u-text-white">
-                  Начни свой путь на зарубежном фрилансе
-                </p>
-                <div class="tags">
-                  <span class="tag">fiverr</span>
-                </div>
-              </div>
-              <div class="image-content">
-                <picture>
-                  <source
-                    srcset="./assets/img/dist/upwork-landing.avif"
-                    type="image/avif"
-                  />
-                  <source
-                    srcset="./assets/img/dist/services-slide-2.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    decoding="async"
-                    data-lazy="./assets/img/dist/services-slide-2.png"
-                    alt="journey-icon"
-                  />
-                </picture>
-              </div>
-            </section>
-            
-            <section class="service-slide slide-3 u-margin-bottom-section">
-              <div class="text-content">
-                <p class="heading-primary instruments-heading u-text-white">
-                  Получи полный доступ к платежной системе Payoneer
-                </p>
-                <div class="tags">
-                  <span class="tag">payoneer</span>
-                  <span class="tag">регистрация payoneer</span>
-                  <span class="tag">вывод средств</span>
-                </div>
-              </div>
-              <div class="image-content">
-                <div class="left">
-                  <picture>
                     <source
                       type="image/avif"
-                      srcset="./assets/img/dist/services-slide-3-1.avif"
+                      srcset="./assets/img/dist/services-slide-4.avif"
                     />
                     <source
                       type="image/webp"
-                      srcset="./assets/img/dist/services-slide-3-1.webp"
+                      srcset="./assets/img/dist/services-slide-4.webp"
                     />
                     <img
                       decoding="async"
-                      data-lazy="./assets/img/dist/services-slide-3-1.png"
+                      data-splide-lazy="./assets/img/dist/services-slide-4.png"
                       alt="journey-icon"
                     />
                   </picture>
+                </div>
+              </li>
+              
+              <li class="service-slide splide__slide slide-5">
+                <div class="text-content">
+                  <p class="heading-primary instruments-heading u-text-white">
+                    Управляй рекламой в Google ADs и Facebook без ограничений
+                  </p>
+                  <div class="tags">
+                    <span class="tag">google ads</span>
+                    <span class="tag">facebook ads</span>
+                  </div>
+                </div>
+                <div class="image-content">
                   <picture>
                     <source
+                      srcset="./assets/img/dist/services-slide-5.avif"
                       type="image/avif"
-                      srcset="./assets/img/dist/services-slide-3-2.avif"
                     />
                     <source
+                      srcset="./assets/img/dist/services-slide-5.webp"
                       type="image/webp"
-                      srcset="./assets/img/dist/services-slide-3-2.webp"
                     />
                     <img
-                      data-lazy="./assets/img/dist/services-slide-3-2.png"
+                      decoding="async"
+                      data-splide-lazy="./assets/img/dist/services-slide-5.png"
                       alt="journey-icon"
                     />
                   </picture>
                 </div>
-                <div class="center">
+              </li>
+              
+              <li class="service-slide splide__slide slide-6">
+                <div class="text-content">
+                  <p class="heading-primary instruments-heading u-text-white">
+                    Лучшие инструменты для дизайнера снова доступны
+                  </p>
+                  <div class="tags">
+                    <span class="tag">На UpWork с 2018 года</span>
+                  </div>
+                </div>
+                <div class="image-content">
+                  <picture class="first">
+                    <source
+                      srcset="./assets/img/dist/services-slide-6-2.avif"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="./assets/img/dist/services-slide-6-2.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      decoding="async"
+                      data-splide-lazy="./assets/img/dist/services-slide-6-2.png"
+                      alt="journey-icon"
+                    />
+                  </picture>
+              
+                  <picture class="second">
+                    <source
+                      srcset="./assets/img/dist/services-slide-6-1.avif"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="./assets/img/dist/services-slide-6-1.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      decoding="async"
+                      data-splide-lazy="./assets/img/dist/services-slide-6-1.png"
+                      alt="journey-icon"
+                    />
+                  </picture>
+                </div>
+              </li>
+              
+              <li class="service-slide splide__slide slide-7">
+                <div class="text-content">
+                  <p class="heading-primary instruments-heading u-text-white">
+                    Товарный бизнес через Shopify или Etsy снова с вами
+                  </p>
+                  <div class="tags">
+                    <span class="tag">shopify</span>
+                    <span class="tag">amazon</span>
+                    <span class="tag">etsy</span>
+                  </div>
+                </div>
+                <div class="image-content">
                   <picture>
                     <source
+                      srcset="./assets/img/dist/services-slide-7.webp"
                       type="image/avif"
-                      srcset="./assets/img/dist/services-slide-3-3.avif"
                     />
                     <source
+                      srcset="./assets/img/dist/services-slide-7.webp"
                       type="image/webp"
-                      srcset="./assets/img/dist/services-slide-3-3.webp"
                     />
                     <img
-                      data-lazy="./assets/img/dist/services-slide-3-3.png"
+                      decoding="async"
+                      data-splide-lazy="./assets/img/dist/services-slide-7.png"
                       alt="journey-icon"
                     />
                   </picture>
                 </div>
-                <div class="right">
-                  <picture>
-                    <source
-                      type="image/avif"
-                      srcset="./assets/img/dist/services-slide-3-4.avif"
-                    />
-                    <source
-                      type="image/webp"
-                      srcset="./assets/img/dist/services-slide-3-4.webp"
-                    />
-                    <img
-                      data-lazy="./assets/img/dist/services-slide-3-4.png"
-                      alt="journey-icon"
-                    />
-                  </picture>
-                  <picture>
-                    <source
-                      type="image/avif"
-                      srcset="./assets/img/dist/services-slide-3-5.avif"
-                    />
-                    <source
-                      type="image/webp"
-                      srcset="./assets/img/dist/services-slide-3-5.webp"
-                    />
-                    <img
-                      data-lazy="./assets/img/dist/services-slide-3-5.png"
-                      alt="journey-icon"
-                    />
-                  </picture>
-                </div>
-              </div>
-            </section>
-            
-            <section class="service-slide slide-4 u-margin-bottom-section">
-              <div class="text-content">
-                <p class="heading-primary instruments-heading u-text-white">
-                  Передовые ИИ сервисы теперь доступны
-                </p>
-                <div class="tags">
-                  <span class="tag">dall-E</span>
-                  <span class="tag">chat gpt-4</span>
-                  <span class="tag">midjorney</span>
-                  <span class="tag">leonardo</span>
-                </div>
-              </div>
-              <div class="image-content">
-                <picture>
-                  <source
-                    type="image/avif"
-                    srcset="./assets/img/dist/services-slide-4.avif"
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="./assets/img/dist/services-slide-4.webp"
-                  />
-                  <img
-                    decoding="async"
-                    data-lazy="./assets/img/dist/services-slide-4.png"
-                    alt="journey-icon"
-                  />
-                </picture>
-              </div>
-            </section>
-            
-            <section class="service-slide slide-5 u-margin-bottom-section">
-              <div class="text-content">
-                <p class="heading-primary instruments-heading u-text-white">
-                  Управляй рекламой в Google ADs и Facebook без ограничений
-                </p>
-                <div class="tags">
-                  <span class="tag">google ads</span>
-                  <span class="tag">facebook ads</span>
-                </div>
-              </div>
-              <div class="image-content">
-                <picture>
-                  <source
-                    srcset="./assets/img/dist/services-slide-5.avif"
-                    type="image/avif"
-                  />
-                  <source
-                    srcset="./assets/img/dist/services-slide-5.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    decoding="async"
-                    data-lazy="./assets/img/dist/services-slide-5.png"
-                    alt="journey-icon"
-                  />
-                </picture>
-              </div>
-            </section>
-            
-            <section class="service-slide slide-6 u-margin-bottom-section">
-              <div class="text-content">
-                <p class="heading-primary instruments-heading u-text-white">
-                  Лучшие инструменты для дизайнера снова доступны
-                </p>
-                <div class="tags">
-                  <span class="tag">На UpWork с 2018 года</span>
-                </div>
-              </div>
-              <div class="image-content">
-                <picture class="first">
-                  <source
-                    srcset="./assets/img/dist/services-slide-6-2.avif"
-                    type="image/avif"
-                  />
-                  <source
-                    srcset="./assets/img/dist/services-slide-6-2.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    decoding="async"
-                    data-lazy="./assets/img/dist/services-slide-6-2.png"
-                    alt="journey-icon"
-                  />
-                </picture>
-            
-                <picture class="second">
-                  <source
-                    srcset="./assets/img/dist/services-slide-6-1.avif"
-                    type="image/avif"
-                  />
-                  <source
-                    srcset="./assets/img/dist/services-slide-6-1.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    decoding="async"
-                    data-lazy="./assets/img/dist/services-slide-6-1.png"
-                    alt="journey-icon"
-                  />
-                </picture>
-              </div>
-            </section>
-            
-            <section class="service-slide slide-7 u-margin-bottom-section">
-              <div class="text-content">
-                <p class="heading-primary instruments-heading u-text-white">
-                  Товарный бизнес через Shopify или Etsy снова с вами
-                </p>
-                <div class="tags">
-                  <span class="tag">shopify</span>
-                  <span class="tag">amazon</span>
-                  <span class="tag">etsy</span>
-                </div>
-              </div>
-              <div class="image-content">
-                <picture>
-                  <source
-                    srcset="./assets/img/dist/services-slide-7.webp"
-                    type="image/avif"
-                  />
-                  <source
-                    srcset="./assets/img/dist/services-slide-7.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    decoding="async"
-                    data-lazy="./assets/img/dist/services-slide-7.png"
-                    alt="journey-icon"
-                  />
-                </picture>
-              </div>
-            </section>
-            
+              </li>
+              
+            </ul>
           </div>
         </div>
 
@@ -751,161 +690,195 @@
           </div>
         </section>
         
-        <section id="clients" class="feedback">
+        <section id="clients" class="feedback u-margin-bottom-section-small">
           <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
             Нам доверяют свои аккаунты
           </h1>
         
-          <!-- SLICK LIB -->
-          <div class="slick-wrapper">
-            <div class="slick slick-feedback u-margin-bottom-heading">
-              <div class="slick-slide">
-                <div class="slick-slide-content">
-                  <h2 class="slick-slide-header">
-                    <span>Вероника</span> | Видеомонтажер
-                  </h2>
-                  <p class="slick-slide-main">
-                    3 года на апворк, заработок более 40000$
-                  </p>
-                  <p class="slick-slide-footer">
-                    “Еще в 22 году пыталась самостоятельно разблокировать свой профиль
-                    UpWork и чуть было не «наломала дров». Доверилась Urelocate еще в
-                    самом начале их пути и за 2 года ни разу не пожалела об этом!”
-                  </p>
-                </div>
-                <picture class="slick__picture">
-                  <source type="image/avif" srcset="./assets/img/dist/veronica.avif" />
-                  <source type="image/webp" srcset="./assets/img/dist/veronica.webp" />
-                  <img
-                    decoding="async"
-                    data-lazy="./assets/img/dist/veronica.png"
-                    alt="user-photo"
-                  />
-                </picture>
-              </div>
-        
-              <div class="slick-slide">
-                <div class="slick-slide-content">
-                  <h2 class="slick-slide-header">
-                    <span>Мишель</span> | Менеджер по продажам и маркетинг
-                  </h2>
-                  <p class="slick-slide-main">
-                    1,5 года на UpWork Заработок более $30.000
-                  </p>
-                  <p class="slick-slide-footer">
-                    “Ребята профессионалы с большой буквы! Провели за ручку по всем
-                    этапам и ответили на все вопросы”
-                  </p>
-                </div>
-                <picture class="slick__picture">
-                  <source type="image/avif" srcset="./assets/img/dist/mishele.avif" />
-                  <source type="image/webp" srcset="./assets/img/dist/mishele.webp" />
-                  <img
-                    decoding="async"
-                    data-lazy="./assets/img/dist/mishele.png"
-                    alt="user-photo"
-                  />
-                </picture>
-              </div>
-              <div class="slick-slide">
-                <div class="slick-slide-content">
-                  <h2 class="slick-slide-header">
-                    <span>Борис</span> | разработка VPN - приложений
-                  </h2>
-                  <p class="slick-slide-main">
-                    6 месяцев на Upwork, заработок более 60000$
-                  </p>
-                  <p class="slick-slide-footer">
-                    “Некоторое время работал на российском фрилансе и ребята из
-                    Urelocate стали настоящей находкой для меня! Благодаря ним открыл
-                    для себя доступ к UpWork и чуть более чем за 6 месяц смог стать
-                    одним из самых успешных фрилансеров в своей нише. Спасибо за
-                    возможность!”
-                  </p>
-                </div>
-                <picture class="slick__picture">
-                  <source type="image/avif" srcset="./assets/img/dist/boris.avif" />
-                  <source type="image/webp" srcset="./assets/img/dist/boris.webp" />
-                  <img
-                    decoding="async"
-                    data-lazy="./assets/img/dist/boris.jpg"
-                    alt="user-photo"
-                  />
-                </picture>
-              </div>
-              <div class="slick-slide">
-                <div class="slick-slide-content">
-                  <h2 class="slick-slide-header"><span>Анастасия</span> | Дизайнер</h2>
-                  <p class="slick-slide-main">
-                    6 лет на UpWork Заработок более $100.000
-                  </p>
-                  <p class="slick-slide-footer">
-                    “После блокировки UpWork несколько месяцев искала решение, однако
-                    все попытки были неудачны. После всех мучений, когда нашла этот
-                    сервис - не могла поверить, что все получится Urelocate-это
-                    настоящая находка, рекомендую”
-                  </p>
-                </div>
-                <picture class="slick__picture">
-                  <source type="image/avif" srcset="./assets/img/dist/anastasia.avif" />
-                  <source type="image/webp" srcset="./assets/img/dist/anastasia.webp" />
-                  <img
-                    decoding="async"
-                    data-lazy="./assets/img/dist/anastasia.jpg"
-                    alt="user-photo"
-                  />
-                </picture>
-              </div>
-              <div class="slick-slide">
-                <div class="slick-slide-content">
-                  <h2 class="slick-slide-header">
-                    <span>Антон</span> | Fullstack Web Dev
-                  </h2>
-                  <p class="slick-slide-main">
-                    2 года на UpWork Заработок более $30.000
-                  </p>
-                  <p class="slick-slide-footer">
-                    “Отличный сервис для работы, быстрая поддержка, и в целом видно, что
-                    стараются помочь всем у кого возникают вопросы. При наличии такого
-                    ресурса вам доступны все сервисы из санкционного списка”
-                  </p>
-                </div>
-                <picture class="slick__picture">
-                  <source type="image/avif" srcset="./assets/img/dist/anton.avif" />
-                  <source type="image/webp" srcset="./assets/img/dist/anton.webp" />
-                  <img
-                    decoding="async"
-                    data-lazy="./assets/img/dist/anton.jpg"
-                    alt="user-photo"
-                  />
-                </picture>
-              </div>
-              <div class="slick-slide">
-                <div class="slick-slide-content">
-                  <h2 class="slick-slide-header">
-                    <span>Сергей</span> | UX/UI, Дизайнер
-                  </h2>
-                  <p class="slick-slide-main">
-                    На UpWork с 2018 года Заработок более $150.000
-                  </p>
-                  <p class="slick-slide-footer">
-                    “Нравится как работают ребята, все чётко, быстро и без каких-либо
-                    проблем! Если возникают вопросы, то всегда помогают. Рекомендовал
-                    вас уже многим своим знакомым, да и буду дальше рекомендовать! ”
-                  </p>
-                </div>
-                <picture class="slick__picture">
-                  <source type="image/avif" srcset="./assets/img/dist/serge.avif" />
-                  <source type="image/webp" srcset="./assets/img/dist/serge.webp" />
-                  <img
-                    decoding="async"
-                    data-lazy="./assets/img/dist/serge.png"
-                    alt="user-photo"
-                  />
-                </picture>
-              </div>
+          <section class="splide splide-feedback">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="splide__slide-feedback-wrapper">
+                    <div class="splide__slide-content">
+                      <h2 class="splide__slide-header">
+                        <span>Вероника</span> | Видеомонтажер
+                      </h2>
+                      <p class="splide__slide-main">
+                        3 года на апворк, заработок более 40000$
+                      </p>
+                      <p class="splide__slide-footer">
+                        “Еще в 22 году пыталась самостоятельно разблокировать свой
+                        профиль UpWork и чуть было не «наломала дров». Доверилась
+                        Urelocate еще в самом начале их пути и за 2 года ни разу не
+                        пожалела об этом!”
+                      </p>
+                    </div>
+                    <picture class="splide__picture">
+                      <source
+                        type="image/avif"
+                        srcset="./assets/img/dist/veronica.avif"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="./assets/img/dist/veronica.webp"
+                      />
+                      <img
+                        decoding="async"
+                        data-splide-lazy="./assets/img/dist/veronica.png"
+                        alt="user-photo"
+                      />
+                    </picture>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__slide-feedback-wrapper">
+                    <div class="splide__slide-content">
+                      <h2 class="splide__slide-header">
+                        <span>Мишель</span> | Менеджер по продажам и маркетинг
+                      </h2>
+                      <p class="splide__slide-main">
+                        1,5 года на UpWork Заработок более $30.000
+                      </p>
+                      <p class="splide__slide-footer">
+                        “Ребята профессионалы с большой буквы! Провели за ручку по всем
+                        этапам и ответили на все вопросы”
+                      </p>
+                    </div>
+                    <picture class="splide__picture">
+                      <source
+                        type="image/avif"
+                        srcset="./assets/img/dist/mishele.avif"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="./assets/img/dist/mishele.webp"
+                      />
+                      <img
+                        decoding="async"
+                        data-splide-lazy="./assets/img/dist/mishele.png"
+                        alt="user-photo"
+                      />
+                    </picture>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__slide-feedback-wrapper">
+                    <div class="splide__slide-content">
+                      <h2 class="splide__slide-header">
+                        <span>Борис</span> | разработка VPN - приложений
+                      </h2>
+                      <p class="splide__slide-main">
+                        6 месяцев на Upwork, заработок более 60000$
+                      </p>
+                      <p class="splide__slide-footer">
+                        “Некоторое время работал на российском фрилансе и ребята из
+                        Urelocate стали настоящей находкой для меня! Благодаря ним
+                        открыл для себя доступ к UpWork и чуть более чем за 6 месяц смог
+                        стать одним из самых успешных фрилансеров в своей нише. Спасибо
+                        за возможность!”
+                      </p>
+                    </div>
+                    <picture class="splide__picture">
+                      <source type="image/avif" srcset="./assets/img/dist/boris.avif" />
+                      <source type="image/webp" srcset="./assets/img/dist/boris.webp" />
+                      <img
+                        decoding="async"
+                        data-splide-lazy="./assets/img/dist/boris.jpg"
+                        alt="user-photo"
+                      />
+                    </picture>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__slide-feedback-wrapper">
+                    <div class="splide__slide-content">
+                      <h2 class="splide__slide-header">
+                        <span>Анастасия</span> | Дизайнер
+                      </h2>
+                      <p class="splide__slide-main">
+                        6 лет на UpWork Заработок более $100.000
+                      </p>
+                      <p class="splide__slide-footer">
+                        “После блокировки UpWork несколько месяцев искала решение,
+                        однако все попытки были неудачны. После всех мучений, когда
+                        нашла этот сервис - не могла поверить, что все получится
+                        Urelocate-это настоящая находка, рекомендую”
+                      </p>
+                    </div>
+                    <picture class="splide__picture">
+                      <source
+                        type="image/avif"
+                        srcset="./assets/img/dist/anastasia.avif"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="./assets/img/dist/anastasia.webp"
+                      />
+                      <img
+                        decoding="async"
+                        data-splide-lazy="./assets/img/dist/anastasia.jpg"
+                        alt="user-photo"
+                      />
+                    </picture>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__slide-feedback-wrapper">
+                    <div class="splide__slide-content">
+                      <h2 class="splide__slide-header">
+                        <span>Антон</span> | Fullstack Web Dev
+                      </h2>
+                      <p class="splide__slide-main">
+                        2 года на UpWork Заработок более $30.000
+                      </p>
+                      <p class="splide__slide-footer">
+                        “Отличный сервис для работы, быстрая поддержка, и в целом видно,
+                        что стараются помочь всем у кого возникают вопросы. При наличии
+                        такого ресурса вам доступны все сервисы из санкционного списка”
+                      </p>
+                    </div>
+                    <picture class="splide__picture">
+                      <source type="image/avif" srcset="./assets/img/dist/anton.avif" />
+                      <source type="image/webp" srcset="./assets/img/dist/anton.webp" />
+                      <img
+                        decoding="async"
+                        data-splide-lazy="./assets/img/dist/anton.jpg"
+                        alt="user-photo"
+                      />
+                    </picture>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__slide-feedback-wrapper">
+                    <div class="splide__slide-content">
+                      <h2 class="splide__slide-header">
+                        <span>Сергей</span> | UX/UI, Дизайнер
+                      </h2>
+                      <p class="splide__slide-main">
+                        На UpWork с 2018 года Заработок более $150.000
+                      </p>
+                      <p class="splide__slide-footer">
+                        “Нравится как работают ребята, все чётко, быстро и без
+                        каких-либо проблем! Если возникают вопросы, то всегда помогают.
+                        Рекомендовал вас уже многим своим знакомым, да и буду дальше
+                        рекомендовать! ”
+                      </p>
+                    </div>
+                    <picture class="splide__picture">
+                      <source type="image/avif" srcset="./assets/img/dist/serge.avif" />
+                      <source type="image/webp" srcset="./assets/img/dist/serge.webp" />
+                      <img
+                        decoding="async"
+                        data-splide-lazy="./assets/img/dist/serge.png"
+                        alt="user-photo"
+                      />
+                    </picture>
+                  </div>
+                </li>
+              </ul>
             </div>
-          </div>
+          </section>
         </section>
         
         <section id="customer-form" class="purchase u-margin-bottom-section">
@@ -1167,6 +1140,7 @@
           </div>
         </section>
         
+
         <section class="community-section u-margin-bottom-section">
           <div class="community-section__content">
             <h1 class="community-section__heading u-text-center u-text-white">
@@ -1596,28 +1570,37 @@
       </div>
     </footer>
     
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/index.min.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/slick.min.js"></script> -->
+    <script defer src="./js/splide.min.js"></script>
+    <script defer src="./js/index.min.js"></script>
 
     <script>
-      $(document).ready(function () {
-        $(".slick-hero").slick({
-          infinite: false,
-          // lazyLoad: "progressive",
+      document.addEventListener("DOMContentLoaded", () => {
+        const heroSplide = new Splide(".splide-hero", {
           arrows: false,
-          // autoplay: true,
-          // autoplaySpeed: 4000,
-          // speed: 1200,
+          pagination: false,
+          type: "loop",
+          autoplay: true,
+          speed: 1200,
+          rewindSpeed: 4000,
+          gap: "30px",
         });
-      });
-      $(document).ready(function () {
-        $(".slick-feedback").slick({
-          // lazyLoad: "progressive",
-          centerMode: true,
-          waitForAnimate: false,
-          variableWidth: true,
+        heroSplide.mount();
+
+        const feedbackSplide = new Splide(".splide-feedback", {
+          pagination: false,
+          type: "loop",
+          perPage: 5,
+          focus: "center",
+          updateOnMove: true,
+          lazyLoad: "nearby",
+          speed: 700,
+          fixedWidth: "29rem",
+          fixedHeight: "37rem",
         });
+        feedbackSplide.mount();
       });
     </script>
   </body>

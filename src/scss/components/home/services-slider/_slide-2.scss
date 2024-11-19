@@ -19,10 +19,12 @@
     }
 
     & > picture {
-      max-width: 50rem;
+      // max-width: 50rem;
+
       width: 100%;
 
       & > img {
+        max-height: 45rem;
         border-top-left-radius: 3.2rem;
         border-top-right-radius: 3.2rem;
       }

@@ -2,21 +2,7 @@
 <html lang="ru">
   <head>
     <!--=include head-content.html -->
-
-    <link
-      rel="preload"
-      href="./assets/img/dist/upwork-landing.avif"
-      as="image"
-      type="image/avif"
-    />
-
-    <link
-      rel="preload"
-      href="./assets/img/dist/icons/logo.svg"
-      as="image"
-      type="image/svg+xml"
-    />
-
+    <link rel="stylesheet" href="./css/splide-core.min.css" />
     <meta name="description" content="Помощь в регистрации на Upwork и " />
     <title>URelocate</title>
   </head>
@@ -24,15 +10,17 @@
     <div class="wrapper">
       <!--=include header.html -->
       <main class="main">
-        <div class="slick-hero-wrapper">
-          <div class="slick slick-hero">
-            <!--=include home//services-slider/slide-1.html -->
-            <!--=include home//services-slider/slide-2.html -->
-            <!--=include home//services-slider/slide-3.html -->
-            <!--=include home//services-slider/slide-4.html -->
-            <!--=include home//services-slider/slide-5.html -->
-            <!--=include home//services-slider/slide-6.html -->
-            <!--=include home//services-slider/slide-7.html -->
+        <div class="splide splide-hero u-margin-bottom-section">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <!--=include home//services-slider/slide-1.html -->
+              <!--=nclude home//services-slider/slide-2.html -->
+              <!--=include home//services-slider/slide-3.html -->
+              <!--=include home//services-slider/slide-4.html -->
+              <!--=include home//services-slider/slide-5.html -->
+              <!--=include home//services-slider/slide-6.html -->
+              <!--=include home//services-slider/slide-7.html -->
+            </ul>
           </div>
         </div>
 
@@ -43,6 +31,7 @@
         <!--=include home/statistics.html -->
         <!--include home/courses.html -->
         <!--=include home/blog.html -->
+
         <!--=include home/community.html -->
         <!--=include home/ref-program.html -->
         <!--=include home/videos.html -->
@@ -51,28 +40,37 @@
       </main>
     </div>
     <!--= include footer.html -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/index.min.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/slick.min.js"></script> -->
+    <script defer src="./js/splide.min.js"></script>
+    <script defer src="./js/index.min.js"></script>
 
     <script>
-      $(document).ready(function () {
-        $(".slick-hero").slick({
-          infinite: false,
-          // lazyLoad: "progressive",
+      document.addEventListener("DOMContentLoaded", () => {
+        const heroSplide = new Splide(".splide-hero", {
           arrows: false,
-          // autoplay: true,
-          // autoplaySpeed: 4000,
-          // speed: 1200,
+          pagination: false,
+          type: "loop",
+          autoplay: true,
+          speed: 1200,
+          rewindSpeed: 4000,
+          gap: "30px",
         });
-      });
-      $(document).ready(function () {
-        $(".slick-feedback").slick({
-          // lazyLoad: "progressive",
-          centerMode: true,
-          waitForAnimate: false,
-          variableWidth: true,
+        heroSplide.mount();
+
+        const feedbackSplide = new Splide(".splide-feedback", {
+          pagination: false,
+          type: "loop",
+          perPage: 5,
+          focus: "center",
+          updateOnMove: true,
+          lazyLoad: "nearby",
+          speed: 700,
+          fixedWidth: "29rem",
+          fixedHeight: "37rem",
         });
+        feedbackSplide.mount();
       });
     </script>
   </body>

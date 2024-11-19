@@ -1,93 +1,49 @@
-.service-slide {
-  display: flex;
-  justify-content: space-between;
-  max-height: 50rem;
-  border-radius: 3.2rem;
-  overflow: hidden;
-  height: 100%;
-
-  @include respond(tab-port) {
-    flex-direction: column;
-    max-height: 70rem;
-  }
-
-  .text-content {
+.splide {
+  &__slide {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 3.2rem;
-    max-width: 50%;
-    padding: 5rem;
+    border-radius: 3.2rem;
+    overflow: hidden;
 
     @include respond(tab-port) {
-      max-width: 100%;
-      padding: 3.2rem;
+      flex-direction: column;
+      max-height: 60rem;
     }
-  }
 
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.8rem;
-
-    .tag {
-      display: inline-block;
-      max-width: fit-content;
-      padding: 0.8rem 3rem;
-      border-radius: 3.2rem;
-      border: 1px solid $white;
-      font-size: 1.8rem;
-      line-height: 2.3rem;
-      font-weight: 600;
-      background-color: $white;
-      color: $black;
+    .text-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 3.2rem;
+      max-width: 50%;
+      padding: 5rem;
 
       @include respond(tab-port) {
-        padding: 0.8rem 1.8rem;
-        font-size: 1.6rem;
-      }
-    }
-  }
-}
-
-.slick-hero-wrapper {
-  height: 100%;
-  .slick {
-    &-hero {
-      opacity: 0;
-      transition: all 0.5s ease-in-out 0.3s;
-
-      &.slick-initialized {
-        opacity: 1;
+        max-width: 100%;
+        padding: 3.2rem;
       }
     }
 
-    &-initialized {
-      // .slick-slide {
-      //   display: flex;
-      // }
-    }
-
-    &-track {
+    .tags {
       display: flex;
-      align-items: stretch;
-    }
+      flex-wrap: wrap;
+      gap: 1.8rem;
 
-    &-current {
-      &::before {
-        background: none;
-      }
-    }
-    &-slide {
-      // display: none;
-      // justify-content: flex-start;
-      // flex: 1 0 100%;
-      position: relative;
-      width: 100%;
-      height: 100%;
+      .tag {
+        display: inline-block;
+        max-width: fit-content;
+        padding: 0.8rem 3rem;
+        border-radius: 3.2rem;
+        border: 1px solid $white;
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+        font-weight: 600;
+        background-color: $white;
+        color: $black;
 
-      &:first-child {
-        display: flex;
+        @include respond(tab-port) {
+          padding: 0.8rem 1.8rem;
+          font-size: 1.6rem;
+        }
       }
     }
   }
