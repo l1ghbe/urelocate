@@ -1,3 +1,21 @@
+function getQueryParams() {
+  const params = new URLSearchParams(window.location.search);
+  const utmParams = ['utm_source', 'utm_campaign', 'AgId', 'utm_term', 'AdPos', 'utm_content', 'device', 'GeoLoc', 'utm_medium'];
+  utmParams.forEach(param => {
+    console.log(params);
+    if (params.has(param)) {
+      console.log(param);
+      document.cookie = `${param}=${params.get(param)}; path=/; max-age=172800`; // 2 days
+    }
+  });
+}
+
+function getCookie(name) {
+  const value = `; ${document.cookie}`;
+  const parts = value.split(`; ${name}=`);
+  if (parts.length === 2) return parts.pop().split(';').shift();
+}
+
 function executePageSpecificCode() {
   commonScripts();
   const currentPath = window.location.pathname;
@@ -12,6 +30,9 @@ function executePageSpecificCode() {
 executePageSpecificCode();
 
 function commonScripts() {
+
+  getQueryParams();
+
   const mobileMenuIcon = document.querySelector(".mobile-menu-icon");
   const mobileNavMenu = document.querySelector(".nav__mobile");
   const checkbox = document.querySelector(".checkbox");

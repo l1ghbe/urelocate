@@ -6,6 +6,25 @@ fetch("./config/config.json")
   .then(initFormSubmission)
   .catch((error) => console.error("Error loading config:", error));
 
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+    return null;
+  }
+  
+  function getUtmParamsFromCookies() {
+    const utmParams = ['utm_source', 'utm_campaign', 'AgId', 'utm_term', 'AdPos', 'utm_content', 'device', 'GeoLoc', 'utm_medium'];
+    const utmData = {};
+    utmParams.forEach(param => {
+      const value = getCookie(param);
+      if (value) {
+        utmData[param] = value;
+      }
+    });
+    return utmData;
+  }
+
 function initFormSubmission(config) {
   const TOKEN = config.privateBotToken;
   const CHAT_ID = config.privateChatId;
@@ -39,12 +58,21 @@ function handleFormSubmit(event, token, chatId) {
 }
 
 function createTelegramMessage(name, telegram, email, comment) {
+  const utmData = getUtmParamsFromCookies();
+  let utmText = '';
+  for (const [key, value] of Object.entries(utmData)) {
+    utmText += `${key}: ${value}\n`;
+  }
+
   return `
     Новая заявка 📧:
 Имя: ${name}
 Telegram: @${telegram}
 Почта: ${email}
 Комментарий: ${comment}
+
+UTM данные 🤖:
+${utmText || 'Отсутствуют'}
   `;
 }
 

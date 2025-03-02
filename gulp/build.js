@@ -1,5 +1,7 @@
 import { dest, series, src } from "gulp";
 import clean from "gulp-clean";
+import { scripts } from "./scripts.js";
+
 
 function cleanDist() {
   return src("./build").pipe(clean());
@@ -23,4 +25,4 @@ function building() {
   ).pipe(dest("./build"));
 }
 
-export const build = series(cleanDist, building);
+export const build = series(cleanDist, scripts, building);
