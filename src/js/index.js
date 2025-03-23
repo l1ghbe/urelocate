@@ -2,7 +2,6 @@ function getQueryParams() {
   const params = new URLSearchParams(window.location.search);
   const utmParams = ['utm_source', 'utm_campaign', 'AgId', 'utm_term', 'AdPos', 'utm_content', 'device', 'GeoLoc', 'utm_medium'];
   utmParams.forEach(param => {
-    console.log(params);
     if (params.has(param)) {
       console.log(param);
       document.cookie = `${param}=${params.get(param)}; path=/; max-age=172800`; // 2 days
@@ -15,6 +14,21 @@ function getCookie(name) {
   const parts = value.split(`; ${name}=`);
   if (parts.length === 2) return parts.pop().split(';').shift();
 }
+
+// function applyUtmParamsToLinks() {
+//   const utmParams = ['utm_source', 'utm_campaign', 'AgId', 'utm_term', 'AdPos', 'utm_content', 'device', 'GeoLoc', 'utm_medium'];
+//   const links = document.querySelectorAll('a');
+//   links.forEach(link => {
+//     let url = new URL(link.href);
+//     utmParams.forEach(param => {
+//       const value = getCookie(param);
+//       if (value) {
+//         url.searchParams.set(param, value);
+//       }
+//     });
+//     link.href = url.toString();
+//   });
+// }
 
 function executePageSpecificCode() {
   commonScripts();

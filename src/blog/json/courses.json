@@ -1,0 +1,20 @@
+{
+  "courses-tag-1": {
+    "heading": "COURSES TAG 1",
+    "paragraph": "Скачивайте нашу полезную инструкцию в формате PDF и начинайте свой путь на UpWork",
+    "courseLink": "##",
+    "videoSrc": "./assets/img/dist/videos/PayoneerPrvw.webm"
+  },
+  "courses-tag-2": {
+    "heading": "COURSES TAG 2",
+    "paragraph": "TAG-2 Скачивайте нашу полезную инструкцию в формате PDF и начинайте свой путь на UpWork",
+    "courseLink": "##",
+    "videoSrc": "./assets/img/dist/videos/UServer.webm"
+  },
+  "courses-tag-3": {
+    "heading": "COURSES TAG 3",
+    "paragraph": "TAG-3",
+    "courseLink": "##",
+    "videoSrc": "./assets/img/dist/videos/PayoneerPrvw.webm"
+  }
+}
