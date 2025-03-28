@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   allInstructionBtns.forEach((button) => {
     button.addEventListener("click", (event) => {
       event.preventDefault();
-      console.log('popupOverlay', popupOverlay)
       popupOverlay.classList.add("show");
       popupForm.classList.add("show");
 
