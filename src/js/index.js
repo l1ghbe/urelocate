@@ -155,7 +155,8 @@ fetch("./json/instructions.json")
 
             instructionsHeadingEl.textContent = heading;
             instructionsParagraphEl.textContent = paragraph;
-            instructionLinkEl.href = instructionLink;
+            instructionLinkEl.setAttribute("data-download-url", instructionLink);
+
             instructionsVideoSrcEl.src = videoSrc;
             instructionsVideoEl.load();
           } catch (error) {

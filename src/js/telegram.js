@@ -65,32 +65,47 @@ async function handleFormSubmit(event, token, chatId, googleSheetUrl) {
     return;
   }
 
-  if (!telegram.startsWith('@')) {
+  if (!telegram.startsWith("@")) {
     telegram = `@${telegram}`;
   }
 
   const message = createTelegramMessage(name, telegram, email, comment);
-  sendTelegramMessage(token, chatId, message);
+  try {
+    sendTelegramMessage(token, chatId, message);
 
-  const utmData = getUtmParamsFromCookies();
-  const {utm_source, utm_term, GeoLoc, AgId, utm_campaign} = utmData || {};
-  console.log("UTM data:", utmData);
+    const utmData = getUtmParamsFromCookies();
+    const { utm_source, utm_term, GeoLoc, AgId, utm_campaign } = utmData || {};
+    const currentDate = new Date();
+    const formattedDate = `${String(currentDate.getDate()).padStart(
+      2,
+      "0"
+    )}.${String(currentDate.getMonth() + 1).padStart(
+      2,
+      "0"
+    )}.${currentDate.getFullYear()}`;
 
-  const currentDate = new Date();
-  const formattedDate = `${String(currentDate.getDate()).padStart(2, '0')}.${String(currentDate.getMonth() + 1).padStart(2, '0')}.${currentDate.getFullYear()}`;
-
-  await appendToGoogleSheet({
-    webAppUrl,
-    name,
-    telegram,
-    source: utm_source || "",
-    campaign: utm_campaign || "",
-    keywords: utm_term || "",
-    region: GeoLoc || "",
-    date: formattedDate || "",
-    hasPurchase: "нет",
-    relevance: "нет",
-  });
+    try {
+      await appendToGoogleSheet({
+        webAppUrl,
+        name,
+        telegram,
+        source: utm_source || "",
+        campaign: utm_campaign || "",
+        keywords: utm_term || "",
+        region: GeoLoc || "",
+        date: formattedDate || "",
+        hasPurchase: "нет",
+        relevance: "нет",
+      });
+    } catch (e) {
+      console.error("Ошибка при отправке данных в Google Sheets", e);
+    } finally {
+      sessionStorage.setItem("formSubmitted", "true");
+      window.location.href = "/thank-you.html";
+    }
+  } catch (e) {
+    console.error("Ошибка при отправке данных в Telegram", e);
+  }
 }
 
 function createTelegramMessage(name, telegram, email, comment) {
@@ -159,7 +174,7 @@ async function appendToGoogleSheet({
     region,
     date,
     hasPurchase,
-    relevance
+    relevance,
   };
 
   try {

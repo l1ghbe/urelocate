@@ -299,7 +299,7 @@
                     </picture>
                   </div>
                 </div>
-              </section>
+              </li>
               
               <li class="service-slide splide__slide slide-4">
                 <div class="text-content">
@@ -479,7 +479,7 @@
                 <div class="services__price">
                   <div class="services__price-offer">
                     <span class="services__price-past">от $59</span>
-                    <span class="services__price-present">$49</span>
+                    <span class="services__price-present">$49 / 4400 ₽</span>
                     <span class="services__sale">-17%</span>
                   </div>
                 </div>
@@ -526,7 +526,7 @@
                 <div class="services__price">
                   <div class="services__price-offer">
                     <span class="services__price-past">от $69</span>
-                    <span class="services__price-present">$55</span>
+                    <span class="services__price-present">$55 / 4950 ₽</span>
                     <span class="services__sale">-20%</span>
                   </div>
                 </div>
@@ -573,7 +573,7 @@
                 <div class="services__price">
                   <div class="services__price-offer">
                     <span class="services__price-past">от $129</span>
-                    <span class="services__price-present">$89</span>
+                    <span class="services__price-present">$89 / 8000 ₽</span>
                     <span class="services__sale">-31%</span>
                   </div>
                 </div>
@@ -620,7 +620,7 @@
                 <div class="services__price">
                   <div class="services__price-offer">
                     <span class="services__price-past">от $119</span>
-                    <span class="services__price-present">$85</span>
+                    <span class="services__price-present">$85 / 7650 ₽</span>
                     <span class="services__sale">-30%</span>
                   </div>
                 </div>
@@ -668,7 +668,7 @@
                 <div class="services__price">
                   <div class="services__price-offer">
                     <span class="services__price-past">от $79</span>
-                    <span class="services__price-present">$49</span>
+                    <span class="services__price-present">$49 / 4400 ₽</span>
                     <span class="services__sale">-51%</span>
                   </div>
                 </div>
@@ -716,7 +716,7 @@
                 <div class="services__price">
                   <div class="services__price-offer">
                     <span class="services__price-past">от $59</span>
-                    <span class="services__price-present">$49</span>
+                    <span class="services__price-present">$49 / 4400 ₽</span>
                     <span class="services__sale">-17%</span>
                   </div>
                 </div>
@@ -927,14 +927,14 @@
         
         <section id="customer-form" class="purchase u-margin-bottom-section">
           <h2 class="heading-secondary u-text-center u-margin-bottom-heading">
-            Хотите приобрести<br />наши услуги?
+            Оставь заявку прямо сейчас <br /> и получи подарок
           </h2>
           <div class="purchase__form">
             <div class="form__text">
-              <h2 class="form__heading">Ответим на все ваши вопросы</h2>
+              <h2 class="form__heading">Получите бесплатную консультацию</h2>
               <p class="form__paragraph">
-                Получите консультацию по интересующим вас вопросам связанным с
-                зарубежным фрилансом и обходом блокировок фриланс-бирж
+                После заполнения формы с вами свяжется менеджер, который ответит на все интересующие вас вопросы связанные с зарубежными фриланс-биржами <br /> <br />
+        Оставив заявку вы получите <strong>подробный гайд</strong> с ключевыми советами для успешного старта на фрилансе
               </p>
             </div>
             <form class="form__controls" id="telegramForm">
@@ -1057,9 +1057,9 @@
                   путь на UpWork
                 </p>
                 <a
-                  href="./assets/pdf/registration-verification.pdf"
+                  href="#"
+                  data-download-url="./assets/pdf/registration-verification.pdf"
                   class="view__btn view-inctruction-link"
-                  download
                   >Получить инструкцию</a
                 >
               </div>
@@ -1613,6 +1613,54 @@
         </div>
       </div>
     </footer>
+
+    <!-- Popup Form -->
+<div id="popupOverlay" class="popup-overlay hidden"></div>
+<div id="popupForm" class="popup hidden">
+  <button id="closePopup" class="popup-close">&times;</button>
+  <section class="purchase">
+    <div class="purchase__form">
+      <div class="form__text">
+        <h2 class="form__heading">Заполните форму и получите бесплатный гайд</h2>
+      </div>
+      <form class="form__controls" id="telegramPopupForm">
+        <div class="form__fields">
+          <input
+            id="popup-form-name"
+            type="text"
+            name="name"
+            class="form__field"
+            required
+            placeholder="Имя"
+          />
+          <input
+            id="popup-form-tg"
+            type="text"
+            name="telegram"
+            class="form__field"
+            required
+            placeholder="Telegram"
+          />
+          <input
+            id="popup-form-email"
+            type="text"
+            name="email"
+            class="form__field"
+            required
+            placeholder="E-mail"
+          />
+        </div>
+        <div class="form__buttons">
+          <button type="submit" class="form__btn">Отправить</button>
+          <p class="form__alert">
+            Нажимая на эту кнопку, вы соглашаетесь на обработку персональных
+            данных и с правилами пользования сервисом
+          </p>
+        </div>
+      </form>
+    </div>
+  </section>
+</div>
     
 
     <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
