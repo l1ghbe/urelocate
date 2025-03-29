@@ -85,6 +85,10 @@
       display: flex;
       justify-content: center;
       padding: 5rem 8rem;
+
+      & > span {
+        display: none;
+      }
     }
   }
 }

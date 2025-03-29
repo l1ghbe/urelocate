@@ -9,12 +9,16 @@
       display: flex;
       flex-wrap: wrap;
       gap: 1.8rem;
+      height: 100%;
     }
 
     &-right {
-      // min-height: 30rem;
       flex: 1 1 30rem;
       min-width: 30%;
+
+      @include respond(tab-port) {
+        flex: 1 1 auto;
+      }
     }
 
     @include respond(tab-port) {
@@ -66,7 +70,7 @@
 
       & > ul {
         text-align: left;
-        list-style-image: url("../assets/img/dist/icons/doc-icon.svg");
+        // list-style: none;
         list-style-position: outside;
         padding-left: 1.8rem;
 
@@ -75,12 +79,11 @@
         }
 
         & > li {
-          padding-left: 1rem;
-          line-height: 100%;
-          font-size: 1.8rem;
-          &::marker {
-            font-size: 1.8em;
-          }
+          padding-left: 3.5rem;
+          list-style: none;
+          background-image: url("../assets/img/dist/icons/doc-icon.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
         }
       }
     }
@@ -97,7 +100,7 @@
         min-height: 24rem;
       }
 
-      & > img {
+      & > picture {
         position: absolute;
         inset: 0;
         z-index: -1;
@@ -105,10 +108,25 @@
         height: 100%;
         object-fit: cover;
 
+        & > img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: top;
+        }
         @include respond(tab-port) {
           object-position: center center;
         }
+        @include respond(phone) {
+          max-height: fit-content;
+        }
       }
+
+      // & > picture.udocs-map {
+      //   @include respond(tab-port) {
+      //     object-position: center center;
+      //   }
+      // }
 
       & > div {
         display: flex;
@@ -151,10 +169,6 @@
       max-height: 23rem;
       flex-basis: 35rem;
 
-      & > p {
-        // padding: 3.2rem 2.5rem 0;
-      }
-
       & > div {
         width: 100%;
         // height: 100%;
@@ -194,6 +208,8 @@
         font-size: 2.5rem;
         letter-spacing: 0.2rem;
         font-weight: 900;
+
+        cursor: url("./../assets/img/dist/icons/cursor.svg"), default;
       }
     }
 

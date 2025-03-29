@@ -1,41 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <title>Userver - Сервер для обхода блокировок</title>
+    <meta name="description" content="Сервер для обхода блокировок Userver помогает фрилансерам обходить блокировки, наложенные на граждан России и Беларуси">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="Сервер для обхода блокировок Userver"/>
+    <meta property="og:description" content="Сервер для обхода блокировок Userver помогает фрилансерам обходить блокировки, наложенные на граждан России и Беларуси"/>
+    <meta property="og:type" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:locale" content="ru_RU">
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     
     <link rel="stylesheet" href="./css/style.min.css" />
     
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-    <title>UServer</title>
+   ym(99556460, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/99556460" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
   </head>
   <body>
+
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org/",
+"@type": "WebPage",
+"name": "UServer"
+}
+</script>
+
+
     <div class="wrapper">
       <header>
         <div class="header-logo">
-          <a href="/"
-            ><img
-              class="header-logo__image"
-              src="./assets/img/dist/icons/logo.svg"
-              alt="logo"
-          /></a>
+          <a href="/">
+            <picture>
+              <source
+                media="(max-width: 1200px)"
+                srcset="./assets/img/dist/logo.png"
+              />
+              <img
+                width="3.9rem"
+                height="2.8rem"
+                decoding="sync"
+                fetchpriority="high"
+                class="header-logo__image"
+                src="./assets/img/dist/icons/logo.svg"
+                alt="URelocate"
+              />
+            </picture>
+          </a>
         </div>
       
         <nav class="nav">
           <h5 class="nav__item">
-            <a class="nav__link" href="/#services">Услуги</a>
+            <a class="nav__link" href="index.html#services">Услуги</a>
           </h5>
-          <h5 class="nav__item"><a class="nav__link" href="blog.html">Блог</a></h5>
+          <h5 class="nav__item"><a class="nav__link" href="/blog">Блог</a></h5>
           <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
           <h5 class="nav__item">
-            <a class="nav__link" href="/#instructions">Инструкции</a>
+            <a class="nav__link" href="index.html/#instructions">Инструкции</a>
           </h5>
         </nav>
       
@@ -43,13 +81,25 @@
           <div class="mobile-menu">
             <input id="checkbox-burger" class="checkbox" type="checkbox" />
             <label for="checkbox-burger">
-              <div class="checkbox-box"></div>
+              <div class="checkbox-box">
+                <img
+                  width="3.2rem"
+                  width="3.2rem"
+                  fetchpriority="high"
+                  loading="eager"
+                  class="mobile-menu-icon"
+                  src="./assets/img/dist/icons/burger.svg"
+                  alt="burger-icon"
+                />
+              </div>
             </label>
       
             <div class="background">
               <nav class="nav__mobile">
                 <h5 class="nav__item">
                   <img
+                    decoding="async"
+                    loading="lazy"
                     class="nav__image nav__image--services"
                     src="./assets/img/dist/icons/goods.svg"
                     alt="services"
@@ -58,15 +108,19 @@
                 </h5>
                 <h5 class="nav__item">
                   <img
+                    decoding="async"
+                    loading="lazy"
                     class="nav__image nav__image--blog"
                     src="./assets/img/dist/icons/blog-pencil.svg"
                     alt="blog-icon"
                   />
-                  <a class="nav__link nav__link--mobile" href="blog.html">Блог</a>
+                  <a class="nav__link nav__link--mobile" href="/blog">Блог</a>
                 </h5>
                 <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
                 <h5 class="nav__item">
                   <img
+                    decoding="async"
+                    loading="lazy"
                     class="nav__image nav__image--info"
                     src="./assets/img/dist/icons/info.svg"
                     alt="info-icon"
@@ -84,7 +138,7 @@
       <main class="main">
         <section class="service__hero u-margin-bottom-section">
           <h1 class="service__heading">
-            <span>Уникальный UServer</span> для обхода блокировок
+            <span>Сервер для обхода блокировок</span> <br>UServer
           </h1>
           <div class="service__card">
             <div class="service__card-preview">
@@ -103,7 +157,7 @@
               <div class="service__card-content-block">
                 <div class="service__card-price">
                   <span class="service__card-price-past">от $59</span>
-                  <span class="service__card-price-present">$49</span>
+                  <span class="service__card-price-present">$49 / 4400 ₽</span>
                   <span class="service__card-sale">-17%</span>
                 </div>
                 <a class="service__card-btn" href="userver.html#customer-form"
@@ -114,9 +168,9 @@
           </div>
         </section>
         <section class="blue-secton u-margin-bottom-section">
-          <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
+          <h2 class="heading-secondary u-text-center u-margin-bottom-heading">
             Что такое UServer?
-          </h1>
+          </h2>
           <div class="blue-secton__content">
             <div class="blue-secton__text">
               <h2 class="regular-heading u-margin-bottom-common">
@@ -162,7 +216,7 @@
               <img
                 class="image"
                 src="./assets/img/dist/wifi.webp"
-                alt="location-iamge"
+                alt="Userver"
               />
             </div>
           </div>
@@ -200,9 +254,9 @@
         </section>
 
         <section class="connection-section u-margin-bottom-section">
-          <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
+          <h2 class="heading-secondary u-text-center u-margin-bottom-heading">
             Как мне подключиться?
-          </h1>
+          </h2>
           <div class="connection-section__content">
             <div class="connection-section__image-block">
               <img
@@ -234,9 +288,9 @@
         </section>
 
         <section class="background-section u-margin-bottom-section">
-          <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
+          <h2 class="heading-secondary u-text-center u-margin-bottom-heading">
             Сопровождение
-          </h1>
+          </h2>
           <div class="background-section__content">
             <div class="background-section__text big-paragraph">
               Приобретая у нас услугу вы получаете полное сопровождение и
@@ -253,9 +307,9 @@
           </div>
         </section>
         <section class="why-userver-section u-margin-bottom-section">
-          <h1 class="heading-secondary u-margin-bottom-heading u-text-center">
+          <h2 class="heading-secondary u-margin-bottom-heading u-text-center">
             Почему именно UServer?
-          </h1>
+          </h2>
           <div class="why-userver-section__content">
             <div
               class="why-userver-section__item why-userver-section__item-common-info u-text-center"
@@ -357,20 +411,20 @@
           </div>
         </section>
         <section class="tariffs-section u-margin-bottom-section">
-          <h1 class="heading-secondary u-margin-bottom-heading u-text-center">
+          <h2 class="heading-secondary u-margin-bottom-heading u-text-center">
             Тарифы
-          </h1>
+          </h2>
           <div class="tariffs-section__content">
             <div class="tariffs-section__item">
               <p class="info">Аренда UServer на 1 месяц</p>
 
               <div class="services__price-offer">
                 <span class="services__price-past">от $59</span>
-                <span class="services__price-present">$49</span>
+                <span class="services__price-present">$49 / 4400 ₽</span>
                 <span class="services__sale">-17%</span>
               </div>
 
-              <a href="userver.html/#customer-form" class="btn"
+              <a href="userver.html#customer-form" class="btn"
                 >Оставить заявку</a
               >
             </div>
@@ -384,25 +438,25 @@
                 <span class="services__sale">-17%</span>
               </div>
 
-              <a href="userver.html/#customer-form" class="btn"
+              <a href="userver.html#customer-form" class="btn"
                 >Оставить заявку</a
               >
             </div>
           </div>
         </section>
         <section id="customer-form" class="purchase u-margin-bottom-section">
-          <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
-            Хотите приобрести<br />наши услуги?
-          </h1>
+          <h2 class="heading-secondary u-text-center u-margin-bottom-heading">
+            Оставь заявку прямо сейчас <br /> и получи подарок
+          </h2>
           <div class="purchase__form">
             <div class="form__text">
-              <h2 class="form__heading">Ответим на все ваши вопросы</h2>
+              <h2 class="form__heading">Получите бесплатную консультацию</h2>
               <p class="form__paragraph">
-                Получите консультацию по интересующим вас вопросам связанным с
-                зарубежным фрилансом и обходом блокировок фриланс-бирж
+                После заполнения формы с вами свяжется менеджер, который ответит на все интересующие вас вопросы связанные с зарубежными фриланс-биржами <br /> <br />
+        Оставив заявку вы получите <strong>подробный гайд</strong> с ключевыми советами для успешного старта на фрилансе
               </p>
             </div>
-            <form class="form__controls">
+            <form class="form__controls" id="telegramForm">
               <div class="form__fields">
                 <input
                   id="form-name"
@@ -428,6 +482,13 @@
                   required
                   placeholder="E-mail"
                 />
+                <textarea
+                  id="form-comment"
+                  type="text"
+                  name="comment"
+                  class="form__field"
+                  placeholder="Комментарий"
+                ></textarea>
               </div>
               <div class="form__buttons">
                 <button type="submit" class="form__btn">Отправить</button>
@@ -441,7 +502,7 @@
         </section>
         
         <section class="faq-section u-margin-bottom-section">
-          <h1 class="heading-secondary u-text-center u-margin-bottom-heading">FAQ</h1>
+          <h2 class="heading-secondary u-text-center u-margin-bottom-heading">FAQ</h2>
           <div class="faq-section__content">
             <ul class="accordion" id="accordion">
               <li class="accordion__item">
@@ -719,7 +780,7 @@
           <a href="index.html#instructions">Инструкции</a>
           <a href="index.html#clients">Отзывы</a>
           <a href="index.html#contacts">Контакты</a>
-          <a href="blog.html">Блог</a>
+          <a href="/blog">Блог</a>
         </div>
         <div class="footer__right">
           <div class="footer__social">
@@ -727,6 +788,10 @@
             <div class="footer__icons">
               <a href="https://t.me/upworkrelocate" target="_blank">
                 <picture class="footer__social-icon">
+                  <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/TelegramLogo.avif"
+                  />
                   <source
                     type="image/webp"
                     srcset="./assets/img/dist/TelegramLogo.webp"
@@ -737,6 +802,10 @@
               <a href="https://www.youtube.com/@URelocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/YouTubeLogo.avif"
+                  />
+                  <source
                     type="image/webp"
                     srcset="./assets/img/dist/YouTubeLogo.webp"
                   />
@@ -745,6 +814,10 @@
               </a>
               <a href="https://www.instagram.com/upwork.relocate" target="_blank">
                 <picture class="footer__social-icon">
+                  <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/InstagramLogo.avif"
+                  />
                   <source
                     type="image/webp"
                     srcset="./assets/img/dist/InstagramLogo.webp"
@@ -755,6 +828,10 @@
               <a href="https://vk.com/urelocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/VKLogo.avif"
+                  />
+                  <source
                     type="image/webp"
                     srcset="./assets/img/dist/VKLogo.webp"
                   />
@@ -763,6 +840,10 @@
               </a>
               <a href="https://discord.gg/PertUXuZRb" target="_blank">
                 <picture class="footer__social-icon">
+                  <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/DiscordLogo.avif"
+                  />
                   <source
                     type="image/webp"
                     srcset="./assets/img/dist/DiscordLogo.webp"

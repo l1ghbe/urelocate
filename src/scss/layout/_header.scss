@@ -15,12 +15,15 @@ header {
   position: relative;
   z-index: 1000;
   padding: 1rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
+
+  font-weight: 600;
+  line-height: 3.2rem;
 
   &__image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 }
 
@@ -80,6 +83,17 @@ header {
   }
 }
 
+.checkbox-box {
+  width: 3.2rem;
+  height: 3.2rem;
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+  }
+}
+
 .mobile-menu {
   position: relative;
   display: none;
@@ -88,15 +102,7 @@ header {
   @include respond(tab-port) {
     display: block;
   }
-}
 
-.checkbox-box {
-  width: 3.2rem;
-  height: 3.2rem;
-  background: url("../assets/img/dist/icons/burger.svg") no-repeat center center;
-}
-
-.mobile-menu {
   & > .checkbox {
     display: none;
     appearance: none;
@@ -105,16 +111,13 @@ header {
     position: relative;
     z-index: 1000;
   }
-  & > .checkbox:checked ~ label > div {
-    background: url("../assets/img/dist/icons/close.svg") no-repeat;
-    background-position: center center;
-  }
   & > .checkbox:checked ~ .background {
     left: 0;
   }
 
   & > .background {
     position: fixed;
+    z-index: 100;
     inset: 0;
     left: 100%;
     height: 100%;

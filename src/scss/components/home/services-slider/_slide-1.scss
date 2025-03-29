@@ -1,0 +1,46 @@
+.slide-1 {
+  background-color: $blue;
+  justify-content: space-between;
+
+  .image-content {
+    display: flex;
+    gap: 2rem;
+    align-items: start;
+    padding-top: 8.4rem;
+    padding-right: 5rem;
+    height: 100%;
+
+    @include respond(tab-port) {
+      justify-content: center;
+      padding: 1.8rem;
+      padding-bottom: 0;
+    }
+  }
+
+  .small {
+    width: 16.6rem;
+    height: 16.6rem;
+    height: 100%;
+
+    @include respond(phone) {
+      display: none;
+    }
+
+    & > img {
+      aspect-ratio: 1/1;
+      width: 100%;
+    }
+  }
+
+  .big {
+    aspect-ratio: 1;
+    width: auto;
+    max-height: 41.6rem;
+    height: 100%;
+    & > picture > img {
+      border-radius: 3.2rem;
+      // border-top-left-radius: 3.2rem;
+      // border-top-right-radius: 3.2rem;
+    }
+  }
+}

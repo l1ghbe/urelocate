@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <!--=include head-content.html -->
 
@@ -32,7 +32,7 @@
               <div class="service__card-content-block">
                 <div class="service__card-price">
                   <span class="service__card-price-past">от $129</span>
-                  <span class="service__card-price-present">$89</span>
+                  <span class="service__card-price-present">$89 / 8000 ₽ </span>
                   <span class="service__card-sale">-31%</span>
                 </div>
                 <a class="service__card-btn" href="unblock.html#customer-form"
@@ -177,7 +177,9 @@
               >
                 <div><span>СЕРВИС №1</span> по обходу блокировок</div>
                 <div class="why-unblock-section__item-subunion">
-                  <div><span>0</span>БЛОКИРОВОК АККАУНТОВ</div>
+                  <div class="account-blocked">
+                    <span>0</span>блокировок аккаунтов
+                  </div>
                   <div>
                     <span>БОЛЕЕ 800</span>кейсов успешной
                     регистрации/разблокировки
@@ -219,7 +221,28 @@
             </div>
             <div class="why-unblock-section__content-right">
               <div class="why-udocs-section__item why-udocs-section__item-map">
-                <img src="./assets/img/dist/MapVert.webp" alt="location-img" />
+                <picture>
+                  <source
+                    media="(max-width: 600px)"
+                    srcset="./assets/img/dist/map-mobile.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    media="(max-width: 600px)"
+                    srcset="./assets/img/dist/map-mobile.webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./assets/img/dist/vmap-wt.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="./assets/img/dist/vmap-wt.webp"
+                    type="image/webp"
+                  />
+                  <img src="./assets/img/dist/vmap-wt.png" alt="map" />
+                </picture>
+
                 <div>
                   <p>локация</p>
                   <p>польша</p>
@@ -250,7 +273,7 @@
 
               <div class="services__price-offer">
                 <span class="services__price-past">от $104</span>
-                <span class="services__price-present">$89</span>
+                <span class="services__price-present">$89 / 8000 ₽ </span>
                 <span class="services__sale">-15%</span>
               </div>
 
@@ -264,7 +287,7 @@
 
               <div class="services__price-offer">
                 <span class="services__price-past">от $59</span>
-                <span class="services__price-present">$49</span>
+                <span class="services__price-present">$49 / 4400 ₽</span>
                 <span class="services__sale">-17%</span>
               </div>
 

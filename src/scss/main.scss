@@ -14,11 +14,13 @@
 @import "pages/payoneer";
 @import "pages/unblock";
 @import "pages/services";
+@import "pages/thank-you";
 
 @import "layout/header";
 @import "layout/navigation";
 @import "layout/footer";
 
+@import "components/common/services-slide";
 @import "components/common/chip-view";
 @import "components/common/answer-form";
 @import "components/common/faq";
@@ -28,8 +30,16 @@
 @import "components/common/black-section";
 @import "components/common/background-section";
 @import "components/common/tariffs-section";
+@import "components/common/popup";
 
 @import "components/home/instruments";
+@import "components/home/services-slider/slide-1";
+@import "components/home/services-slider/slide-2";
+@import "components/home/services-slider/slide-3";
+@import "components/home/services-slider/slide-4";
+@import "components/home/services-slider/slide-5";
+@import "components/home/services-slider/slide-6";
+@import "components/home/services-slider/slide-7";
 @import "components/home/services";
 @import "components/home/feedback";
 @import "components/home/instructions";

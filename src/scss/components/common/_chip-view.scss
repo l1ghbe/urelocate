@@ -88,7 +88,7 @@
       flex-wrap: nowrap;
       justify-content: flex-start;
       overflow: auto;
-
+      padding-bottom: 1rem;
       white-space: nowrap;
     }
   }
@@ -101,6 +101,7 @@
     font-weight: 600;
     background-color: $white;
     transition: 0.3s;
+    cursor: pointer;
 
     &:hover {
       background-color: rgba($black, 0.8);

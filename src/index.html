@@ -1,41 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <title>URelocate - сервисы для фрилансеров</title>
+    <meta name="description" content="Посетите сайт URelocate, чтобы узнать, как фрилансеру работать на зарубежных биржах, как получать деньги и зарабатывать. Отзывы и советы. ">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="URelocate - сервисы для фрилансеров"/>
+    <meta property="og:description" content="Посетите сайт URelocate, чтобы узнать, как фрилансеру работать на зарубежных биржах, как получать деньги и зарабатывать. Отзывы и советы. "/>
+    <meta property="og:type" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:locale" content="ru_RU">
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     
     <link rel="stylesheet" href="./css/style.min.css" />
     
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    
+    <link rel="stylesheet" href="./css/splide-core.min.css" />
 
-    <title>URelocate</title>
+<meta name="google-site-verification" content="LKP42VPZOXkFEnNu15NbYi_OYEMssmLTr65-KZ_B2O4" />
+<meta name="yandex-verification" content="610a1b81dcc89598" />
+
+<script src="https://apis.google.com/js/api.js" async defer></script>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(99556460, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/99556460" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
   </head>
   <body>
+
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org/",
+"@type": "WebPage",
+"name": "URelocate"
+}
+</script>
+
     <div class="wrapper">
       <header>
         <div class="header-logo">
-          <a href="/"
-            ><img
-              class="header-logo__image"
-              src="./assets/img/dist/icons/logo.svg"
-              alt="logo"
-          /></a>
+          <a href="/">
+            <picture>
+              <source
+                media="(max-width: 1200px)"
+                srcset="./assets/img/dist/logo.png"
+              />
+              <img
+                width="3.9rem"
+                height="2.8rem"
+                decoding="sync"
+                fetchpriority="high"
+                class="header-logo__image"
+                src="./assets/img/dist/icons/logo.svg"
+                alt="URelocate"
+              />
+            </picture>
+          </a>
         </div>
       
         <nav class="nav">
           <h5 class="nav__item">
-            <a class="nav__link" href="/#services">Услуги</a>
+            <a class="nav__link" href="index.html#services">Услуги</a>
           </h5>
-          <h5 class="nav__item"><a class="nav__link" href="blog.html">Блог</a></h5>
+          <h5 class="nav__item"><a class="nav__link" href="/blog">Блог</a></h5>
           <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
           <h5 class="nav__item">
-            <a class="nav__link" href="/#instructions">Инструкции</a>
+            <a class="nav__link" href="index.html/#instructions">Инструкции</a>
           </h5>
         </nav>
       
@@ -43,13 +87,25 @@
           <div class="mobile-menu">
             <input id="checkbox-burger" class="checkbox" type="checkbox" />
             <label for="checkbox-burger">
-              <div class="checkbox-box"></div>
+              <div class="checkbox-box">
+                <img
+                  width="3.2rem"
+                  width="3.2rem"
+                  fetchpriority="high"
+                  loading="eager"
+                  class="mobile-menu-icon"
+                  src="./assets/img/dist/icons/burger.svg"
+                  alt="burger-icon"
+                />
+              </div>
             </label>
       
             <div class="background">
               <nav class="nav__mobile">
                 <h5 class="nav__item">
                   <img
+                    decoding="async"
+                    loading="lazy"
                     class="nav__image nav__image--services"
                     src="./assets/img/dist/icons/goods.svg"
                     alt="services"
@@ -58,15 +114,19 @@
                 </h5>
                 <h5 class="nav__item">
                   <img
+                    decoding="async"
+                    loading="lazy"
                     class="nav__image nav__image--blog"
                     src="./assets/img/dist/icons/blog-pencil.svg"
                     alt="blog-icon"
                   />
-                  <a class="nav__link nav__link--mobile" href="blog.html">Блог</a>
+                  <a class="nav__link nav__link--mobile" href="/blog">Блог</a>
                 </h5>
                 <!-- <h5 class="nav__item"><a class="nav__link" href="#">О Нас</a></h5> -->
                 <h5 class="nav__item">
                   <img
+                    decoding="async"
+                    loading="lazy"
                     class="nav__image nav__image--info"
                     src="./assets/img/dist/icons/info.svg"
                     alt="info-icon"
@@ -82,40 +142,316 @@
       </header>
       
       <main class="main">
-        <!--include home/instruments.html -->
-        <section class="journey u-margin-bottom-section">
-          <div class="text-content">
-            <p class="heading-primary u-text-white">
-              Начни свой путь на зарубежном фрилансе
-            </p>
-            <div class="tags">
-              <span class="tag">upwork</span>
-            </div>
+        <div class="splide splide-hero u-margin-bottom-section">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="service-slide splide__slide slide-1">
+                <div class="text-content">
+                  <h1><p class="heading-primary instruments-heading u-text-white">
+                    Начни свой путь на зарубежном фрилансе c URelocate
+                  </p></h1>
+                  <div class="tags">
+                    <span class="tag">upwork</span>
+                  </div>
+                </div>
+                <div class="image-content">
+                  <div class="small">
+                    <picture>
+                      <source srcset="./assets/img/dist/upwork-logo.avif" type="image/avif" />
+                      <source srcset="./assets/img/dist/upwork-logo.webp" type="image/webp" />
+                      <img
+                        fetchpriority="high"
+                        src="./assets/img/dist/upwork-logo.png"
+                        alt="upwork-icon"
+                      />
+                    </picture>
+                  </div>
+                  <div class="big">
+                    <picture>
+                      <source
+                        media="(max-width: 600px)"
+                        srcset="./assets/img/dist/upwork-landing-mobile.avif"
+                        type="image/avif"
+                      />
+                      <source
+                        media="(max-width: 600px)"
+                        srcset="./assets/img/dist/upwork-landing-mobile.webp"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(max-width: 1100px)"
+                        srcset="./assets/img/dist/upwork-landing-tablet.avif"
+                        type="image/avif"
+                      />
+                      <source
+                        media="(max-width: 1100px)"
+                        srcset="./assets/img/dist/upwork-landing-tablet.webp"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="./assets/img/dist/upwork-landing.avif"
+                        type="image/avif"
+                      />
+                      <source
+                        srcset="./assets/img/dist/upwork-landing.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        loading="eager"
+                        fetchpriority="high"
+                        width="480"
+                        src="./assets/img/dist/upwork-landing.png"
+                        alt="journey-icon"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </li>
+              
+              <!--=nclude home//services-slider/slide-2.html -->
+              <li class="service-slide splide__slide slide-3">
+                <div class="text-content">
+                  <p class="heading-primary instruments-heading u-text-white">
+                    Получи полный доступ к платежной системе Payoneer
+                  </p>
+                  <div class="tags">
+                    <span class="tag">payoneer</span>
+                    <span class="tag">регистрация payoneer</span>
+                    <span class="tag">вывод средств</span>
+                  </div>
+                </div>
+                <div class="image-content">
+                  <div class="left">
+                    <picture>
+                      <source
+                        type="image/avif"
+                        srcset="./assets/img/dist/services-slide-3-1.avif"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="./assets/img/dist/services-slide-3-1.webp"
+                      />
+                      <img
+                        decoding="async"
+                        data-splide-lazy="./assets/img/dist/services-slide-3-1.png"
+                        alt="journey-icon"
+                      />
+                    </picture>
+                    <picture>
+                      <source
+                        type="image/avif"
+                        srcset="./assets/img/dist/services-slide-3-2.avif"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="./assets/img/dist/services-slide-3-2.webp"
+                      />
+                      <img
+                        data-splide-lazy="./assets/img/dist/services-slide-3-2.png"
+                        alt="journey-icon"
+                      />
+                    </picture>
+                  </div>
+                  <div class="center">
+                    <picture>
+                      <source
+                        type="image/avif"
+                        srcset="./assets/img/dist/services-slide-3-3.avif"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="./assets/img/dist/services-slide-3-3.webp"
+                      />
+                      <img
+                        data-splide-lazy="./assets/img/dist/services-slide-3-3.png"
+                        alt="journey-icon"
+                      />
+                    </picture>
+                  </div>
+                  <div class="right">
+                    <picture>
+                      <source
+                        type="image/avif"
+                        srcset="./assets/img/dist/services-slide-3-4.avif"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="./assets/img/dist/services-slide-3-4.webp"
+                      />
+                      <img
+                        data-splide-lazy="./assets/img/dist/services-slide-3-4.png"
+                        alt="journey-icon"
+                      />
+                    </picture>
+                    <picture>
+                      <source
+                        type="image/avif"
+                        srcset="./assets/img/dist/services-slide-3-5.avif"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="./assets/img/dist/services-slide-3-5.webp"
+                      />
+                      <img
+                        data-splide-lazy="./assets/img/dist/services-slide-3-5.png"
+                        alt="journey-icon"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </li>
+              
+              <li class="service-slide splide__slide slide-4">
+                <div class="text-content">
+                  <p class="heading-primary instruments-heading u-text-white">
+                    Передовые ИИ сервисы теперь доступны
+                  </p>
+                  <div class="tags">
+                    <span class="tag">dall-E</span>
+                    <span class="tag">chat gpt-4</span>
+                    <span class="tag">midjorney</span>
+                    <span class="tag">leonardo</span>
+                  </div>
+                </div>
+                <div class="image-content">
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="./assets/img/dist/services-slide-4.avif"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="./assets/img/dist/services-slide-4.webp"
+                    />
+                    <img
+                      decoding="async"
+                      data-splide-lazy="./assets/img/dist/services-slide-4.png"
+                      alt="journey-icon"
+                    />
+                  </picture>
+                </div>
+              </li>
+              
+              <li class="service-slide splide__slide slide-5">
+                <div class="text-content">
+                  <p class="heading-primary instruments-heading u-text-white">
+                    Управляй рекламой в Google ADs и Facebook без ограничений
+                  </p>
+                  <div class="tags">
+                    <span class="tag">google ads</span>
+                    <span class="tag">facebook ads</span>
+                  </div>
+                </div>
+                <div class="image-content">
+                  <picture>
+                    <source
+                      srcset="./assets/img/dist/services-slide-5.avif"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="./assets/img/dist/services-slide-5.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      decoding="async"
+                      data-splide-lazy="./assets/img/dist/services-slide-5.png"
+                      alt="journey-icon"
+                    />
+                  </picture>
+                </div>
+              </li>
+              
+              <li class="service-slide splide__slide slide-6">
+                <div class="text-content">
+                  <p class="heading-primary instruments-heading u-text-white">
+                    Лучшие инструменты для дизайнера снова доступны
+                  </p>
+                  <div class="tags">
+                    <span class="tag">На UpWork с 2018 года</span>
+                  </div>
+                </div>
+                <div class="image-content">
+                  <picture class="first">
+                    <source
+                      srcset="./assets/img/dist/services-slide-6-2.avif"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="./assets/img/dist/services-slide-6-2.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      decoding="async"
+                      data-splide-lazy="./assets/img/dist/services-slide-6-2.png"
+                      alt="journey-icon"
+                    />
+                  </picture>
+              
+                  <picture class="second">
+                    <source
+                      srcset="./assets/img/dist/services-slide-6-1.avif"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="./assets/img/dist/services-slide-6-1.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      decoding="async"
+                      data-splide-lazy="./assets/img/dist/services-slide-6-1.png"
+                      alt="journey-icon"
+                    />
+                  </picture>
+                </div>
+              </li>
+              
+              <li class="service-slide splide__slide slide-7">
+                <div class="text-content">
+                  <p class="heading-primary instruments-heading u-text-white">
+                    Товарный бизнес через Shopify или Etsy снова с вами
+                  </p>
+                  <div class="tags">
+                    <span class="tag">shopify</span>
+                    <span class="tag">amazon</span>
+                    <span class="tag">etsy</span>
+                  </div>
+                </div>
+                <div class="image-content">
+                  <picture>
+                    <source
+                      srcset="./assets/img/dist/services-slide-7.webp"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="./assets/img/dist/services-slide-7.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      decoding="async"
+                      data-splide-lazy="./assets/img/dist/services-slide-7.png"
+                      alt="journey-icon"
+                    />
+                  </picture>
+                </div>
+              </li>
+              
+            </ul>
           </div>
-          <div class="image-content">
-            <div class="small">
-              <img src="./assets/img/dist/icons/upwork-logo.svg" alt="upwork-icon" />
-            </div>
-            <div class="big">
-              <picture>
-                <source srcset="./assets/img/dist/journey.webp" type="image/webp" />
-                <img src="./assets/img/dist/journey.png" alt="journey-icon" />
-              </picture>
-            </div>
-          </div>
-        </section>
-        
+        </div>
+
         <section class="services u-margin-bottom-section">
-          <h1
+          <h2
             id="services"
             class="heading-secondary u-text-center u-margin-bottom-heading"
           >
             Наши услуги
-          </h1>
+          </h2>
           <div class="services__list">
             <div class="services__item">
               <div class="services__preview">
                 <video
+                  height="100%"
+                  preload="none"
                   playsinline
                   muted="muted"
                   autoplay="autoplay"
@@ -123,7 +459,8 @@
                   class="prod-icon-cont"
                 >
                   <source
-                    src="./assets/img/dist/videos/UServerPrvw.webm"
+                    data-src="./assets/img/dist/videos/UServerPrvw.webm"
+                    src=""
                     type="video/webm"
                   />
                 </video>
@@ -142,7 +479,7 @@
                 <div class="services__price">
                   <div class="services__price-offer">
                     <span class="services__price-past">от $59</span>
-                    <span class="services__price-present">$49</span>
+                    <span class="services__price-present">$49 / 4400 ₽</span>
                     <span class="services__sale">-17%</span>
                   </div>
                 </div>
@@ -161,6 +498,7 @@
             <div class="services__item">
               <div class="services__preview">
                 <video
+                  preload="none"
                   playsinline
                   muted="muted"
                   autoplay="autoplay"
@@ -168,7 +506,8 @@
                   class="prod-icon-cont"
                 >
                   <source
-                    src="./assets/img/dist/videos/UDocsPreview1.webm"
+                    data-src="./assets/img/dist/videos/UDocsPreview1.webm"
+                    src=""
                     type="video/webm"
                   />
                 </video>
@@ -187,7 +526,7 @@
                 <div class="services__price">
                   <div class="services__price-offer">
                     <span class="services__price-past">от $69</span>
-                    <span class="services__price-present">$55</span>
+                    <span class="services__price-present">$55 / 4950 ₽</span>
                     <span class="services__sale">-20%</span>
                   </div>
                 </div>
@@ -206,6 +545,7 @@
             <div class="services__item">
               <div class="services__preview">
                 <video
+                  preload="none"
                   playsinline
                   muted="muted"
                   autoplay="autoplay"
@@ -213,7 +553,8 @@
                   class="prod-icon-cont"
                 >
                   <source
-                    src="./assets/img/dist/videos/UpFivPrvw.webm"
+                    src=""
+                    data-src="./assets/img/dist/videos/UpFivPrvw.webm"
                     type="video/webm"
                   />
                 </video>
@@ -232,7 +573,7 @@
                 <div class="services__price">
                   <div class="services__price-offer">
                     <span class="services__price-past">от $129</span>
-                    <span class="services__price-present">$89</span>
+                    <span class="services__price-present">$89 / 8000 ₽</span>
                     <span class="services__sale">-31%</span>
                   </div>
                 </div>
@@ -251,6 +592,7 @@
             <div class="services__item">
               <div class="services__preview">
                 <video
+                  preload="none"
                   playsinline
                   muted="muted"
                   autoplay="autoplay"
@@ -258,7 +600,8 @@
                   class="prod-icon-cont"
                 >
                   <source
-                    src="./assets/img/dist/videos/PayoneerPrvw.webm"
+                    src=""
+                    data-src="./assets/img/dist/videos/PayoneerPrvw.webm"
                     type="video/webm"
                   />
                 </video>
@@ -277,7 +620,7 @@
                 <div class="services__price">
                   <div class="services__price-offer">
                     <span class="services__price-past">от $119</span>
-                    <span class="services__price-present">$85</span>
+                    <span class="services__price-present">$85 / 7650 ₽</span>
                     <span class="services__sale">-30%</span>
                   </div>
                 </div>
@@ -296,6 +639,7 @@
             <div class="services__item">
               <div class="services__preview">
                 <video
+                  preload="none"
                   playsinline
                   muted="muted"
                   autoplay="autoplay"
@@ -303,7 +647,8 @@
                   class="prod-icon-cont"
                 >
                   <source
-                    src="./assets/img/dist/videos/UServerPrvw.webm"
+                    src=""
+                    data-src="./assets/img/dist/videos/UServerPrvw.webm"
                     type="video/webm"
                   />
                 </video>
@@ -323,7 +668,7 @@
                 <div class="services__price">
                   <div class="services__price-offer">
                     <span class="services__price-past">от $79</span>
-                    <span class="services__price-present">$49</span>
+                    <span class="services__price-present">$49 / 4400 ₽</span>
                     <span class="services__sale">-51%</span>
                   </div>
                 </div>
@@ -342,6 +687,7 @@
             <div class="services__item">
               <div class="services__preview">
                 <video
+                  preload="none"
                   playsinline
                   muted="muted"
                   autoplay="autoplay"
@@ -349,7 +695,8 @@
                   class="prod-icon-cont"
                 >
                   <source
-                    src="./assets/img/dist/videos/OtherPreview.webm"
+                    src=""
+                    data-src="./assets/img/dist/videos/OtherPreview.webm"
                     type="video/webm"
                   />
                 </video>
@@ -369,7 +716,7 @@
                 <div class="services__price">
                   <div class="services__price-offer">
                     <span class="services__price-past">от $59</span>
-                    <span class="services__price-present">$49</span>
+                    <span class="services__price-present">$49 / 4400 ₽</span>
                     <span class="services__sale">-17%</span>
                   </div>
                 </div>
@@ -387,20 +734,210 @@
           </div>
         </section>
         
-        <!-- include home/feedback.html -->
+        <section id="clients" class="feedback u-margin-bottom-section-small">
+          <h2 class="heading-secondary u-text-center u-margin-bottom-heading">
+            Отзывы о URelocate
+          </h2>
+        
+          <section class="splide splide-feedback">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="splide__slide-feedback-wrapper">
+                    <div class="splide__slide-content">
+                      <h2 class="splide__slide-header">
+                        <span>Вероника</span> | Видеомонтажер
+                      </h2>
+                      <p class="splide__slide-main">
+                        3 года на апворк, заработок более 40000$
+                      </p>
+                      <p class="splide__slide-footer">
+                        “Еще в 22 году пыталась самостоятельно разблокировать свой
+                        профиль UpWork и чуть было не «наломала дров». Доверилась
+                        Upwork relocate еще в самом начале их пути и за 2 года ни разу не
+                        пожалела об этом!”
+                      </p>
+                    </div>
+                    <picture class="splide__picture">
+                      <source
+                        type="image/avif"
+                        srcset="./assets/img/dist/veronica.avif"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="./assets/img/dist/veronica.webp"
+                      />
+                      <img
+                        decoding="async"
+                        data-splide-lazy="./assets/img/dist/veronica.png"
+                        alt="user-photo"
+                      />
+                    </picture>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__slide-feedback-wrapper">
+                    <div class="splide__slide-content">
+                      <h2 class="splide__slide-header">
+                        <span>Мишель</span> | Менеджер по продажам и маркетинг
+                      </h2>
+                      <p class="splide__slide-main">
+                        1,5 года на UpWork Заработок более $30.000
+                      </p>
+                      <p class="splide__slide-footer">
+                        “Ребята профессионалы с большой буквы! Провели за ручку по всем
+                        этапам и ответили на все вопросы”
+                      </p>
+                    </div>
+                    <picture class="splide__picture">
+                      <source
+                        type="image/avif"
+                        srcset="./assets/img/dist/mishele.avif"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="./assets/img/dist/mishele.webp"
+                      />
+                      <img
+                        decoding="async"
+                        data-splide-lazy="./assets/img/dist/mishele.png"
+                        alt="user-photo"
+                      />
+                    </picture>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__slide-feedback-wrapper">
+                    <div class="splide__slide-content">
+                      <h2 class="splide__slide-header">
+                        <span>Борис</span> | разработка VPN - приложений
+                      </h2>
+                      <p class="splide__slide-main">
+                        6 месяцев на Upwork, заработок более 60000$
+                      </p>
+                      <p class="splide__slide-footer">
+                        “Некоторое время работал на российском фрилансе и ребята из
+                        Urelocate стали настоящей находкой для меня! Благодаря ним
+                        открыл для себя доступ к UpWork и чуть более чем за 6 месяц смог
+                        стать одним из самых успешных фрилансеров в своей нише. Спасибо
+                        за возможность!”
+                      </p>
+                    </div>
+                    <picture class="splide__picture">
+                      <source type="image/avif" srcset="./assets/img/dist/boris.avif" />
+                      <source type="image/webp" srcset="./assets/img/dist/boris.webp" />
+                      <img
+                        decoding="async"
+                        data-splide-lazy="./assets/img/dist/boris.jpg"
+                        alt="user-photo"
+                      />
+                    </picture>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__slide-feedback-wrapper">
+                    <div class="splide__slide-content">
+                      <h2 class="splide__slide-header">
+                        <span>Анастасия</span> | Дизайнер
+                      </h2>
+                      <p class="splide__slide-main">
+                        6 лет на UpWork Заработок более $100.000
+                      </p>
+                      <p class="splide__slide-footer">
+                        “После блокировки UpWork несколько месяцев искала решение,
+                        однако все попытки были неудачны. После всех мучений, когда
+                        нашла этот сервис - не могла поверить, что все получится
+                        Urelocate-это настоящая находка, рекомендую”
+                      </p>
+                    </div>
+                    <picture class="splide__picture">
+                      <source
+                        type="image/avif"
+                        srcset="./assets/img/dist/anastasia.avif"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="./assets/img/dist/anastasia.webp"
+                      />
+                      <img
+                        decoding="async"
+                        data-splide-lazy="./assets/img/dist/anastasia.jpg"
+                        alt="user-photo"
+                      />
+                    </picture>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__slide-feedback-wrapper">
+                    <div class="splide__slide-content">
+                      <h2 class="splide__slide-header">
+                        <span>Антон</span> | Fullstack Web Dev
+                      </h2>
+                      <p class="splide__slide-main">
+                        2 года на UpWork Заработок более $30.000
+                      </p>
+                      <p class="splide__slide-footer">
+                        “Отличный сервис для работы, быстрая поддержка, и в целом видно,
+                        что стараются помочь всем у кого возникают вопросы. При наличии
+                        такого ресурса вам доступны все сервисы из санкционного списка”
+                      </p>
+                    </div>
+                    <picture class="splide__picture">
+                      <source type="image/avif" srcset="./assets/img/dist/anton.avif" />
+                      <source type="image/webp" srcset="./assets/img/dist/anton.webp" />
+                      <img
+                        decoding="async"
+                        data-splide-lazy="./assets/img/dist/anton.jpg"
+                        alt="user-photo"
+                      />
+                    </picture>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__slide-feedback-wrapper">
+                    <div class="splide__slide-content">
+                      <h2 class="splide__slide-header">
+                        <span>Сергей</span> | UX/UI, Дизайнер
+                      </h2>
+                      <p class="splide__slide-main">
+                        На UpWork с 2018 года Заработок более $150.000
+                      </p>
+                      <p class="splide__slide-footer">
+                        “Нравится как работают ребята, все чётко, быстро и без
+                        каких-либо проблем! Если возникают вопросы, то всегда помогают.
+                        Рекомендовал вас уже многим своим знакомым, да и буду дальше
+                        рекомендовать! ”
+                      </p>
+                    </div>
+                    <picture class="splide__picture">
+                      <source type="image/avif" srcset="./assets/img/dist/serge.avif" />
+                      <source type="image/webp" srcset="./assets/img/dist/serge.webp" />
+                      <img
+                        decoding="async"
+                        data-splide-lazy="./assets/img/dist/serge.png"
+                        alt="user-photo"
+                      />
+                    </picture>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        
         <section id="customer-form" class="purchase u-margin-bottom-section">
-          <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
-            Хотите приобрести<br />наши услуги?
-          </h1>
+          <h2 class="heading-secondary u-text-center u-margin-bottom-heading">
+            Оставь заявку прямо сейчас <br /> и получи подарок
+          </h2>
           <div class="purchase__form">
             <div class="form__text">
-              <h2 class="form__heading">Ответим на все ваши вопросы</h2>
+              <h2 class="form__heading">Получите бесплатную консультацию</h2>
               <p class="form__paragraph">
-                Получите консультацию по интересующим вас вопросам связанным с
-                зарубежным фрилансом и обходом блокировок фриланс-бирж
+                После заполнения формы с вами свяжется менеджер, который ответит на все интересующие вас вопросы связанные с зарубежными фриланс-биржами <br /> <br />
+        Оставив заявку вы получите <strong>подробный гайд</strong> с ключевыми советами для успешного старта на фрилансе
               </p>
             </div>
-            <form class="form__controls">
+            <form class="form__controls" id="telegramForm">
               <div class="form__fields">
                 <input
                   id="form-name"
@@ -426,6 +963,13 @@
                   required
                   placeholder="E-mail"
                 />
+                <textarea
+                  id="form-comment"
+                  type="text"
+                  name="comment"
+                  class="form__field"
+                  placeholder="Комментарий"
+                ></textarea>
               </div>
               <div class="form__buttons">
                 <button type="submit" class="form__btn">Отправить</button>
@@ -439,9 +983,9 @@
         </section>
         
         <section id="instructions" class="instructions u-margin-bottom-section">
-          <h1 class="heading-primary u-text-center u-margin-bottom-heading">
+          <h2 class="heading-primary u-text-center u-margin-bottom-heading">
             Полезные инструкции от URelocate
-          </h1>
+          </h2>
           <div class="instructions__chips u-margin-bottom-heading">
             <div class="chip__labels">
               <label for="tag-1" class="chip__label chip__label--active"
@@ -513,35 +1057,42 @@
                   путь на UpWork
                 </p>
                 <a
-                  href="./assets/pdf/registration-verification.pdf"
+                  href="#"
+                  data-download-url="./assets/pdf/registration-verification.pdf"
                   class="view__btn view-inctruction-link"
-                  download
                   >Получить инструкцию</a
                 >
               </div>
               <div class="view__video-block">
-                <picture class="instructions-view__video view__video">
-                  <img
-                    class="instructions-view-videoSrc"
-                    src="./assets/img/dist/instr-1.webp"
-                    type="video/webp"
+                <video
+                  preload="none"
+                  playsinline
+                  muted="muted"
+                  autoplay="autoplay"
+                  loop="loop"
+                  class="instructions-view__video view__video instructions-view-videoSrc"
+                >
+                  <source
+                    src="./assets/img/dist/videos/registration.webm"
+                    type="video/webm"
                   />
-                </picture>
+                </video>
               </div>
             </div>
           </div>
         </section>
         
         <section class="statistics">
-          <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
+          <h2 class="heading-secondary u-text-center u-margin-bottom-heading">
             Немного интересной статистики
-          </h1>
+          </h2>
           <div class="statistics__grid u-margin-bottom-section">
             <div class="statistics__grid-item">
               <h2 class="u-text-center">Зачем вам нужен зарубежный фриланс?</h2>
             </div>
             <div class="statistics__grid-item">
               <video
+                preload="none"
                 playsinline
                 muted="muted"
                 autoplay="autoplay"
@@ -562,8 +1113,9 @@
             </div>
             <div class="statistics__grid-item">
               <div class="u-text-center">
-                <h3 class="">150-250К</h3>
                 <p>среднестатистический заработок</p>
+                <h3 class="">150-250К</h3>
+                <p>рублей в месяц</p>
               </div>
             </div>
             <div class="statistics__grid-item">
@@ -584,11 +1136,11 @@
           </div>
         </section>
         
-        <!-- include home/courses.html -->
+        <!--include home/courses.html -->
         <section class="blog-section u-margin-bottom-section">
-          <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
+          <h2 class="heading-secondary u-text-center u-margin-bottom-heading">
             Наш полезный блог
-          </h1>
+          </h2>
           <div class="blog-section__content">
             <div class="blog-section__huge-block">
               <div class="blog-section__huge-block__content">
@@ -598,7 +1150,7 @@
                 </div>
                 <div class="blog-section__bottom-block">
                   <h2 class="huge-paragraph">Как выйти на фриланс новичку</h2>
-                  <a href="blog-article-1.html" class="blog-section__btn-link"
+                  <a href="freelance-for-new-users.html" class="blog-section__btn-link"
                     >Читать</a
                   >
                 </div>
@@ -611,8 +1163,10 @@
                 </h2>
               </div>
               <div class="blog-section__arrow">
-                <a class="blog-section__arrow-link" href="./blog.html">
+                <a class="blog-section__arrow-link" href=".//blog">
+                  <span>Посетить блог</span>
                   <svg
+                    aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     width="152"
                     height="30"
@@ -630,18 +1184,20 @@
           </div>
         </section>
         
+
         <section class="community-section u-margin-bottom-section">
           <div class="community-section__content">
-            <h1 class="community-section__heading u-text-center u-text-white">
+            <h2 class="community-section__heading u-text-center u-text-white">
               Ламповое и готовое помочь
               <a class="community-section__link" href="https://discord.gg/PertUXuZRb"
-                >коммьюнти</a
+                >комьюнти</a
               >
-            </h1>
+            </h2>
           </div>
         
           <div class="community-section__video-block">
             <video
+              preload="none"
               playsinline
               muted="muted"
               autoplay="autoplay"
@@ -655,7 +1211,7 @@
         
         <section class="ref-program-section u-margin-bottom-section">
           <div class="ref-program-section__content u-text-white">
-            <h1 class="regular-heading">Реферальная программа</h1>
+            <h2 class="regular-heading">Реферальная программа</h2>
             <p class="big-paragraph">
               Мы всегда открыты к новому сотрудничеству и готовы обсудить с вами
               индивидуальные условия реферальной системы. Приводите к нам ваших друзей и
@@ -665,23 +1221,29 @@
           </div>
           <div class="ref-program-section__image">
             <picture>
+              <source type="image/avif" srcset="./assets/img/dist/referral.avif" />
               <source src="./assets/img/dist/referral.webp" type="image/webp" />
-              <img src="./assets/img/dist/referral.png" alt="ref-program-image" />
+              <img
+                decoding="async"
+                src="./assets/img/dist/referral.png"
+                alt="ref-program-image"
+              />
             </picture>
           </div>
         </section>
         
         <section class="videos-section u-margin-bottom-section">
-          <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
+          <h2 class="heading-secondary u-text-center u-margin-bottom-heading">
             Наши видео
-          </h1>
+          </h2>
           <div class="videos-section__grid">
             <div class="videos-section__left">
               <div class="videos-section__grid-item">
                 <iframe
                   width="100%"
+                  loading="lazy"
                   height="100%"
-                  src="https://www.youtube.com/embed/eIbfSp76mdM?si=cfoyA_jLCitg7erX"
+                  src="https://www.youtube.com/embed/CkB9955Va6s?si=OcmawMTMA5DYxx31"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -692,6 +1254,7 @@
               <div class="videos-section__grid-item">
                 <iframe
                   width="100%"
+                  loading="lazy"
                   height="100%"
                   src="https://www.youtube.com/embed/1JMJbxLw0-c?si=8YGcGSM019kDugPp"
                   title="YouTube video player"
@@ -704,8 +1267,9 @@
               <div class="videos-section__grid-item">
                 <iframe
                   width="100%"
+                  loading="lazy"
                   height="100%"
-                  src="https://www.youtube.com/embed/1JMJbxLw0-c?si=qHr4hj3XGgz2ekEu"
+                  src="https://www.youtube.com/embed/m-J7QhTXXAU?si=wjXdVkI0cMa5ytgS"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -716,8 +1280,9 @@
               <div class="videos-section__grid-item">
                 <iframe
                   width="100%"
+                  loading="lazy"
                   height="100%"
-                  src="https://www.youtube.com/embed/TATdx8NU7YI?si=O7AzVPVxGRhFLszc"
+                  src="https://www.youtube.com/embed/Hknq3wZCAGM?si=pDDkWW4H6NZWs61o"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -729,6 +1294,7 @@
             <div class="videos-section__grid-item videos-section__right">
               <iframe
                 width="100%"
+                loading="lazy"
                 height="100%"
                 src="https://www.youtube.com/embed/0bO78QjHCeE?si=C_YrQDWNWQcI7Feo"
                 title="YouTube video player"
@@ -742,38 +1308,92 @@
         </section>
         
         <section id="contacts" class="u-margin-bottom-section">
-          <h1 class="heading-secondary u-text-center u-margin-bottom-heading">
+          <h2 class="heading-secondary u-text-center u-margin-bottom-heading">
             Связь с нами и наши социальные сети
-          </h1>
+          </h2>
           <div class="social-media-section__content">
-            <h1 class="social-media-section-heading heading-primary u-text-white">
+            <h2 class="social-media-section-heading heading-primary u-text-white">
               Присоединяйтесь к нам в соц сетях
-            </h1>
+            </h2>
         
             <div class="social-media-section__icons">
-              <a href="https://t.me/upworkrelocate"
-                ><img src="./assets/img/dist/TelegramLogo.webp"
-              /></a>
-              <a href="https://www.youtube.com/@URelocate"
-                ><img src="./assets/img/dist/YouTubeLogo.webp"
-              /></a>
-              <a
-                href="
-              https://www.instagram.com/upwork.relocate/"
-                ><img src="./assets/img/dist/InstagramLogo.webp"
-              /></a>
-              <a href="https://vk.com/urelocate"
-                ><img src="./assets/img/dist/VKLogo.webp"
-              /></a>
-              <a href="https://discord.gg/PertUXuZRb"
-                ><img src="./assets/img/dist/DiscordLogo.webp"
-              /></a>
+              <a href="https://t.me/upworkrelocate">
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/TelegramLogo.avif"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="./assets/img/dist/TelegramLogo.webp"
+                  />
+                  <img
+                    src="./assets/img/dist/TelegramLogo.png"
+                    alt="social-media-icon"
+                  />
+                </picture>
+              </a>
+              <a href="https://www.youtube.com/@URelocate">
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/YouTubeLogo.avif"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="./assets/img/dist/YouTubeLogo.webp"
+                  />
+                  <img
+                    src="./assets/img/dist/YouTubeLogo.png"
+                    alt="social-media-icon"
+                  />
+                </picture>
+              </a>
+              <a href="https://www.instagram.com/upwork.relocate/">
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/InstagramLogo.avif"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="./assets/img/dist/InstagramLogo.webp"
+                  />
+                  <img
+                    src="./assets/img/dist/InstagramLogo.png"
+                    alt="social-media-icon"
+                  />
+                </picture>
+              </a>
+              <a href="https://vk.com/urelocate">
+                <picture>
+                  <source type="image/avif" srcset="./assets/img/dist/VKLogo.avif" />
+                  <source type="image/webp" srcset="./assets/img/dist/VKLogo.webp" />
+                  <img src="./assets/img/dist/VKLogo.png" alt="social-media-icon" />
+                </picture>
+              </a>
+              <a href="https://discord.gg/PertUXuZRb">
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/DiscordLogo.avif"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="./assets/img/dist/DiscordLogo.webp"
+                  />
+                  <img
+                    src="./assets/img/dist/DiscordLogo.png"
+                    alt="social-media-icon"
+                  />
+                </picture>
+              </a>
             </div>
           </div>
         </section>
         
         <section class="faq-section u-margin-bottom-section">
-          <h1 class="heading-secondary u-text-center u-margin-bottom-heading">FAQ</h1>
+          <h2 class="heading-secondary u-text-center u-margin-bottom-heading">FAQ</h2>
           <div class="faq-section__content">
             <ul class="accordion" id="accordion">
               <li class="accordion__item">
@@ -914,7 +1534,7 @@
           <a href="index.html#instructions">Инструкции</a>
           <a href="index.html#clients">Отзывы</a>
           <a href="index.html#contacts">Контакты</a>
-          <a href="blog.html">Блог</a>
+          <a href="/blog">Блог</a>
         </div>
         <div class="footer__right">
           <div class="footer__social">
@@ -922,6 +1542,10 @@
             <div class="footer__icons">
               <a href="https://t.me/upworkrelocate" target="_blank">
                 <picture class="footer__social-icon">
+                  <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/TelegramLogo.avif"
+                  />
                   <source
                     type="image/webp"
                     srcset="./assets/img/dist/TelegramLogo.webp"
@@ -932,6 +1556,10 @@
               <a href="https://www.youtube.com/@URelocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/YouTubeLogo.avif"
+                  />
+                  <source
                     type="image/webp"
                     srcset="./assets/img/dist/YouTubeLogo.webp"
                   />
@@ -940,6 +1568,10 @@
               </a>
               <a href="https://www.instagram.com/upwork.relocate" target="_blank">
                 <picture class="footer__social-icon">
+                  <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/InstagramLogo.avif"
+                  />
                   <source
                     type="image/webp"
                     srcset="./assets/img/dist/InstagramLogo.webp"
@@ -950,6 +1582,10 @@
               <a href="https://vk.com/urelocate" target="_blank">
                 <picture class="footer__social-icon">
                   <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/VKLogo.avif"
+                  />
+                  <source
                     type="image/webp"
                     srcset="./assets/img/dist/VKLogo.webp"
                   />
@@ -958,6 +1594,10 @@
               </a>
               <a href="https://discord.gg/PertUXuZRb" target="_blank">
                 <picture class="footer__social-icon">
+                  <source
+                    type="image/avif"
+                    srcset="./assets/img/dist/DiscordLogo.avif"
+                  />
                   <source
                     type="image/webp"
                     srcset="./assets/img/dist/DiscordLogo.webp"
@@ -973,7 +1613,87 @@
         </div>
       </div>
     </footer>
+
+    <!-- Popup Form -->
+<div id="popupOverlay" class="popup-overlay hidden"></div>
+<div id="popupForm" class="popup hidden">
+  <button id="closePopup" class="popup-close">&times;</button>
+  <section class="purchase">
+    <div class="purchase__form">
+      <div class="form__text">
+        <h2 class="form__heading">Заполните форму и получите бесплатный гайд</h2>
+      </div>
+      <form class="form__controls" id="telegramPopupForm">
+        <div class="form__fields">
+          <input
+            id="popup-form-name"
+            type="text"
+            name="name"
+            class="form__field"
+            required
+            placeholder="Имя"
+          />
+          <input
+            id="popup-form-tg"
+            type="text"
+            name="telegram"
+            class="form__field"
+            required
+            placeholder="Telegram"
+          />
+          <input
+            id="popup-form-email"
+            type="text"
+            name="email"
+            class="form__field"
+            required
+            placeholder="E-mail"
+          />
+        </div>
+        <div class="form__buttons">
+          <button type="submit" class="form__btn">Отправить</button>
+          <p class="form__alert">
+            Нажимая на эту кнопку, вы соглашаетесь на обработку персональных
+            данных и с правилами пользования сервисом
+          </p>
+        </div>
+      </form>
+    </div>
+  </section>
+</div>
     
-    <script src="./js/index.min.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/slick.min.js"></script> -->
+    <script defer src="./js/splide.min.js"></script>
+    <script defer src="./js/index.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const heroSplide = new Splide(".splide-hero", {
+          arrows: false,
+          pagination: false,
+          type: "loop",
+          autoplay: true,
+          speed: 1200,
+          rewindSpeed: 4000,
+          gap: "30px",
+        });
+        heroSplide.mount();
+
+        const feedbackSplide = new Splide(".splide-feedback", {
+          pagination: false,
+          type: "loop",
+          perPage: 5,
+          focus: "center",
+          updateOnMove: true,
+          lazyLoad: "nearby",
+          speed: 1000,
+          fixedWidth: "29rem",
+          fixedHeight: "37rem",
+        });
+        feedbackSplide.mount();
+      });
+    </script>
   </body>
 </html>

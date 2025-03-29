@@ -1,0 +1,35 @@
+.slide-3 {
+  background-color: $black;
+  .image-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8rem;
+    padding: 4rem;
+    padding-right: 9%;
+
+    @include respond(tab-port) {
+      justify-content: center;
+      padding: 3.2rem;
+    }
+
+    .left,
+    .center,
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+    }
+
+    .left {
+      align-items: end;
+    }
+
+    .center {
+      align-self: center;
+    }
+
+    .right {
+    }
+  }
+}
